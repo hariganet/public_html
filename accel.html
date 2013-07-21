@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="ja-JP">
+<head>
+<meta charset="UTF-8">
+<title>accelerationIncludingGravity</title>
+<meta name="viewport" content="maximum-scale=2.0,width=device-width,initial-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+<style type~"text/css">
+
+button.act{
+	height:50px;
+	width:100px;
+}
+
+button.act:hover{
+	color:white;
+	background-color:black;
+
+}
+
+</style>
+
+</head>
+<body>
+
+<audio id="kick">
+	<source src="music/rain4.mp3" type="audio/mpeg"/>
+</audio>
+<canvas id="a_canvas" width="300" height="300"></canvas>
+
+<button id="play" class="act" onclick="audio_load()">play</button>
+
+<script language="javascript">
+
+var button = document.getElementById('button');
+
+var kick_sound = document.getElementById("kick");
+
+function audio_load(){
+	
+	kick_sound.load();
+}
+
+window.addEventListener('devicemotion', function(evt) {
+
+
+var acc = evt.accelerationIncludingGravity;
+
+var canvas = document.getElementById("a_canvas");
+var context = canvas.getContext("2d"); 
+ 
+
+context.font = "20pt Arial";
+
+
+context.clearRect(0,0,canvas.width,canvas.height);
+
+var thr = 15;
+
+if(acc.x < -thr || acc.x >thr || acc.y < -thr || acc.y >thr || acc.z < -thr || acc.z > thr){
+	context.fillStyle = 'rgb(255,0,0)';
+	context.fillRect(0,0,window.innerWidth,window.innerHeight);
+	
+	kick_sound.play();
+
+	//kick_sound.load();
+
+}//else if(acc.x >10 && acc.y < -9 && acc.z > 3){
+
+//}
+
+context.fillText(acc.x, 10, 50);   
+
+context.fillText(acc.y, 10, 100);   
+
+context.fillText(acc.z, 10, 150);   
+
+},true);
+
+
+
+</script>
+</body>
+</html>
+
+

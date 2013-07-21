@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="ja-JP">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>accelerationIncludingGravity</title>
+</head>
+<body>
+<ul>
+<li>x:<span id="x">-</span></li>
+<li>y:<span id="y">-</span></li>
+<li>z:<span id="z">-</span></li>
+</ul>
+<script language="javascript">
+var x = document.getElementById('x');
+var y = document.getElementById('y');
+var z = document.getElementById('z');
+window.addEventListener('devicemotion', function(evt) {
+var acc = evt.accelerationIncludingGravity;
+x.innerHTML = acc.x;
+y.innerHTML = acc.y;
+z.innerHTML = acc.z;
+draw(acc.x*2, acc.y*2);
+
+document.write(x);
+document.write(acc.x);
+
+},true);
+
+if(x < -0.5){
+	document.bgColor = "#FF0000";
+	x.innerHTML = acc.x;
+}
+
+
+</script>
+</body>
+</html>
+
+
