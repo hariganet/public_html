@@ -4,123 +4,15 @@
 <meta charset="UTF-8">
 <title>らくがき帳</title>
 <script>
-//マウスボタンが押されているかどうかを調べる変数を宣言
-var mouseDown = false;
-
-//ペンの設定
-var penX = 0;
-var penY = 0;
-var penColor = "rgba(0,0,0,1)";
-var penWidth = 10;
-
-//描画の開始
-function startDraw(event){
-	//マウスボタンが押された
-	mouseDown = true;
-
-	//ペンの座標をセット
-	penX = event.clientX;
-	penY = event.clientY;
-}
-
-//描画
-function draw(event){
-	//マウスボタンが押されていれば描画
-	if(mouseDown){
-		//キャンバスの取得
-		var canvas = document.getElementById("main");
-		//コンテキストの取得
-		var context = canvas.getContext("2d");
-	
-		//ペンのセット
-		context.strokeStyle = penColor;
-		context.lineWidth = penWidth;
-		context.lineCap = "round";
-		//マウスカーソルの座標を取得
-		var x = event.clientX;
-		var y = event.clientY;
-
-		//パスの開始
-		context.beginPath();
-		//座標の移動
-		context.moveTo(penX,penY);
-		//線の描画
-		context.lineTo(x,y);
-		//パスの描画
-		context.stroke();
-
-		//ペン座標の切り替え
-		penX = x;
-		penY = y;
-	}
-}
-
-//描画の終了
-function endDraw(event){
-	//マウスボタンが離された
-	mouseDown = false;
-}
-
-//ペンの色を変更
-function changeColor(){
-	//スライダーの値を取得
-	var penR = document.getElementById("penR").value;
-	var penG = document.getElementById("penG").value;
-	var penB = document.getElementById("penB").value;
-	var penA = document.getElementById("penA").value;
-
-	//ペンの色をセット
-	penColor = "rgba("+penR+","+penG+","+penB+","+penA+")";
-
-	//ペンの色用のキャンバスの取得
-	var canvasColor = document.getElementById("canvasColor"); 	
-	//コンテキストの取得
-	var contextColor = canvasColor.getContext("2d");
-
-	//ペンの色のを塗りつぶしの四角形で表示
-	contextColor.clearRect(0,0,20,20);
-	contextColor.fillStyle = penColor;
-	contextColor.fillRect(0,0,20,20);
-	//ペンの色をテキストで表示
-	var textColor = document.getElementById("textColor");
-	textColor.innerHTML = "R:"+penR+", G:"+penG+", B:"+penB+", A:"+penA;
-
-
-}
 
 </script>
 <style>
-canvas{
-	border:solid #999999 lpx;
-}
-
-.pallet{
-	background-color:#EEEEEE;
-	border:solid #999999 1px;
-	width:620px;
-	padding:10px;
-	font-size:small;
-}
-
-#canvasColor{
-	background-image: url("shimauma.jpg");
-}
-
 
 </style>
 </head>
-<body onLoad="changeColor()">
-<canvas id="main" width="800" height="600" onMouseDown="startDraw(event)" onMouseMove="draw(event)" onMouseUp="endDraw(event)">
-</canvas>
-<div class="pallet">
-	<canvas id="canvasColor" width="20" height="20"></canvas>
-	ペンの色：[<span id="textColor">R:0,G:0,B:0,A:1.0</span>]
-	<br>
-	R:<input type="range" id="penR" value="0" min="0" max="255" onChange="changeColor()">
-	G:<input type="range" id="penG" value="0" min="0" max="255" onChange="changeColor()">
-	B:<input type="range" id="penB" value="0" min="0" max="255" onChange="changeColor()">
-	A:<input type="range" id="penA" value="1" min="0" max="1" step="0.1" onChange="changeColor()">
+<body>
 
+practice
 
 </body>
 </html>
