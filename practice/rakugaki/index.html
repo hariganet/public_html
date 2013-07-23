@@ -2,6 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
 <title>らくがき帳</title>
 <script>
 //マウスボタンが押されているかどうかを調べる変数を宣言
@@ -154,8 +158,8 @@ function showImage(){
 
 </script>
 <style>
-canvas{
-	border:solid #999999 lpx;
+canvas {
+	border:solid #999999 1px;
 }
 
 .pallet{
@@ -190,7 +194,7 @@ canvas{
 
 </style>
 </head>
-<body onLoad="changeColor()">
+<body onLoad="changeColor(); changeWidth();" >
 <canvas id="main" width="640" height="480" onMouseDown="startDraw(event)" onMouseMove="draw(event)" onMouseUp="endDraw(event)">
 </canvas>
 <div class="pallet">
