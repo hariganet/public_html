@@ -88,28 +88,28 @@ function changeColor(){
 
 }
 
-//set pen basic color
+//基本色をペンの色にセット
 function setColor(r,g,b){
-  // set value in slider
+  //スライダーに値をセット
   document.getElementById("penR").value = r;
   document.getElementById("penG").value = g;
   document.getElementById("penB").value = b;
 
-  // change pen color
+  //ペンの色を変更
   changeColor();
 }
 
-// change pen thickness
+//ペンの太さを変更
 function changeWidth(){
-  // get value in slider
+  //スライダーの値を変更
   penWidth = document.getElementById("penW").value;
 
-  // canvas for pen thickness
+  // ペンの色用キャンバスの取得
   var canvasWidth = document.getElementById("canvasWidth");
-  // get context
+  //コンテキストの取得
   var contextWidth = canvasWidth.getContext("2d");
 
-  // view pen thickness by filled circle
+  //ペンの太さを塗りつぶしの円で表示
   contextWidth.clearRect(0,0,20,20);
   contextWidth.beginPath();
   contextWidth.arc(10,10,penWidth/2,0,2*Math.PI,false);
@@ -117,32 +117,32 @@ function changeWidth(){
 
 }
 
-// clear canvas
+//キャンバスをクリア
 function clearCanvas(){
-  // get canvas
+  // キャンバスの取得
   var canvas = document.getElementById("main");
-  // get context
+  //コンテキストの取得
   var context = canvas.getContext("2d");
 
-  // clear canvas
+  //キャンバスをクリア
   context.clearRect(0,0,canvas.width,canvas.height);
 
 }
 
-// view rakugaki in other window
+//らくがきを別ウィンドウで表示
 function showImage(){
-  // get canvas
+  //キャンバスの取得
   var canvas = document.getElementById("main");
 
-  // create new window
+  //新しいウィンドウを作成
   var imageWin = window.open("","");
   
-  //write html in new window
+  //新しいウィンドウにHTMLを書き込む
   imageWin.document.open();
   imageWin.document.write('<html>');
     imageWin.document.write('<head><title>rakugaki</title></head>');
     imageWin.document.write('<body>');
-      //create canvas data on url data
+      //キャンバスのデータをURLデータとして生成
       imageWin.document.write('<img src="'+canvas.toDataURL()+'">');
 
       imageWin.document.write('</body></html>');
@@ -203,7 +203,7 @@ canvas {
 	A:<input type="range" id="penA" value="1" min="0" max="1" step="0.1" onChange="changeColor()">
   
   <hr>
-  basic color:
+  基本色：
   <button type="button" class="red" onclick="setColor(255,0,0)"></button>
   <button type="button" class="yellow" onclick="setColor(255,255,0)"></button>
   <button type="button" class="green" onclick="setColor(0,255,0)"></button>
@@ -216,13 +216,13 @@ canvas {
 
 <div class="pallet">
   <canvas id="canvasWidth" width="20" height="20"></canvas>
-  pen thickness:
+  ペンの太さ：
   <input type="range" id="penW" value="10" min="1" max="20" onInput="changeWidth()">
 </div>
 
 <div id="buttons">
-  <input type="button" value="erase rakugaki" onclick="clearCanvas()">
-  <input type="button" value="rakugaki in other window" onclick="showImage()">
+  <input type="button" value="らくがきを消す" onclick="clearCanvas()">
+  <input type="button" value="らくがきを別ウィンドウで表示" onclick="showImage()">
 </div>
 
 </body>
