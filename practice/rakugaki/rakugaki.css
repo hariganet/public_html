@@ -1,0 +1,34 @@
+canvas {
+	border:solid #999999 1px;
+}
+
+.pallet{
+	background-color:#EEEEEE;
+	border:solid #999999 1px;
+	width:620px;
+	padding:10px;
+	font-size:small;
+}
+
+#canvasColor{
+	background-image: url("pen_back.jpg");
+}
+
+.red { background-color:#FF0000; }
+.yellow { background-color:#FFFF00; }
+.green { background-color:#00FF00; }
+.cyan { background-color:#00FFFF; }
+.blue { background-color:#0000FF; }
+.magenta { background-color:#FF00FF; }
+.white { background-color:#FFFFFF; }
+.black { background-color:#000000; }
+
+#buttons {
+  background-color:#CCCCCC;
+  border:solid #999999 1px;
+  width:620px;
+  padding:10px;
+}
+
+
+
