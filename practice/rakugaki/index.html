@@ -2,8 +2,22 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name = "viewport" content = "width = 660, user-scalable=no">
 <title>らくがき帳</title>
 <script>
+
+  window.addEventListener("load", function()
+  {
+    var canvas = document.getElementById("main");
+    canvas.addEventListener("touchstart", startTouchDraw, true);
+    canvas.addEventListener("touchmove", TouchDraw, true);
+    canvas.addEventListener("touchend", endTouchDraw, true);
+
+  }, true);  
+  
+  
+  
+  
 //マウスボタンが押されているかどうかを調べる変数を宣言
 var mouseDown = false;
 
@@ -12,6 +26,58 @@ var penX = 0;
 var penY = 0;
 var penColor = "rgba(0,0,0,1)";
 var penWidth = 10;
+
+
+
+
+//描画の開始
+function startTouchDraw(event){
+	//マウスボタンが押された
+	mouseDown = true;
+
+	//ペンの座標をセット
+  penX = event.touches[0].clientX;
+	penY = event.touches[0].clientY;
+}
+
+//描画
+function TouchDraw(event){
+	//マウスボタンが押されていれば描画
+	if(mouseDown){
+		//キャンバスの取得
+		var canvas = document.getElementById("main");
+		//コンテキストの取得
+		var context = canvas.getContext("2d");
+	
+		//ペンのセット
+		context.strokeStyle = penColor;
+		context.lineWidth = penWidth;
+		context.lineCap = "round";
+		//マウスカーソルの座標を取得
+		var x = event.touches[0].clientX;
+		var y = event.touches[0].clientY;
+
+		//パスの開始
+		context.beginPath();
+		//座標の移動
+		context.moveTo(penX,penY);
+		//線の描画
+		context.lineTo(x,y);
+		//パスの描画
+		context.stroke();
+
+		//ペン座標の切り替え
+		penX = x;
+		penY = y;
+	}
+}
+
+//描画の終了
+function endDraw(event){
+	//マウスボタンが離された
+	mouseDown = false;
+}
+
 
 //描画の開始
 function startDraw(event){
@@ -191,7 +257,7 @@ canvas {
 </style>
 </head>
 <body onLoad="changeColor(); changeWidth();" >
-<canvas id="main" width="640" height="480" onMouseDown="startDraw(event)" onMouseMove="draw(event)" onMouseUp="endDraw(event)">
+  <canvas id="main" width="640" height="480" onMouseDown="startDraw(event)" onMouseMove="draw(event)" onMouseUp="endDraw(event)" >
 </canvas>
 <div class="pallet">
 	<canvas id="canvasColor" width="20" height="20"></canvas>
