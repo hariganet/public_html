@@ -3,6 +3,25 @@
   <head>
     <meta charset="UTF-8">
     <title>世界時計</title>
+    <script>
+      //時計の表示
+      function clock(){
+        //時計の日時
+        var now = new Date();
+
+        //時間の取得
+        var hour = now.getHours();
+        //分の取得
+        var min = now.getMinutes();
+        //秒の取得
+        var sec = now.getSeconds();
+
+        //時間表示用の要素の取得
+        var timeElement = document.getElementById("time");
+        //時間をセット
+        timeElement.innerHTML = hour+":"+min+":"+ sec;
+      }
+    </script>
     <style>
       #clock {
         font-family:"Courier New";
@@ -17,7 +36,7 @@
       }
     </style>
   </head>
-  <body>
+  <body onLoad="clock()">
     <div id="clock">
       <img src="worldmap.jpg">
       <div id="time">--:--:--</div>
