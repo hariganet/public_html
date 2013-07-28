@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <title>世界時計</title>
     <script>
+      //タイマー（１秒後に関数clockを実行
+      setInterval("clock()",1000);
+
       //時計の表示
       function clock(){
         //時計の日時
         var now = new Date();
 
+        //Tokyoの時間（ミリ秒）
+        var timeTokyo = now.getTime();
+        //UTC（協定世界時）の時間（ミリ秒）
+        var timeUTC = timeTokyo - 9*60*60*1000;
+
+        //選択された都市のタイムゾーン
+        var cityElement = document.getElementById("city");
+        var index = cityElement.selectedIndex;
+        var timeZone = cityElement.options[index].value;
+
+        //選択された都市の時間（ミリ秒）
+        var timeCity = timeUTC + timeZone*60*60*1000;
+
+        //Timezoneを表示
+        var timeZoneElement = document.getElementById("timezone");
+        timeZoneElement.innerHTML = "Timezone:" + timeZone;
+
+        //選択された都市の日時
+        now = new Date(timeCity);
+        
         //時間の取得
         var hour = now.getHours();
         //分の取得
@@ -41,6 +64,16 @@
         //日の取得
         var day = now.getDate();
 
+        // ２桁表示に変更
+        if(month < 10){
+          month = "0" + month;
+        }
+
+        if(day < 10){
+          day = "0" + day;
+        }
+
+
         //曜日の名称
         var weekArray = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
         //曜日の取得
@@ -50,8 +83,6 @@
         //時間をセット
         dateElement.innerHTML = year + "/" + month + "/" + day + " " + week;
 
-        //タイマー（１秒後に関数clockを実行
-        setTimeout("clock()",1000);
       }
     </script>
     <style>
@@ -75,6 +106,19 @@
   </head>
   <body onLoad="clock()">
     <div id="clock">
+      <select id="city">
+        <option value="-10">Honolulu (USA)
+        <option value="-8">Los Angels (USA)
+        <option value="-5">New York (USA)
+        <option value="-3">Rio de Janeiro (BRAZIL)
+        <option value="0">London (UK)
+        <option value="2">Cairo (EGYPT)
+        <option value="5.5">New Delhi (INDIA)
+        <option value="7">Bangkok (THAILAND)
+        <option value="9" selected>Tokyo (JAPAN)
+        <option value="10">Sydney (AUSTRALIA)
+      </select>
+      <span id="timezone"></span>
       <img src="worldmap.jpg">
       <div id="date">----/--/-- ---</div>
       <div id="time">--:--:--</div>
