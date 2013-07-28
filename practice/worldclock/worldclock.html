@@ -16,6 +16,19 @@
         //秒の取得
         var sec = now.getSeconds();
 
+        //２桁表示に変更
+        if(hour < 10){
+          hour = "0" + hour;
+        }
+
+        if(min < 10){
+          min = "0" + min;
+        }
+
+        if(sec < 10){
+          sec = "0" + sec;
+        }
+
         //時間表示用の要素の取得
         var timeElement = document.getElementById("time");
         //時間をセット
@@ -36,6 +49,9 @@
         var dateElement = document.getElementById("date");
         //時間をセット
         dateElement.innerHTML = year + "/" + month + "/" + day + " " + week;
+
+        //タイマー（１秒後に関数clockを実行
+        setTimeout("clock()",1000);
       }
     </script>
     <style>
