@@ -19,7 +19,23 @@
         //時間表示用の要素の取得
         var timeElement = document.getElementById("time");
         //時間をセット
-        timeElement.innerHTML = hour+":"+min+":"+ sec;
+        timeElement.innerHTML = hour + ":" + min + ":" +  sec;
+
+        //年の取得
+        var year = now.getFullYear();
+        //月の取得
+        var month = now.getMonth();
+        //日の取得
+        var day = now.getDate();
+
+        //曜日の名称
+        var weekArray = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+        //曜日の取得
+        var week = weekArray[now.getDay()];
+        //日付表示用の要素の取得
+        var dateElement = document.getElementById("date");
+        //時間をセット
+        dateElement.innerHTML = year + "/" + month + "/" + day + " " + week;
       }
     </script>
     <style>
@@ -31,14 +47,20 @@
         width:300px;
         padding:10px;
       }
+      
       #time{
         font-size:42pt;
+      }
+
+      #date{
+        font-size:20pt
       }
     </style>
   </head>
   <body onLoad="clock()">
     <div id="clock">
       <img src="worldmap.jpg">
+      <div id="date">----/--/-- ---</div>
       <div id="time">--:--:--</div>
     </div>
   </body>
