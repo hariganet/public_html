@@ -8,12 +8,19 @@
   </head>
   <body>
     <form>
-      1ドル＝
+      1
+      <select id="currency" onChange="changeCurrency()">
+        <option value="ドル">ドル
+        <option value="ユーロ">ユーロ
+        <option value="人民元">人民元
+      </select>
+      ＝
       <input type="number" step="0.1" id="rate" value="77.8" size="12">円<img src="worldmap.jpg">
       両替する金額：
       <input type="number" id="inMoney" value="100" size="12">
       <br>
-      <input type="button" id="buttonExchange" value="ドルから円に両替" onClick="exchange()">
+      <input type="button" id="buttonExchange" value="ドルから円に両替" onClick="exchange('toYen')">
+      <input type="button" id="buttonExchange2" value="円からドルに両替" onClick="exchange('fromYen')">    
       <hr>両替結果：
       <div id="outMoney">-----</div>
     </form>
