@@ -1,0 +1,16 @@
+      #clock {
+        font-family:"Courier New";
+        background-color:#CCCCCC;
+        border:solid #999999 1px;
+        color:#000000;
+        width:300px;
+        padding:10px;
+      }
+      
+      #time{
+        font-size:42pt;
+      }
+
+      #date{
+        font-size:20pt
+      }
