@@ -2,12 +2,12 @@
   border:solid #999999 1px;
   width:640px;
   height:480px;
-}
+  }
 
 #thumbArea{
-  border:solid #999999 1px;
-  width:620px;
-  padding:10px;
+    border:solid #999999 1px;
+    width:620px;
+    padding:10px;
 }
 
 .thumb{
@@ -20,4 +20,11 @@
 .select{
   border:solid #333366 2px;
   opacity:1.0;
+}
+
+#buttons{
+  background-color:#CCCCCC;
+  border:solid #999999 1px;
+  width:620px;
+  padding:10px;
 }
