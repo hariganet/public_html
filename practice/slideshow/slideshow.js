@@ -33,7 +33,7 @@ function startSlideShow(){
   audio.volume = document.getElementById("volume").value;
 
   //連続クリック対策、開始ボタンを無効に
-  document.getElementById("buttonStart").disabled = "true";
+  document.getElementById("buttonStart").disabled = true;
 }
 
 //スライドショーを一時停止
@@ -46,7 +46,7 @@ function pauseSlideShow(){
   audio.pause();
 
   //連続クリック対策、開始ボタンを有効に
-  document.getElementById("buttonStart").disabled = "false";
+  document.getElementById("buttonStart").disabled = false;
 }
 
 //スライドショーを停止
@@ -61,6 +61,9 @@ function stopSlideShow(){
   //BGMの停止
   var audio = document.getElementById("audio");
   audio.load(); 
+
+  //連続クリック対策、開始ボタンを有効に
+  document.getElementById("buttonStart").disabled = false;
 }
 
 //画像を表示
