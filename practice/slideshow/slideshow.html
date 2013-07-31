@@ -26,6 +26,13 @@
       <button type="button" id="buttonStop" onClick="stopSlideShow()">
         <img src="img/stop.png">
       </button>
+      Volume [0.0-1.0]:
+      <input type="range" id="volume" min="0" max="1" step="0.1" value="1.0" onChange="changeVolume()">
+    </div>
+    <audio id="audio" loop>
+      <source src="music/sample.mp3"></source>
+      <source src="music/sample.ogg"></source>
+    </audio>
   </body>
 </html>
 

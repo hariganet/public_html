@@ -24,12 +24,29 @@ function startSlideShow(){
   //１回目の画像の切り替え
   changeImage();
   timerId = setInterval("changeImage()",10000);
+  
+  //BGM開始
+  var audio = document.getElementById("audio");
+  audio.play();
+
+  //ボリュームをセット
+  audio.volume = document.getElementById("volume").value;
+
+  //連続クリック対策、開始ボタンを無効に
+  document.getElementById("buttonStart").disabled = "true";
 }
 
 //スライドショーを一時停止
 function pauseSlideShow(){
   //タイマーの停止
   clearInterval(timerId);
+
+  //BGMの一時停止
+  var audio = document.getElementById("audio");
+  audio.pause();
+
+  //連続クリック対策、開始ボタンを有効に
+  document.getElementById("buttonStart").disabled = "false";
 }
 
 //スライドショーを停止
@@ -40,6 +57,10 @@ function stopSlideShow(){
   currentImage = 0;
   //先頭の画像を表示
   showImage(currentImage);
+
+  //BGMの停止
+  var audio = document.getElementById("audio");
+  audio.load(); 
 }
 
 //画像を表示
@@ -56,6 +77,13 @@ function showImage(imageNo){
 
   //選択されたサムネール画像にselectクラスを追加
   thumbImages[imageNo].classList.add("select");
+}
+
+//ボリュームの変更
+function changeVolume(){
+  //ボリュームをセット
+  var audio = document.getElementById("audio");
+  audio.volume = document.getElementById("volume").value;
 }
 
 
