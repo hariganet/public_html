@@ -32,3 +32,50 @@ function dragOverMemo(event){
   //通常のドラッグの動作を禁止
   event.preventDefault();
 }
+
+//付箋紙ID用のカウンター
+var memoCurrentId = 1;
+
+//付箋紙の追加
+function addMemo(){
+  //入力されたテキストの取得
+  var memoText = document.getElementById("memoText").value;
+
+  //選択された色の取得
+  var memoColor = "yellow";
+  if(document.getElementById("memoY").checked){
+    memoColor = "yellow";
+  }
+  if(document.getElementById("memoR").checked){
+    memoColor = "red";
+  }
+  if(document.getElementById("memoG").checked){
+    memoColor = "green";
+  }
+
+  //付箋紙DOM要素作成
+  var memoElement = document.createElement("a");
+
+  //付箋紙DOM要素のプロパティをセット
+  memoElement.href = "#";
+  memoElement.id = "memo" + memoCurrentId;
+  memoElement.className = "memo " + memoColor;
+  memoElement.draggable = true;
+
+  //付箋紙DOM要素のイベントをセット
+  memoElement.ondragstart = dragMemo;
+
+  //付箋紙DOM要素のテキストをセット
+  memoElement.innerHTML = memoText;
+
+  //付箋紙エリアに作成した付箋紙を追加
+  var memoArea = document.getElementById("memoArea");
+  memoArea.appendChild(memoElement);
+
+  //カウンターのインクリメント
+  memoCurrentId++;  
+}
+
+
+
+  

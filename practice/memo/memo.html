@@ -7,8 +7,14 @@
     <script type="text/javascript" src="memo.js" charset="UTF-8"></script>
   </head>
   <body>
+  <form>
+    <input type="text" id="memoText" size="50" placeholder="メモを入力してください">
+    <input type="radio" name="memoColor" id="memoY" checked>黄色
+    <input type="radio" name="memoColor" id="memoR" checked>赤色
+    <input type="radio" name="memoColor" id="memoG" checked>緑色
+    <input type="button" value="付箋紙を貼る" onClick="addMemo()">
+  </form>
     <div id="memoArea" onDragOver="dragOverMemo(event)" onDrop="dropMemo(event)">
-      <a href="#" id="memo1" class="memo yellow" draggable="true" onDragStart="dragMemo(event)">メモ１</a>
     </div>
   </body>
 </html>

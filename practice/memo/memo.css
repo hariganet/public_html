@@ -31,3 +31,10 @@
 .green{
   background-color:#CCFFCC;
 }
+
+form{
+  background-color:#CCCCCC;
+  border:solid #999999 1px;
+  width:620px;
+  padding:10px;
+}
