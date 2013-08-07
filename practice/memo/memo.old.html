@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>付箋紙アプリ</title>
+    <link rel="stylesheet" type="text/css" href="memo.old.css" media="all" charset="UTF-8">
+    <script type="text/javascript" src="memo.old.js" charset="UTF-8"></script>
+  </head>
+  <body>
+  <form>
+    <input type="text" id="memoText" size="50" placeholder="メモを入力してください">
+    <input type="radio" name="memoColor" id="memoY" checked>黄色
+    <input type="radio" name="memoColor" id="memoR" checked>赤色
+    <input type="radio" name="memoColor" id="memoG" checked>緑色
+    <input type="button" value="付箋紙を貼る" onClick="addMemo()">
+  </form>
+    <div id="memoArea" onDragOver="dragOverMemo(event)" onDrop="dropMemo(event)">
+    </div>
+  </body>
+</html>
+
+    
+
