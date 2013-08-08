@@ -36,6 +36,31 @@ Memo.prototype.move = function(x, y){
   memoElement.style.top = y + "px";
 };
 
+//Memoクラスremoveメソッド
+Memo.prototype.remove = function(){
+  //DOM要素の取得
+  var memoElement = document.getElementById(this.id);
+
+  //付箋紙エリアから子要素を削除
+  var memoArea = document.getElementById("memoArea");
+  memoArea.removeChild(memoElement);
+}
+
+//ゴミ箱にドロップ
+function dropTrash(event){
+  //格納されたIDの取得
+  var id = event.dataTransfer.getData("text");
+
+  //付箋紙オブジェクトの取得
+  var memo = memoArray[id];
+
+  //DOM要素の削除
+  memo.remove();
+
+  //付箋紙オブジェクトの削除
+  delete memoArray[id];
+}
+
 //連想配列
 var memoArray = new Array();
 

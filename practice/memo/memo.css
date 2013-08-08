@@ -38,3 +38,13 @@ form{
   width:620px;
   padding:10px;
 }
+
+#trashArea{
+  background-color:#6699CC;
+  color:#FFFFFF;
+  border:dashed #333366 1px;
+  width:620px;
+  height:100px;
+  padding:10px;
+
+}
