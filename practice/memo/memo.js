@@ -1,3 +1,44 @@
+//Memoクラス
+function Memo(id, text, color, x, y){
+  //プロパティ
+  this.id = "memo" + id;
+  this.text = text;
+  this.color = color;
+  this.x = x;
+  this.y = y;
+
+  //DOM要素を作成するcreateメソッド
+  this.create = function(){
+    //付箋紙DOM要素の作成
+    var memoElement = document.createElement("a");
+    memoElement.href = "#";
+    memoElement.id = this.id;
+    memoElement.className = "memo " + this.color;
+    memoElement.draggable = true;
+    memoElement.ondragstart = dragMemo;
+    memoElement.innerHTML = this.text;
+
+    //付箋紙エリアに作成した付箋紙を追加
+    var memoArea = document.getElementById("memoArea");
+    memoArea.appendChild(memoElement);
+  };
+}
+
+//Memoクラスmoveメソッド
+Memo.prototype.move = function(x, y){
+  //付箋紙頂点座標のセット
+  this.x = x;
+  this.y = y;
+
+  //付箋紙の移動
+  var memoElement = document.getElementById(this.id);
+  memoElement.style.left = x + "px";
+  memoElement.style.top = y + "px";
+};
+
+//連想配列
+var memoArray = new Array();
+
 //ドラッグ座標と付箋紙頂点のオフセット
 var offsetX = 0;
 var offsetY = 0;
@@ -20,11 +61,10 @@ function dropMemo(event){
   var id = event.dataTransfer.getData("text");
 
   //ドラッグした付箋紙の取得
-  var memoElement = document.getElementById(id);
+  var memo = memoArray[id];
 
   //付箋紙の座標をドロップした座標にセット
-  memoElement.style.left = event.clientX - offsetX + "px";
-  memoElement.style.top = event.clientY - offsetY + "px";
+  memo.move(event.clientX - offsetX, event.clientY - offsetY);
 }
 
 //ドラッグ中
@@ -53,24 +93,14 @@ function addMemo(){
     memoColor = "green";
   }
 
-  //付箋紙DOM要素作成
-  var memoElement = document.createElement("a");
+  //付箋紙オブジェクトの生成
+  var memo = new Memo(memoCurrentId, memoText, memoColor, 50, 80);
 
-  //付箋紙DOM要素のプロパティをセット
-  memoElement.href = "#";
-  memoElement.id = "memo" + memoCurrentId;
-  memoElement.className = "memo " + memoColor;
-  memoElement.draggable = true;
+  //付箋紙DOM要素の作成
+  memo.create();
 
-  //付箋紙DOM要素のイベントをセット
-  memoElement.ondragstart = dragMemo;
-
-  //付箋紙DOM要素のテキストをセット
-  memoElement.innerHTML = memoText;
-
-  //付箋紙エリアに作成した付箋紙を追加
-  var memoArea = document.getElementById("memoArea");
-  memoArea.appendChild(memoElement);
+  //付箋紙配列に追加
+  memoArray[memo.id] = memo;
 
   //カウンターのインクリメント
   memoCurrentId++;  
