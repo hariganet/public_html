@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+#main{
+  border:solid #999999 1px;
+  width:640px;
+  height:480px;
+  }
+
+#thumbArea{
+    border:solid #999999 1px;
+    width:620px;
+    padding:10px;
+}
+
+.thumb{
+  width:90px;
+  height:90px;
+  border:solid #CCCCCC 2px;
+  opacity:0.6;
+}
+
+.select{
+  border:solid #333366 2px;
+  opacity:1.0;
+}
+
+#buttons{
+  background-color:#CCCCCC;
+  border:solid #999999 1px;
+  width:620px;
+  padding:10px;
+}

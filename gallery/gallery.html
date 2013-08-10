@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>スライドショー</title>
+    <link rel="stylesheet" href="gallery.css" type="text/css" charset="UTF-8" media="all">
+    <script type="text/javascript" src="gallery.js" charset="UTF-8"></script>
+  </head>
+  <body>
+    <img src="img/sample0.jpg" id="main">
+    <div id="thumbArea">
+      <img src="img/sample0_s.jpg" class="thumb select" onClick="showImage(0)">
+      <img src="img/sample1_s.jpg" class="thumb" onClick="showImage(1)">
+      <img src="img/sample2_s.jpg" class="thumb" onClick="showImage(2)">
+      <img src="img/sample3_s.jpg" class="thumb" onClick="showImage(3)">
+      <img src="img/sample4_s.jpg" class="thumb" onClick="showImage(4)">
+    </div>
+    <div id="buttons">
+      <button type="button" id="buttonStart" onClick="startSlideShow()">
+        <img src="img/start.png">
+      </button>
+      <button type="button" id="buttonPause" onClick="pauseSlideShow()">
+        <img src="img/pause.png">
+      </button>
+      <button type="button" id="buttonStop" onClick="stopSlideShow()">
+        <img src="img/stop.png">
+      </button>
+      Volume [0.0-1.0]:
+      <input type="range" id="volume" min="0" max="1" step="0.1" value="1.0" onChange="changeVolume()">
+    </div>
+    <audio id="audio" loop>
+      <source src="music/sample.mp3"></source>
+      <source src="music/sample.ogg"></source>
+    </audio>
+  </body>
+</html>
+
+
