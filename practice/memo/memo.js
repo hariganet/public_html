@@ -44,7 +44,28 @@ Memo.prototype.remove = function(){
   //付箋紙エリアから子要素を削除
   var memoArea = document.getElementById("memoArea");
   memoArea.removeChild(memoElement);
+
+  //ローカルストレージから付箋紙情報を削除
+  localStorage.removeItem(this.id);
+
 }
+
+//MemoクラスSaveメソッド
+Memo.prototype.save = function(){
+  //付箋紙情報をJSON形式で格納
+  var memoJSON = {
+    "text":this.text,
+    "color":this.color,
+    "x":this.x,
+    "y":this.y
+  };
+
+  //JSONオブジェクトを文字列に変換
+  var memoStringJSON = JSON.stringify(memoJSON);
+
+  //ローカルストレージに付箋紙情報を保存
+  localStorage.setItem(this.id, memoStringJSON);
+};
 
 //ゴミ箱にドロップ
 function dropTrash(event){
@@ -54,12 +75,17 @@ function dropTrash(event){
   //付箋紙オブジェクトの取得
   var memo = memoArray[id];
 
-  //DOM要素の削除
-  memo.remove();
+  if(confirm("削除しますか？")){
 
-  //付箋紙オブジェクトの削除
-  delete memoArray[id];
+    //DOM要素の削除
+    memo.remove();
+  
+    //付箋紙オブジェクトの削除
+    delete memoArray[id];
+
+  }
 }
+
 
 //連想配列
 var memoArray = new Array();
@@ -90,6 +116,9 @@ function dropMemo(event){
 
   //付箋紙の座標をドロップした座標にセット
   memo.move(event.clientX - offsetX, event.clientY - offsetY);
+
+  //付箋紙情報をローカルストレージに保存
+  memo.save();
 }
 
 //ドラッグ中
@@ -106,31 +135,78 @@ function addMemo(){
   //入力されたテキストの取得
   var memoText = document.getElementById("memoText").value;
 
-  //選択された色の取得
-  var memoColor = "yellow";
-  if(document.getElementById("memoY").checked){
-    memoColor = "yellow";
+  if(memoText.length > 20){
+    alert("入力された文字が長過ぎます。");
+  }else{
+
+    //選択された色の取得
+    var memoColor = "yellow";
+   if(document.getElementById("memoY").checked){
+      memoColor = "yellow";
+    }
+    if(document.getElementById("memoR").checked){
+      memoColor = "red";
+   }
+    if(document.getElementById("memoG").checked){
+      memoColor = "green";
+    }
+
+    //付箋紙オブジェクトの生成
+    var memo = new Memo(memoCurrentId, memoText, memoColor, 50, 80);
+
+    //付箋紙DOM要素の作成
+    memo.create();
+
+    //付箋紙情報をローカルストレージに保存
+    memo.save();
+
+    //付箋紙配列に追加
+    memoArray[memo.id] = memo;
+
+    //カウンターのインクリメント
+    memoCurrentId++;  
+
+    //付箋紙IDカウンターをローカルストレージに保存
+    localStorage.setItem("memoCurrentId", memoCurrentId);
   }
-  if(document.getElementById("memoR").checked){
-    memoColor = "red";
-  }
-  if(document.getElementById("memoG").checked){
-    memoColor = "green";
-  }
-
-  //付箋紙オブジェクトの生成
-  var memo = new Memo(memoCurrentId, memoText, memoColor, 50, 80);
-
-  //付箋紙DOM要素の作成
-  memo.create();
-
-  //付箋紙配列に追加
-  memoArray[memo.id] = memo;
-
-  //カウンターのインクリメント
-  memoCurrentId++;  
 }
 
+//付箋紙情報の読み込み
+function loadMemo(){
+  //付箋紙IDカウンターの読み込み
+  memoCurrentId = localStorage.getItem("memoCurrentId");
+  if(memoCurrentId == null){
+    memoCurrentId = 1;
+  }
 
+  //すべての付箋紙情報の読み込み
+  for(var i=1; i<memoCurrentId; ++i){
+    //付箋紙IDの作成
+    var memoId = "memo"+i;
 
-  
+    //付箋紙情報(JSON形式)の読み込み
+    var memoJSON = localStorage.getItem(memoId);
+
+    //付箋紙情報の取得
+    if(memoJSON != null){
+      //JSON形式の解析
+      var memoData = JSON.parse(memoJSON);
+
+      //付箋紙情報の取得
+      var memoText = memoData.text;
+      var memoColor = memoData.color;
+      var memoX = memoData.x;
+      var memoY = memoData.y;
+
+      //付箋紙オブジェクトの生成
+      var memo = new Memo(i, memoText, memoColor, memoX, memoY);
+
+      //付箋紙要素(DOM要素)の作成
+      memo.create();
+      //付箋紙要素(DOM要素)の移動
+      memo.move(memo.x, memo.y);
+      //連想配列に付箋紙オブジェクトを格納
+      memoArray[memo.id] = memo;
+    }
+  }
+}

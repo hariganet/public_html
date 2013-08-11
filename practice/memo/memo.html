@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="memo.css" media="all" charset="UTF-8">
     <script type="text/javascript" src="memo.js" charset="UTF-8"></script>
   </head>
-  <body>
+  <body onLoad="loadMemo()">
   <form>
     <input type="text" id="memoText" size="50" placeholder="メモを入力してください">
     <input type="radio" name="memoColor" id="memoY" checked>黄色
@@ -18,8 +18,8 @@
     </div>
     <div id="trashArea" ondragover="dragOverMemo(event)" ondrop="dropTrash(event)">ゴミ箱
     </div>
-  </body>
+</body>
 </html>
 
-    
+  
 
