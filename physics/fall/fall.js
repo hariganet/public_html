@@ -38,3 +38,9 @@ function draw(){
   context.arc(100, y, 15, 0, 360*Math.PI/180);
   context.fill();
 }
+
+function jump(){
+  //上にジャンプ
+  v = -g * 7; 
+
+}
