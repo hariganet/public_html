@@ -2,9 +2,9 @@ var canvas;
 var context;
 var timer;
 
-var g = 9.8;
+var gravity = 9.8;
 var t = 0.2;  //時間
-var e = -0.9; //はね返り係数
+var e = -1; //はね返り係数
 
 var ballCurrentId = 0;
 
@@ -21,13 +21,15 @@ function Ball(id, vx, vy, x, y){
 
 }
 
-function addBall(){
+function addBall(id, vx, vy, x, y){
+
   //new memo
-  var ball = new Ball(ballCurrentId, 10, -100, 15, canvas.height-15);
+  var ball = new Ball(id, vx, vy, x, y);
 
   ballArray[ball.id] = ball;
 
   ballCurrentId++;
+
 }
 
 function init(){
@@ -36,26 +38,43 @@ function init(){
   context = canvas.getContext("2d");
 
   //add ball
-  addBall();
-  //最初のボールを描画
-  //context.arc(x, y, 15, 0, 360*Math.PI/180);
+  addBall(ballCurrentId, 10, -100, 15, canvas.height-15);
+  addBall(ballCurrentId, 10, -50, 15, canvas.height-15);
 
   //タイマースタート
   timer = setInterval(draw, 20);
 }
 
+function setColor(color, num){
+  var thr = 127;
+  color = Math.floor( Math.abs(num) );
+  color = color % thr + thr;
+
+  return color;
+}
 
 function draw(){
-  
-  g = 9.8;  //重力加速度
-  var i;
-  for(i=0; i<ballArray.length; ++i){
+ 
+  for(var i=0; i<ballArray.length; ++i){
+
+    //ボールを描画
+    context.beginPath();
+    
+    var red = setColor(red, ballArray[i].x);
+    var green = setColor(green, ballArray[i].y);
+    var blue = setColor(blue, ballArray[i].y - ballArray[i].x);
+    
+    context.fillStyle = "rgb(" + red + ", " + green + ", " + blue + ")";
+    context.arc(ballArray[i].x, ballArray[i].y, 15, 0, 360*Math.PI/180);
+    context.arc(ballArray[i].x, ballArray[i].y, 15, 0, 360*Math.PI/180);
+    context.fill();
+ 
+
     //x方向（等速度運動）
     ballArray[i].x = ballArray[i].x + ballArray[i].vx;
     //y方向（等加速度運動）  
-    ballArray[i].vy = ballArray[i].vy + g * t;
-    ballArray[i].y = ballArray[i].y + ballArray[i].vy * t + 0.5 * g * t * t;
-    
+    ballArray[i].vy = ballArray[i].vy + gravity * t;
+    ballArray[i].y = ballArray[i].y + ballArray[i].vy * t + 0.5 * gravity * t * t;
 
     //地面にぶつかったとき
     if(ballArray[i].y > canvas.height - 15){
@@ -71,42 +90,22 @@ function draw(){
       ballArray[i].x = 15;
       ballArray[i].vx = ballArray[i].vx * e;
     }
-  
-
-    //ボールを描画
-    context.beginPath();
-
-    var thr = 127;
-
-    var r = Math.floor(ballArray[i].x);
-    if(r < 0){
-      r = -r;
-    }
-    r = r % thr + thr;
-
-    var g = Math.floor(ballArray[i].y);
-    if(g < 0){
-      g = -g;
-    }
-    g = g % thr + thr;
-
-    var b = Math.floor(ballArray[i].y-ballArray[i].x);
-    if(b < 0){
-      b = -b;
-    } 
-    b = b %  thr + thr;
-    context.fillStyle = "rgb(" + r + ", " + g + ", " + b + ")";
-    context.arc(ballArray[i].x, ballArray[i].y, 15, 0, 360*Math.PI/180);
-    context.arc(ballArray[i].x, ballArray[i].y, 15, 0, 360*Math.PI/180);
-    context.fill();
   }
-
 
     //キャンバスを初期化
   var canvasColor = "rgba(0, 0, 0, 0.1)";
   context.fillStyle = canvasColor;
   context.rect(0, 0, 1200, 600);
   context.fill();
+}
+
+function makeBall(event){
+  if(ballCurrentId > 10){
+    delete ballArray[0];
+    ballCurrentId = 0;
+  }
+
+  addBall(ballCurrentId, 10, -50, event.clientX, event.clientY);
 
 }
 
