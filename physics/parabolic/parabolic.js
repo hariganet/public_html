@@ -20,18 +20,56 @@ function Ball(id, vx, vy, x, y){
   this.x = x;
   this.y = y;
 
+  this.radius = 15;
+
+
+  this.color = "rgb(" + (+128 + Math. floor( Math.random() * 128 )) + "," + (+128 + Math. floor( Math.random() * 128 )) + ","  + (+128 + Math. floor( Math.random() * 128 )) + ")"; 
+
 }
+
+Ball.prototype.hitx = function(){
+
+  this.vx = -this.vx;
+  var dx = 10;
+  
+  if(this.vx < 0){
+    dx = -dx;
+  }
+  
+  this.x = this.x + dx;
+  
+};
+
+Ball.prototype.hity = function(){
+
+  this.vy = -this.vy;
+  var dy = -10;
+
+  if(this.vy < 0){
+    dy = -dy;
+  }
+
+  this.y = this.y + dy;
+
+};
+
 
 Ball.prototype.verocity = function(){
 
-  this.vx = this.vx * 1.1;
-  this.vy = this.vy * 1.1;
+  var ampX = 1.0 + Math.floor( Math.random() * 3 ) * 0.1;
+  var ampY = 1.0 + Math.floor( Math.random() * 3 ) * 0.1;
+
+  this.vx = this.vx * ampX;
+  this.vy = this.vy * ampY;
   
-  if(this.y > canvas.height - 20  &&  Math.abs(this.vx) >14){
+  if(this.y > canvas.height - 20  &&  Math.abs(this.vx) >12){
+    
+    var newVx0 = 1 + Math.floor( Math.random() * 5 );
+    
     if(this.vx > 0){
-      this.vx = 10;
+      this.vx = newVx0;
     }else{
-      this.vx = -10;
+      this.vx = -newVx0;
     }
     this.vy = - (50 + Math.floor( Math.random() * 50 ) );
   }
@@ -88,8 +126,8 @@ function draw(){
     var blue = setColor(blue, ballArray[i].y - ballArray[i].x);
     
     //context.fillStyle = "rgb(" + red + ", " + green + ", " + blue + ")";
-    context.fillStyle = "rgb(0, " + green + ", " + blue + ")";
-    context.arc(ballArray[i].x, ballArray[i].y, 15, 0, 360*Math.PI/180);
+    context.fillStyle = ballArray[i].color;
+    context.arc(ballArray[i].x, ballArray[i].y, ballArray[i].radius, 0, 360*Math.PI/180);
     context.fill();
  
 
@@ -123,7 +161,7 @@ function draw(){
 }
 
 function makeBall(event){
-  if(ballCurrentId >= 15){
+  if(ballCurrentId >= 23){
     delete ballArray[0];
     ballCurrentId = 0;
   }
@@ -141,9 +179,20 @@ function check(){
           var distance = Math.sqrt( x2 + y2 );
 
           if(distance < 10){
+/*
+            if(ballArray[i].vx * ballArray[j].vx < 0){
+              ballArray[i].hitx();
+              ballArray[j].hitx();
+            }
+            if(ballArray[i].vy * ballArray[j].vy < 0){
+              ballArray[i].hit(y);
+              ballArray[j].hit(y);
+            }
+*/
             ballArray[i].verocity();
             ballArray[j].verocity();
-            //context.fillStyle = "rgb(0, 255, 0)";
+           
+           //context.fillStyle = "rgb(0, 255, 0)";
             //context.fillRect(10, 10, 100, 100);
             //addBall(ballCurrentId, 0, -50, ballArray[i].x, ballArray[i].y);
           }
