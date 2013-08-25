@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8"/>
+<title>バグ消しパズル</title>
+<link rel="stylesheet" href="style-reset.css" type="text/css" />
+<link rel="stylesheet" href="chap5.css" type="text/css" />
+<script src="html5uacheck.js"></script>
+<script src="chap5.js"></script>
+
+<body>
+
+<div class="gameboard">
+<p class="toolbar">
+	レベル<span id="levelcount">1</span>　ノルマ<span id="normcount">0</span>
+</p>
+
+<canvas width="480" height="480" id="cvs_stage"></canvas>
+
+<!--ゲーム開始画面-->
+<div class="dialogbox" id="title">
+<button id="btn_gamestart">ゲーム開始</button>
+</div>
+
+<!--ゲームクリア画面-->
+<div class="dialogbox" id="gameclear">
+<button id="btn_nextstage">次のステージ</button>
+</div>
+
+</div><!--gameboard End-->
+
+<!--画像-->
+<img src="img/fruits.png" id="bugimage"/>
+
+<!--サウンド-->
+<audio id="dragsound">
+	<source src="audio/tm2_put000.mp3" type="audio/mpeg"/>
+	<source src="audio/tm2_put000.ogg" type="audio/ogg"/>
+</audio>
+<audio id="dropsound">
+	<source src="audio/tm2_heartbeat000.mp3" type="audio/mpeg"/>
+	<source src="audio/tm2_heartbeat000.ogg" type="audio/ogg"/>
+</audio>
+<audio id="deathsound">
+	<source src="audio/tm2_death000.mp3" type="audio/mpeg"/>
+	<source src="audio/tm2_death000.ogg" type="audio/ogg"/>
+</audio>
+<audio id="clearsound">
+	<source src="audio/music17.mp3" type="audio/mpeg"/>
+	<source src="audio/music17.ogg" type="audio/ogg"/>
+</audio>
+
+</body>
+</html>

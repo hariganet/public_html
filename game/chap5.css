@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+body{
+	font-family: "ＭＳ Ｐゴシック", "ヒラギノ角ゴ Pro W3", 
+		"Hiragino Kaku Gothic Pro", Osaka, 
+		Arial, Helvetica, sans-serif;
+}
+.gameboard{
+	border: solid rgb(255,128,0) 1px;
+	border-top: solid rgb(255,128,0) 10px;
+	width: 484px;
+	padding: 20px;
+	margin: auto;
+	background-image:url("img/fruits_bg.png");
+	-webkit-box-shadow: 0px 0px 36px #444444;
+	box-shadow: 0px 0px 36px #444444;
+	border-radius: 8px;
+	position: relative;
+}
+
+.gameboard h1{
+	color:rgb(255, 200, 200);
+	font-size: 24px;
+	text-align: center;	
+	letter-spacing: 1em;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+
+.toolbar{
+	background-color: white;
+	padding: 4px 20px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+	color: black;
+	line-height: 32px;
+	height: 32px;
+}
+.toolbar span{
+	font-size: 32px;
+	margin: 0px 20px 0px 10px; 
+}
+
+#cvs_stage{
+	-webkit-box-shadow: 0px 0px 36px 2px 
+		rgb(255, 200, 200);
+	box-shadow: 0px 0px 36px 2px 
+		rgb(255, 200, 200);
+}
+
+button {
+	color: black;
+	background-color: white;
+	border-radius: 6px;
+	border: solid gray;
+	height:32px;
+	vertical-align:top;
+}
+button:hover{
+	color:white;
+	background-color: black;
+}
+#btn_restart{
+	float: right;
+}
+
+#title{
+	display: none;
+	background-image:url("img/title.png");
+}
+#gameclear{
+	display: none;
+	background-image:url("img/clear.png");
+	background-position: 0px -6px;
+}
+.dialogbox{
+	position: absolute;
+	top: 80px;
+	left:20px;
+	width: 480px;
+	height: 480px;
+	-webkit-box-shadow: 0px 0px 2px 2px 
+		black;
+	box-shadow: 0px 0px 2px 2px 
+		black;
+}
+#title button{
+	position: absolute;
+	top: 350px;
+	left: 20px;
+	-webkit-box-shadow: 0px 0px 24px 6px #FFFF22;
+	box-shadow: 0px 0px 24px 6px #FFFF22;
+}
+#gameclear button{
+	position: absolute;
+	top: 350px;
+	left: 20px;
+	-webkit-box-shadow: 0px 0px 24px 6px #FFFF22;
+	box-shadow: 0px 0px 24px 6px #FFFF22;
+}
