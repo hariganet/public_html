@@ -189,10 +189,19 @@ function check(){
               ballArray[j].hit(y);
             }
 */
+            //本来の処理
             ballArray[i].verocity();
             ballArray[j].verocity();
-           
-           //context.fillStyle = "rgb(0, 255, 0)";
+            
+            //ボールを消す処理
+            //ballArray.splice(i, 1);
+            //ballArray.splice(j, 1);
+            //j--;
+            //i--;
+            //break;
+
+ 
+            //context.fillStyle = "rgb(0, 255, 0)";
             //context.fillRect(10, 10, 100, 100);
             //addBall(ballCurrentId, 0, -50, ballArray[i].x, ballArray[i].y);
           }
