@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>class名を変更する</title>
+    <style>
+      #foo{
+        background-color:white;
+        color:black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="foo">This is foo. Click me</div>
+    <div id="bar">This is bar.</div>
+    <script>
+      var foo = document.getElementById('foo');
+      foo.onclick = function toggleStyle(){
+        var style = this.style;
+        if(!style.cssFloat){
+          style.cssFloat = 'left';
+          style.backgroundColor = 'black';
+          style.color = 'white';
+        }else{
+          style.cssFloat = '';
+          style.backgroundColor = 'white';
+          style.color = 'black';
+        }
+      };
+    </script>
+  </body>
+</html>
+
+

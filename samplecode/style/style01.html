@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>class名を変更する</title>
+    <style>
+      .foo-before{
+        background-color:white;
+        color:black;
+      }
+      
+      .foo-after{
+        background-color:black;
+        color:white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="foo" class="foo-before">Click me.</div>
+    <script>
+      var foo = document.getElementById('foo');
+      foo.onclick = function toggleStyle(){
+        this.className = (this.className == 'foo-before') ? 'foo-after' : 'foo-before';
+      };
+    </script>
+  </body>
+</html>
+
+
