@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>click</title>
+  </head>
+  <body>
+    <div id="foo" style="position: absolute;">This is sample.</div>
+
+    <script>
+      var elem = document.getElementById('foo');
+      var frame = 0;
+      setInterval(function(){
+        frame += 1;
+        elem.style.left = frame * 10 + 'px';
+      
+      }, 100);
+
+
+    </script>
+  </body>
+</html>
+
