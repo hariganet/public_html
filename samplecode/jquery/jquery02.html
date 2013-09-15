@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>リスト12.5</title>
+    <meta charset="UTF-8">
+    <script src="/jquery-1.10.2.min.js"></script>
+  </head>
+  <body>
+    <div class='foo'>foo</div>
+    <div class='bar'>bar</div>
+    <div class='baz'>baz</div>
+
+    <script>
+    // clickイベントにイベントリスナを登録する
+    $('.foo').bind('click',function(){
+      $(this).text('Hello!');
+    });
+ 
+    // 複数のイベントリスナを一括で登録する
+    $('.bar').bind({
+      'mouseover':function(){
+        $(this).text('Hi!');
+      },
+      'mouseout':function(){
+        $(this).text('Bye!');
+      }
+    });
+
+    // bazがくりっくされたとき、barのmouseoutイベントのイベントリスナを削除する
+    $('.baz').bind('click',function(){
+      $('.bar').unbind('mouseout');
+    });
+   </script>
+
+  </body>
+</html>
+
