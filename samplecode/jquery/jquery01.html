@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>リスト12.1</title>
+    <meta charset="UTF-8">
+    <script src="/jquery-1.10.2.min.js"></script>
+  </head>
+  <body>
+    <button class='foo'>このボタンがクリックされたときにリンクを追加する</button>
+    <button class='foo'>このボタンでは反応しない</button>
+
+    <script>
+    // class="foo"の最初のbutton要素がクリックされたときの処理を設定する
+    $('button.foo:first').click( function(){
+      $('<div><a></a></div>')
+
+      .find('a')
+        .text('jQuery.com')
+        .attr('href','http://jquery.com')
+      .end()
+
+      .appendTo('body');
+    
+    });
+
+    </script>
+
+  </body>
+</html>
+
