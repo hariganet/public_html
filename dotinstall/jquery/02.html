@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>jQueryの練習</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  </head>
+  <body>
+    <h1>jQueryの練習</h1>
+    <div id="main">
+      <p>これは練習です。こちらは、<a href="http://google.com/">リンク</a>です。</p>
+      <ul id="menu">
+        <li>0番</li>
+        <li class="listitem">1番</li>
+        <li class="listitem">2番</li>
+        <li><a href="http://yahoo.com/">3番</a></li>
+      </ul>
+    </div><!-- /main -->
+    <script>
+      $(function(){
+        //jQueryのコードはこちらに
+        //セレクタ.メソッド
+        $('li').css({
+          'border': '1px solid #ccc',
+          'font-size': '36px'
+        });
+        console.log($('li').css('font-size'));
+      });
+    </script>
+  </body>
+</html>
+
