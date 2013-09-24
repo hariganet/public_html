@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
   background-color: #000000;
 }

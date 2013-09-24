@@ -91,7 +91,21 @@ function addBall(id, vx, vy, x, y){
 function init(){
   //描画コンテキストを取得
   canvas = document.getElementById("canvas");
+
+  expandCanvas();
+
+  //alert(document.body.clientWidth);
+  //alert(document.body.clientHeight);
+
+  //alert(document.documentElement.clientWidth);
+  //alert(document.documentElement.clientHeight);
+
+  //alert(window.innerWidth);
+  //alert(window.innerHeight);
+  
   context = canvas.getContext("2d");
+  
+  canvas.addEventListener('click', makeBall);
 
   //add ball
   addBall(ballCurrentId, 10, -100, 15, canvas.height-15);
@@ -216,3 +230,19 @@ function jump(){
   //vx = vx * 1.5;
 }
 
+
+function expandCanvas(){
+  var b = document.body;
+  var d = document.documentElement;
+//  canvas.width = Math.max(b.clientWidth, b.scrollWidth, d.scrollWidth, d.clientWidth);
+//  canvas.height = Math.max(b.clienHeight, b.scrollHeight, d.scrollHeight, d.clientHeight);
+
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  alert(canvas.width);
+  alert(canvas.height);
+
+
+}
