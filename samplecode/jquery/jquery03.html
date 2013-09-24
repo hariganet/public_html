@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>リスト12.6</title>
+    <meta charset="UTF-8">
+    <script src="/jquery-1.10.2.min.js"></script>
+
+    <style>
+      .foo{
+        background-color:black;
+        color:white;      
+      }
+    
+    </style>
+
+  </head>
+  <body>
+    <div class='foo'>Click me!</div>
+    <div class='bar'>Double Click me!</div>
+
+    <script>
+    // clickイベントにイベントリスナを登録する
+    $('.foo').click({ message: 'Hello!'}, function(event){
+      alert(event.data.message);
+      alert($(this).css('color'));
+    });
+
+    // .barがダブルクリックされたときに.fooのclickイベントを発火する
+    $('.bar').dblclick(function(){
+      $('.foo').click();
+    });  
+  
+  </script>
+
+  </body>
+</html>
+
