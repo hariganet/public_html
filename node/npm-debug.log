@@ -1,0 +1,2071 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/home/hariganet/.nave/installed/0.11.7/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'express' ]
+2 info using npm@1.3.11
+3 info using node@v0.11.7
+4 verbose cache add [ 'express', null ]
+5 verbose cache add name=undefined spec="express" args=["express",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'express',
+6 verbose parsed url   path: 'express',
+6 verbose parsed url   href: 'express' }
+7 silly lockFile f3c62de4-express express
+8 verbose lock express /home/hariganet/.npm/f3c62de4-express.lock
+9 silly lockFile f3c62de4-express express
+10 silly lockFile f3c62de4-express express
+11 verbose addNamed [ 'express', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 64a534c1-express express@
+14 verbose lock express@ /home/hariganet/.npm/64a534c1-express.lock
+15 silly addNameRange { name: 'express', range: '*', hasData: false }
+16 verbose url raw express
+17 verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+18 verbose url resolved https://registry.npmjs.org/express
+19 info trying registry request attempt 1 at 15:13:30
+20 verbose etag "BCNBCY9HWTBMA5CGMMG3SE986"
+21 http GET https://registry.npmjs.org/express
+22 http 304 https://registry.npmjs.org/express
+23 silly registry.get cb [ 304,
+23 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+23 silly registry.get     etag: '"BCNBCY9HWTBMA5CGMMG3SE986"',
+23 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:31 GMT',
+23 silly registry.get     'content-length': '0' } ]
+24 verbose etag express from cache
+25 silly addNameRange number 2 { name: 'express', range: '*', hasData: true }
+26 silly addNameRange versions [ 'express',
+26 silly addNameRange   [ '0.14.0',
+26 silly addNameRange     '0.14.1',
+26 silly addNameRange     '1.0.0',
+26 silly addNameRange     '1.0.1',
+26 silly addNameRange     '1.0.2',
+26 silly addNameRange     '1.0.3',
+26 silly addNameRange     '1.0.4',
+26 silly addNameRange     '1.0.5',
+26 silly addNameRange     '1.0.6',
+26 silly addNameRange     '1.0.7',
+26 silly addNameRange     '1.0.8',
+26 silly addNameRange     '2.0.0',
+26 silly addNameRange     '2.1.0',
+26 silly addNameRange     '2.1.1',
+26 silly addNameRange     '2.2.0',
+26 silly addNameRange     '2.2.1',
+26 silly addNameRange     '2.2.2',
+26 silly addNameRange     '2.3.0',
+26 silly addNameRange     '2.3.1',
+26 silly addNameRange     '2.3.2',
+26 silly addNameRange     '2.3.3',
+26 silly addNameRange     '2.3.4',
+26 silly addNameRange     '2.3.5',
+26 silly addNameRange     '2.3.6',
+26 silly addNameRange     '2.3.7',
+26 silly addNameRange     '2.3.8',
+26 silly addNameRange     '2.3.9',
+26 silly addNameRange     '2.3.10',
+26 silly addNameRange     '2.3.11',
+26 silly addNameRange     '2.3.12',
+26 silly addNameRange     '2.4.0',
+26 silly addNameRange     '2.4.1',
+26 silly addNameRange     '2.4.2',
+26 silly addNameRange     '2.4.3',
+26 silly addNameRange     '2.4.4',
+26 silly addNameRange     '2.4.5',
+26 silly addNameRange     '2.4.6',
+26 silly addNameRange     '2.4.7',
+26 silly addNameRange     '2.5.0',
+26 silly addNameRange     '2.5.1',
+26 silly addNameRange     '2.5.2',
+26 silly addNameRange     '2.5.3',
+26 silly addNameRange     '2.5.4',
+26 silly addNameRange     '2.5.5',
+26 silly addNameRange     '2.5.6',
+26 silly addNameRange     '2.5.7',
+26 silly addNameRange     '2.5.8',
+26 silly addNameRange     '2.5.9',
+26 silly addNameRange     '2.5.10',
+26 silly addNameRange     '2.5.11',
+26 silly addNameRange     '3.0.0',
+26 silly addNameRange     '3.0.1',
+26 silly addNameRange     '3.0.2',
+26 silly addNameRange     '3.0.3',
+26 silly addNameRange     '3.0.4',
+26 silly addNameRange     '3.0.5',
+26 silly addNameRange     '3.0.6',
+26 silly addNameRange     '3.1.0',
+26 silly addNameRange     '3.1.1',
+26 silly addNameRange     '3.1.2',
+26 silly addNameRange     '3.2.0',
+26 silly addNameRange     '3.2.1',
+26 silly addNameRange     '3.2.2',
+26 silly addNameRange     '3.2.3',
+26 silly addNameRange     '3.2.4',
+26 silly addNameRange     '3.2.5',
+26 silly addNameRange     '3.2.6',
+26 silly addNameRange     '3.3.0',
+26 silly addNameRange     '3.3.1',
+26 silly addNameRange     '3.3.2',
+26 silly addNameRange     '3.3.3',
+26 silly addNameRange     '3.3.4',
+26 silly addNameRange     '3.3.5',
+26 silly addNameRange     '3.3.6',
+26 silly addNameRange     '1.0.0-beta',
+26 silly addNameRange     '1.0.0-beta2',
+26 silly addNameRange     '1.0.0-rc',
+26 silly addNameRange     '1.0.0-rc2',
+26 silly addNameRange     '1.0.0-rc3',
+26 silly addNameRange     '1.0.0-rc4',
+26 silly addNameRange     '2.0.0-beta',
+26 silly addNameRange     '2.0.0-beta2',
+26 silly addNameRange     '2.0.0-beta3',
+26 silly addNameRange     '2.0.0-rc',
+26 silly addNameRange     '2.0.0-rc2',
+26 silly addNameRange     '2.0.0-rc3',
+26 silly addNameRange     '3.0.0-alpha1',
+26 silly addNameRange     '3.0.0-alpha2',
+26 silly addNameRange     '3.0.0-alpha3',
+26 silly addNameRange     '3.0.0-alpha4',
+26 silly addNameRange     '3.0.0-alpha5',
+26 silly addNameRange     '3.0.0-beta1',
+26 silly addNameRange     '3.0.0-beta2',
+26 silly addNameRange     '3.0.0-beta3',
+26 silly addNameRange     '3.0.0-beta4',
+26 silly addNameRange     '3.0.0-beta6',
+26 silly addNameRange     '3.0.0-beta7',
+26 silly addNameRange     '3.0.0-rc1',
+26 silly addNameRange     '3.0.0-rc2',
+26 silly addNameRange     '3.0.0-rc3',
+26 silly addNameRange     '3.0.0-rc4',
+26 silly addNameRange     '3.0.0-rc5',
+26 silly addNameRange     '3.3.7',
+26 silly addNameRange     '3.3.8',
+26 silly addNameRange     '3.4.0',
+26 silly addNameRange     '3.4.1',
+26 silly addNameRange     '3.4.2',
+26 silly addNameRange     '3.4.3' ] ]
+27 verbose addNamed [ 'express', '3.4.3' ]
+28 verbose addNamed [ '3.4.3', '3.4.3' ]
+29 silly lockFile 6c7aa29b-express-3-4-3 express@3.4.3
+30 verbose lock express@3.4.3 /home/hariganet/.npm/6c7aa29b-express-3-4-3.lock
+31 silly lockFile 6c7aa29b-express-3-4-3 express@3.4.3
+32 silly lockFile 6c7aa29b-express-3-4-3 express@3.4.3
+33 silly lockFile 64a534c1-express express@
+34 silly lockFile 64a534c1-express express@
+35 silly resolved [ { name: 'express',
+35 silly resolved     description: 'Sinatra inspired web development framework',
+35 silly resolved     version: '3.4.3',
+35 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+35 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+35 silly resolved     dependencies:
+35 silly resolved      { connect: '2.10.1',
+35 silly resolved        commander: '1.3.2',
+35 silly resolved        'range-parser': '0.0.4',
+35 silly resolved        mkdirp: '0.3.5',
+35 silly resolved        cookie: '0.1.0',
+35 silly resolved        'buffer-crc32': '0.2.1',
+35 silly resolved        fresh: '0.2.0',
+35 silly resolved        methods: '0.0.1',
+35 silly resolved        send: '0.1.4',
+35 silly resolved        'cookie-signature': '1.0.1',
+35 silly resolved        debug: '*' },
+35 silly resolved     devDependencies:
+35 silly resolved      { ejs: '*',
+35 silly resolved        mocha: '*',
+35 silly resolved        jade: '0.30.0',
+35 silly resolved        hjs: '*',
+35 silly resolved        stylus: '*',
+35 silly resolved        should: '2',
+35 silly resolved        'connect-redis': '*',
+35 silly resolved        marked: '*',
+35 silly resolved        supertest: '0.6.0' },
+35 silly resolved     keywords:
+35 silly resolved      [ 'express',
+35 silly resolved        'framework',
+35 silly resolved        'sinatra',
+35 silly resolved        'web',
+35 silly resolved        'rest',
+35 silly resolved        'restful',
+35 silly resolved        'router',
+35 silly resolved        'app',
+35 silly resolved        'api' ],
+35 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/express' },
+35 silly resolved     main: 'index',
+35 silly resolved     bin: { express: './bin/express' },
+35 silly resolved     scripts: { prepublish: 'npm prune', test: 'make test' },
+35 silly resolved     engines: { node: '*' },
+35 silly resolved     readme: '[![express logo](http://f.cl.ly/items/0V2S1n0K1i3y1c122g04/Screen%20Shot%202012-04-11%20at%209.59.42%20AM.png)](http://expressjs.com/)\n\n  Fast, unopinionated, minimalist web framework for [node](http://nodejs.org).\n\n  [![Build Status](https://secure.travis-ci.org/visionmedia/express.png)](http://travis-ci.org/visionmedia/express) [![Gittip](http://img.shields.io/gittip/visionmedia.png)](https://www.gittip.com/visionmedia/)\n\n```js\nvar express = require(\'express\');\nvar app = express();\n\napp.get(\'/\', function(req, res){\n  res.send(\'Hello World\');\n});\n\napp.listen(3000);\n```\n\n## Installation\n\n    $ npm install -g express\n\n## Quick Start\n\n The quickest way to get started with express is to utilize the executable `express(1)` to generate an application as shown below:\n\n Create the app:\n\n    $ npm install -g express\n    $ express /tmp/foo && cd /tmp/foo\n\n Install dependencies:\n\n    $ npm install\n\n Start the server:\n\n    $ node app\n\n## Features\n\n  * Built on [Connect](http://github.com/senchalabs/connect)\n  * Robust routing\n  * HTTP helpers (redirection, caching, etc)\n  * View system supporting 14+ template engines\n  * Content negotiation\n  * Focus on high performance\n  * Environment based configuration\n  * Executable for generating applications quickly\n  * High test coverage\n\n## Philosophy\n\n  The Express philosophy is to provide small, robust tooling for HTTP servers. Making\n  it a great solution for single page applications, web sites, hybrids, or public\n  HTTP APIs.\n\n  Built on Connect you can use _only_ what you need, and nothing more, applications\n  can be as big or as small as you like, even a single file. Express does\n  not force you to use any specific ORM or template engine. With support for over\n  14 template engines via [Consolidate.js](http://github.com/visionmedia/consolidate.js)\n  you can quickly craft your perfect framework.\n\n## More Information\n\n  * [Website and Documentation](http://expressjs.com/) stored at [visionmedia/expressjs.com](https://github.com/visionmedia/expressjs.com)\n  * Join #express on freenode\n  * [Google Group](http://groups.google.com/group/express-js) for discussion\n  * Follow [tjholowaychuk](http://twitter.com/tjholowaychuk) on twitter for updates\n  * Visit the [Wiki](http://github.com/visionmedia/express/wiki)\n  * [Русскоязычная документация](http://jsman.ru/express/)\n  * Run express examples [online](https://runnable.com/express)\n\n## Viewing Examples\n\nClone the Express repo, then install the dev dependencies to install all the example / test suite deps:\n\n    $ git clone git://github.com/visionmedia/express.git --depth 1\n    $ cd express\n    $ npm install\n\nthen run whichever tests you want:\n\n    $ node examples/content-negotiation\n\nYou can also view live examples here\n\n<a href="https://runnable.com/express" target="_blank"><img src="https://runnable.com/external/styles/assets/runnablebtn.png" style="width:67px;height:25px;"></a>\n\n## Running Tests\n\nTo run the test suite first invoke the following command within the repo, installing the development dependencies:\n\n    $ npm install\n\nthen run the tests:\n\n    $ make test\n\n## Contributors\n\n  https://github.com/visionmedia/express/graphs/contributors\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2009-2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+35 silly resolved     readmeFilename: 'Readme.md',
+35 silly resolved     bugs: { url: 'https://github.com/visionmedia/express/issues' },
+35 silly resolved     _id: 'express@3.4.3',
+35 silly resolved     _from: 'express@' } ]
+36 info install express@3.4.3 into /var/www/www.hariganet.com/public_html/node
+37 info installOne express@3.4.3
+38 info /var/www/www.hariganet.com/public_html/node/node_modules/express unbuild
+39 verbose tar unpack /home/hariganet/.npm/express/3.4.3/package.tgz
+40 silly lockFile 92394d9c-c-html-node-node-modules-express tar:///var/www/www.hariganet.com/public_html/node/node_modules/express
+41 verbose lock tar:///var/www/www.hariganet.com/public_html/node/node_modules/express /home/hariganet/.npm/92394d9c-c-html-node-node-modules-express.lock
+42 silly lockFile 413ca1f7-et-npm-express-3-4-3-package-tgz tar:///home/hariganet/.npm/express/3.4.3/package.tgz
+43 verbose lock tar:///home/hariganet/.npm/express/3.4.3/package.tgz /home/hariganet/.npm/413ca1f7-et-npm-express-3-4-3-package-tgz.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 silly gunzTarPerm extractEntry package.json
+46 silly gunzTarPerm extractEntry .npmignore
+47 silly gunzTarPerm extractEntry LICENSE
+48 silly gunzTarPerm extractEntry index.js
+49 silly gunzTarPerm extractEntry .travis.yml
+50 silly gunzTarPerm extractEntry History.md
+51 silly gunzTarPerm extractEntry Makefile
+52 silly gunzTarPerm extractEntry Readme.md
+53 silly gunzTarPerm extractEntry bin/express
+54 silly gunzTarPerm extractEntry lib/application.js
+55 silly gunzTarPerm extractEntry lib/express.js
+56 silly gunzTarPerm extractEntry lib/middleware.js
+57 silly gunzTarPerm extractEntry lib/request.js
+58 silly gunzTarPerm extractEntry lib/response.js
+59 silly gunzTarPerm extractEntry lib/utils.js
+60 silly gunzTarPerm extractEntry lib/view.js
+61 silly gunzTarPerm extractEntry lib/router/index.js
+62 silly gunzTarPerm extractEntry lib/router/route.js
+63 silly lockFile 92394d9c-c-html-node-node-modules-express tar:///var/www/www.hariganet.com/public_html/node/node_modules/express
+64 silly lockFile 92394d9c-c-html-node-node-modules-express tar:///var/www/www.hariganet.com/public_html/node/node_modules/express
+65 silly lockFile 413ca1f7-et-npm-express-3-4-3-package-tgz tar:///home/hariganet/.npm/express/3.4.3/package.tgz
+66 silly lockFile 413ca1f7-et-npm-express-3-4-3-package-tgz tar:///home/hariganet/.npm/express/3.4.3/package.tgz
+67 info preinstall express@3.4.3
+68 verbose readDependencies using package.json deps
+69 verbose readDependencies using package.json deps
+70 verbose cache add [ 'range-parser@0.0.4', null ]
+71 verbose cache add name=undefined spec="range-parser@0.0.4" args=["range-parser@0.0.4",null]
+72 verbose parsed url { protocol: null,
+72 verbose parsed url   slashes: null,
+72 verbose parsed url   auth: null,
+72 verbose parsed url   host: null,
+72 verbose parsed url   port: null,
+72 verbose parsed url   hostname: null,
+72 verbose parsed url   hash: null,
+72 verbose parsed url   search: null,
+72 verbose parsed url   query: null,
+72 verbose parsed url   pathname: 'range-parser@0.0.4',
+72 verbose parsed url   path: 'range-parser@0.0.4',
+72 verbose parsed url   href: 'range-parser@0.0.4' }
+73 verbose cache add name="range-parser" spec="0.0.4" args=["range-parser","0.0.4"]
+74 verbose parsed url { protocol: null,
+74 verbose parsed url   slashes: null,
+74 verbose parsed url   auth: null,
+74 verbose parsed url   host: null,
+74 verbose parsed url   port: null,
+74 verbose parsed url   hostname: null,
+74 verbose parsed url   hash: null,
+74 verbose parsed url   search: null,
+74 verbose parsed url   query: null,
+74 verbose parsed url   pathname: '0.0.4',
+74 verbose parsed url   path: '0.0.4',
+74 verbose parsed url   href: '0.0.4' }
+75 verbose addNamed [ 'range-parser', '0.0.4' ]
+76 verbose addNamed [ '0.0.4', '0.0.4' ]
+77 silly lockFile 0760c556-range-parser-0-0-4 range-parser@0.0.4
+78 verbose lock range-parser@0.0.4 /home/hariganet/.npm/0760c556-range-parser-0-0-4.lock
+79 verbose cache add [ 'mkdirp@0.3.5', null ]
+80 verbose cache add name=undefined spec="mkdirp@0.3.5" args=["mkdirp@0.3.5",null]
+81 verbose parsed url { protocol: null,
+81 verbose parsed url   slashes: null,
+81 verbose parsed url   auth: null,
+81 verbose parsed url   host: null,
+81 verbose parsed url   port: null,
+81 verbose parsed url   hostname: null,
+81 verbose parsed url   hash: null,
+81 verbose parsed url   search: null,
+81 verbose parsed url   query: null,
+81 verbose parsed url   pathname: 'mkdirp@0.3.5',
+81 verbose parsed url   path: 'mkdirp@0.3.5',
+81 verbose parsed url   href: 'mkdirp@0.3.5' }
+82 verbose cache add name="mkdirp" spec="0.3.5" args=["mkdirp","0.3.5"]
+83 verbose parsed url { protocol: null,
+83 verbose parsed url   slashes: null,
+83 verbose parsed url   auth: null,
+83 verbose parsed url   host: null,
+83 verbose parsed url   port: null,
+83 verbose parsed url   hostname: null,
+83 verbose parsed url   hash: null,
+83 verbose parsed url   search: null,
+83 verbose parsed url   query: null,
+83 verbose parsed url   pathname: '0.3.5',
+83 verbose parsed url   path: '0.3.5',
+83 verbose parsed url   href: '0.3.5' }
+84 verbose addNamed [ 'mkdirp', '0.3.5' ]
+85 verbose addNamed [ '0.3.5', '0.3.5' ]
+86 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+87 verbose lock mkdirp@0.3.5 /home/hariganet/.npm/67d2df2a-mkdirp-0-3-5.lock
+88 verbose cache add [ 'cookie@0.1.0', null ]
+89 verbose cache add name=undefined spec="cookie@0.1.0" args=["cookie@0.1.0",null]
+90 verbose parsed url { protocol: null,
+90 verbose parsed url   slashes: null,
+90 verbose parsed url   auth: null,
+90 verbose parsed url   host: null,
+90 verbose parsed url   port: null,
+90 verbose parsed url   hostname: null,
+90 verbose parsed url   hash: null,
+90 verbose parsed url   search: null,
+90 verbose parsed url   query: null,
+90 verbose parsed url   pathname: 'cookie@0.1.0',
+90 verbose parsed url   path: 'cookie@0.1.0',
+90 verbose parsed url   href: 'cookie@0.1.0' }
+91 verbose cache add name="cookie" spec="0.1.0" args=["cookie","0.1.0"]
+92 verbose parsed url { protocol: null,
+92 verbose parsed url   slashes: null,
+92 verbose parsed url   auth: null,
+92 verbose parsed url   host: null,
+92 verbose parsed url   port: null,
+92 verbose parsed url   hostname: null,
+92 verbose parsed url   hash: null,
+92 verbose parsed url   search: null,
+92 verbose parsed url   query: null,
+92 verbose parsed url   pathname: '0.1.0',
+92 verbose parsed url   path: '0.1.0',
+92 verbose parsed url   href: '0.1.0' }
+93 verbose addNamed [ 'cookie', '0.1.0' ]
+94 verbose addNamed [ '0.1.0', '0.1.0' ]
+95 silly lockFile b55e145e-cookie-0-1-0 cookie@0.1.0
+96 verbose lock cookie@0.1.0 /home/hariganet/.npm/b55e145e-cookie-0-1-0.lock
+97 verbose cache add [ 'buffer-crc32@0.2.1', null ]
+98 verbose cache add name=undefined spec="buffer-crc32@0.2.1" args=["buffer-crc32@0.2.1",null]
+99 verbose parsed url { protocol: null,
+99 verbose parsed url   slashes: null,
+99 verbose parsed url   auth: null,
+99 verbose parsed url   host: null,
+99 verbose parsed url   port: null,
+99 verbose parsed url   hostname: null,
+99 verbose parsed url   hash: null,
+99 verbose parsed url   search: null,
+99 verbose parsed url   query: null,
+99 verbose parsed url   pathname: 'buffer-crc32@0.2.1',
+99 verbose parsed url   path: 'buffer-crc32@0.2.1',
+99 verbose parsed url   href: 'buffer-crc32@0.2.1' }
+100 verbose cache add name="buffer-crc32" spec="0.2.1" args=["buffer-crc32","0.2.1"]
+101 verbose parsed url { protocol: null,
+101 verbose parsed url   slashes: null,
+101 verbose parsed url   auth: null,
+101 verbose parsed url   host: null,
+101 verbose parsed url   port: null,
+101 verbose parsed url   hostname: null,
+101 verbose parsed url   hash: null,
+101 verbose parsed url   search: null,
+101 verbose parsed url   query: null,
+101 verbose parsed url   pathname: '0.2.1',
+101 verbose parsed url   path: '0.2.1',
+101 verbose parsed url   href: '0.2.1' }
+102 verbose addNamed [ 'buffer-crc32', '0.2.1' ]
+103 verbose addNamed [ '0.2.1', '0.2.1' ]
+104 silly lockFile 057d0d26-buffer-crc32-0-2-1 buffer-crc32@0.2.1
+105 verbose lock buffer-crc32@0.2.1 /home/hariganet/.npm/057d0d26-buffer-crc32-0-2-1.lock
+106 verbose cache add [ 'fresh@0.2.0', null ]
+107 verbose cache add name=undefined spec="fresh@0.2.0" args=["fresh@0.2.0",null]
+108 verbose parsed url { protocol: null,
+108 verbose parsed url   slashes: null,
+108 verbose parsed url   auth: null,
+108 verbose parsed url   host: null,
+108 verbose parsed url   port: null,
+108 verbose parsed url   hostname: null,
+108 verbose parsed url   hash: null,
+108 verbose parsed url   search: null,
+108 verbose parsed url   query: null,
+108 verbose parsed url   pathname: 'fresh@0.2.0',
+108 verbose parsed url   path: 'fresh@0.2.0',
+108 verbose parsed url   href: 'fresh@0.2.0' }
+109 verbose cache add name="fresh" spec="0.2.0" args=["fresh","0.2.0"]
+110 verbose parsed url { protocol: null,
+110 verbose parsed url   slashes: null,
+110 verbose parsed url   auth: null,
+110 verbose parsed url   host: null,
+110 verbose parsed url   port: null,
+110 verbose parsed url   hostname: null,
+110 verbose parsed url   hash: null,
+110 verbose parsed url   search: null,
+110 verbose parsed url   query: null,
+110 verbose parsed url   pathname: '0.2.0',
+110 verbose parsed url   path: '0.2.0',
+110 verbose parsed url   href: '0.2.0' }
+111 verbose addNamed [ 'fresh', '0.2.0' ]
+112 verbose addNamed [ '0.2.0', '0.2.0' ]
+113 silly lockFile 1a4cf0d3-fresh-0-2-0 fresh@0.2.0
+114 verbose lock fresh@0.2.0 /home/hariganet/.npm/1a4cf0d3-fresh-0-2-0.lock
+115 verbose cache add [ 'methods@0.0.1', null ]
+116 verbose cache add name=undefined spec="methods@0.0.1" args=["methods@0.0.1",null]
+117 verbose parsed url { protocol: null,
+117 verbose parsed url   slashes: null,
+117 verbose parsed url   auth: null,
+117 verbose parsed url   host: null,
+117 verbose parsed url   port: null,
+117 verbose parsed url   hostname: null,
+117 verbose parsed url   hash: null,
+117 verbose parsed url   search: null,
+117 verbose parsed url   query: null,
+117 verbose parsed url   pathname: 'methods@0.0.1',
+117 verbose parsed url   path: 'methods@0.0.1',
+117 verbose parsed url   href: 'methods@0.0.1' }
+118 verbose cache add name="methods" spec="0.0.1" args=["methods","0.0.1"]
+119 verbose parsed url { protocol: null,
+119 verbose parsed url   slashes: null,
+119 verbose parsed url   auth: null,
+119 verbose parsed url   host: null,
+119 verbose parsed url   port: null,
+119 verbose parsed url   hostname: null,
+119 verbose parsed url   hash: null,
+119 verbose parsed url   search: null,
+119 verbose parsed url   query: null,
+119 verbose parsed url   pathname: '0.0.1',
+119 verbose parsed url   path: '0.0.1',
+119 verbose parsed url   href: '0.0.1' }
+120 verbose addNamed [ 'methods', '0.0.1' ]
+121 verbose addNamed [ '0.0.1', '0.0.1' ]
+122 silly lockFile 209c2920-methods-0-0-1 methods@0.0.1
+123 verbose lock methods@0.0.1 /home/hariganet/.npm/209c2920-methods-0-0-1.lock
+124 verbose cache add [ 'send@0.1.4', null ]
+125 verbose cache add name=undefined spec="send@0.1.4" args=["send@0.1.4",null]
+126 verbose parsed url { protocol: null,
+126 verbose parsed url   slashes: null,
+126 verbose parsed url   auth: null,
+126 verbose parsed url   host: null,
+126 verbose parsed url   port: null,
+126 verbose parsed url   hostname: null,
+126 verbose parsed url   hash: null,
+126 verbose parsed url   search: null,
+126 verbose parsed url   query: null,
+126 verbose parsed url   pathname: 'send@0.1.4',
+126 verbose parsed url   path: 'send@0.1.4',
+126 verbose parsed url   href: 'send@0.1.4' }
+127 verbose cache add name="send" spec="0.1.4" args=["send","0.1.4"]
+128 verbose parsed url { protocol: null,
+128 verbose parsed url   slashes: null,
+128 verbose parsed url   auth: null,
+128 verbose parsed url   host: null,
+128 verbose parsed url   port: null,
+128 verbose parsed url   hostname: null,
+128 verbose parsed url   hash: null,
+128 verbose parsed url   search: null,
+128 verbose parsed url   query: null,
+128 verbose parsed url   pathname: '0.1.4',
+128 verbose parsed url   path: '0.1.4',
+128 verbose parsed url   href: '0.1.4' }
+129 verbose addNamed [ 'send', '0.1.4' ]
+130 verbose addNamed [ '0.1.4', '0.1.4' ]
+131 silly lockFile 555fd08a-send-0-1-4 send@0.1.4
+132 verbose lock send@0.1.4 /home/hariganet/.npm/555fd08a-send-0-1-4.lock
+133 verbose cache add [ 'cookie-signature@1.0.1', null ]
+134 verbose cache add name=undefined spec="cookie-signature@1.0.1" args=["cookie-signature@1.0.1",null]
+135 verbose parsed url { protocol: null,
+135 verbose parsed url   slashes: null,
+135 verbose parsed url   auth: null,
+135 verbose parsed url   host: null,
+135 verbose parsed url   port: null,
+135 verbose parsed url   hostname: null,
+135 verbose parsed url   hash: null,
+135 verbose parsed url   search: null,
+135 verbose parsed url   query: null,
+135 verbose parsed url   pathname: 'cookie-signature@1.0.1',
+135 verbose parsed url   path: 'cookie-signature@1.0.1',
+135 verbose parsed url   href: 'cookie-signature@1.0.1' }
+136 verbose cache add name="cookie-signature" spec="1.0.1" args=["cookie-signature","1.0.1"]
+137 verbose parsed url { protocol: null,
+137 verbose parsed url   slashes: null,
+137 verbose parsed url   auth: null,
+137 verbose parsed url   host: null,
+137 verbose parsed url   port: null,
+137 verbose parsed url   hostname: null,
+137 verbose parsed url   hash: null,
+137 verbose parsed url   search: null,
+137 verbose parsed url   query: null,
+137 verbose parsed url   pathname: '1.0.1',
+137 verbose parsed url   path: '1.0.1',
+137 verbose parsed url   href: '1.0.1' }
+138 verbose addNamed [ 'cookie-signature', '1.0.1' ]
+139 verbose addNamed [ '1.0.1', '1.0.1' ]
+140 silly lockFile d4a1eba1-cookie-signature-1-0-1 cookie-signature@1.0.1
+141 verbose lock cookie-signature@1.0.1 /home/hariganet/.npm/d4a1eba1-cookie-signature-1-0-1.lock
+142 verbose cache add [ 'debug@*', null ]
+143 verbose cache add name=undefined spec="debug@*" args=["debug@*",null]
+144 verbose parsed url { protocol: null,
+144 verbose parsed url   slashes: null,
+144 verbose parsed url   auth: null,
+144 verbose parsed url   host: null,
+144 verbose parsed url   port: null,
+144 verbose parsed url   hostname: null,
+144 verbose parsed url   hash: null,
+144 verbose parsed url   search: null,
+144 verbose parsed url   query: null,
+144 verbose parsed url   pathname: 'debug@*',
+144 verbose parsed url   path: 'debug@*',
+144 verbose parsed url   href: 'debug@*' }
+145 verbose cache add name="debug" spec="*" args=["debug","*"]
+146 verbose parsed url { protocol: null,
+146 verbose parsed url   slashes: null,
+146 verbose parsed url   auth: null,
+146 verbose parsed url   host: null,
+146 verbose parsed url   port: null,
+146 verbose parsed url   hostname: null,
+146 verbose parsed url   hash: null,
+146 verbose parsed url   search: null,
+146 verbose parsed url   query: null,
+146 verbose parsed url   pathname: '*',
+146 verbose parsed url   path: '*',
+146 verbose parsed url   href: '*' }
+147 verbose addNamed [ 'debug', '*' ]
+148 verbose addNamed [ null, '*' ]
+149 silly lockFile 3ac45eff-debug debug@*
+150 verbose lock debug@* /home/hariganet/.npm/3ac45eff-debug.lock
+151 verbose cache add [ 'connect@2.10.1', null ]
+152 verbose cache add name=undefined spec="connect@2.10.1" args=["connect@2.10.1",null]
+153 verbose parsed url { protocol: null,
+153 verbose parsed url   slashes: null,
+153 verbose parsed url   auth: null,
+153 verbose parsed url   host: null,
+153 verbose parsed url   port: null,
+153 verbose parsed url   hostname: null,
+153 verbose parsed url   hash: null,
+153 verbose parsed url   search: null,
+153 verbose parsed url   query: null,
+153 verbose parsed url   pathname: 'connect@2.10.1',
+153 verbose parsed url   path: 'connect@2.10.1',
+153 verbose parsed url   href: 'connect@2.10.1' }
+154 verbose cache add name="connect" spec="2.10.1" args=["connect","2.10.1"]
+155 verbose parsed url { protocol: null,
+155 verbose parsed url   slashes: null,
+155 verbose parsed url   auth: null,
+155 verbose parsed url   host: null,
+155 verbose parsed url   port: null,
+155 verbose parsed url   hostname: null,
+155 verbose parsed url   hash: null,
+155 verbose parsed url   search: null,
+155 verbose parsed url   query: null,
+155 verbose parsed url   pathname: '2.10.1',
+155 verbose parsed url   path: '2.10.1',
+155 verbose parsed url   href: '2.10.1' }
+156 verbose addNamed [ 'connect', '2.10.1' ]
+157 verbose addNamed [ '2.10.1', '2.10.1' ]
+158 silly lockFile fc3d8274-connect-2-10-1 connect@2.10.1
+159 verbose lock connect@2.10.1 /home/hariganet/.npm/fc3d8274-connect-2-10-1.lock
+160 verbose cache add [ 'commander@1.3.2', null ]
+161 verbose cache add name=undefined spec="commander@1.3.2" args=["commander@1.3.2",null]
+162 verbose parsed url { protocol: null,
+162 verbose parsed url   slashes: null,
+162 verbose parsed url   auth: null,
+162 verbose parsed url   host: null,
+162 verbose parsed url   port: null,
+162 verbose parsed url   hostname: null,
+162 verbose parsed url   hash: null,
+162 verbose parsed url   search: null,
+162 verbose parsed url   query: null,
+162 verbose parsed url   pathname: 'commander@1.3.2',
+162 verbose parsed url   path: 'commander@1.3.2',
+162 verbose parsed url   href: 'commander@1.3.2' }
+163 verbose cache add name="commander" spec="1.3.2" args=["commander","1.3.2"]
+164 verbose parsed url { protocol: null,
+164 verbose parsed url   slashes: null,
+164 verbose parsed url   auth: null,
+164 verbose parsed url   host: null,
+164 verbose parsed url   port: null,
+164 verbose parsed url   hostname: null,
+164 verbose parsed url   hash: null,
+164 verbose parsed url   search: null,
+164 verbose parsed url   query: null,
+164 verbose parsed url   pathname: '1.3.2',
+164 verbose parsed url   path: '1.3.2',
+164 verbose parsed url   href: '1.3.2' }
+165 verbose addNamed [ 'commander', '1.3.2' ]
+166 verbose addNamed [ '1.3.2', '1.3.2' ]
+167 silly lockFile 2016e061-commander-1-3-2 commander@1.3.2
+168 verbose lock commander@1.3.2 /home/hariganet/.npm/2016e061-commander-1-3-2.lock
+169 silly addNameRange { name: 'debug', range: '*', hasData: false }
+170 verbose url raw range-parser/0.0.4
+171 verbose url resolving [ 'https://registry.npmjs.org/', './range-parser/0.0.4' ]
+172 verbose url resolved https://registry.npmjs.org/range-parser/0.0.4
+173 info trying registry request attempt 1 at 15:13:32
+174 verbose etag "27HRUXP1C4FYWUHH9AKW9J76C"
+175 http GET https://registry.npmjs.org/range-parser/0.0.4
+176 verbose url raw mkdirp/0.3.5
+177 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp/0.3.5' ]
+178 verbose url resolved https://registry.npmjs.org/mkdirp/0.3.5
+179 info trying registry request attempt 1 at 15:13:32
+180 verbose etag "6A3HQJJS800XM6HY1G91KHAHX"
+181 http GET https://registry.npmjs.org/mkdirp/0.3.5
+182 verbose url raw cookie/0.1.0
+183 verbose url resolving [ 'https://registry.npmjs.org/', './cookie/0.1.0' ]
+184 verbose url resolved https://registry.npmjs.org/cookie/0.1.0
+185 info trying registry request attempt 1 at 15:13:32
+186 verbose etag "F1R4EMW6NEBFUL3OK9Q9DKBJF"
+187 http GET https://registry.npmjs.org/cookie/0.1.0
+188 verbose url raw buffer-crc32/0.2.1
+189 verbose url resolving [ 'https://registry.npmjs.org/', './buffer-crc32/0.2.1' ]
+190 verbose url resolved https://registry.npmjs.org/buffer-crc32/0.2.1
+191 info trying registry request attempt 1 at 15:13:32
+192 verbose etag "4JLO8SIQOKXMA94PVFN5E59WV"
+193 http GET https://registry.npmjs.org/buffer-crc32/0.2.1
+194 verbose url raw fresh/0.2.0
+195 verbose url resolving [ 'https://registry.npmjs.org/', './fresh/0.2.0' ]
+196 verbose url resolved https://registry.npmjs.org/fresh/0.2.0
+197 info trying registry request attempt 1 at 15:13:32
+198 verbose etag "6CDQ014VE8MJLSGJOYMKCVKVG"
+199 http GET https://registry.npmjs.org/fresh/0.2.0
+200 verbose url raw methods/0.0.1
+201 verbose url resolving [ 'https://registry.npmjs.org/', './methods/0.0.1' ]
+202 verbose url resolved https://registry.npmjs.org/methods/0.0.1
+203 info trying registry request attempt 1 at 15:13:32
+204 verbose etag "D7BIME5C6Q45VILIKMWZAC09D"
+205 http GET https://registry.npmjs.org/methods/0.0.1
+206 verbose url raw send/0.1.4
+207 verbose url resolving [ 'https://registry.npmjs.org/', './send/0.1.4' ]
+208 verbose url resolved https://registry.npmjs.org/send/0.1.4
+209 info trying registry request attempt 1 at 15:13:33
+210 verbose etag "44MEX16XITH6HKKBT0BOK31OO"
+211 http GET https://registry.npmjs.org/send/0.1.4
+212 verbose url raw cookie-signature/1.0.1
+213 verbose url resolving [ 'https://registry.npmjs.org/', './cookie-signature/1.0.1' ]
+214 verbose url resolved https://registry.npmjs.org/cookie-signature/1.0.1
+215 info trying registry request attempt 1 at 15:13:33
+216 verbose etag "332BQXGWC1DJFGGZJ0ETUQXA6"
+217 http GET https://registry.npmjs.org/cookie-signature/1.0.1
+218 verbose url raw debug
+219 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+220 verbose url resolved https://registry.npmjs.org/debug
+221 info trying registry request attempt 1 at 15:13:33
+222 verbose etag "AI2IHWD96UTI2Y5ZY8SO9X426"
+223 http GET https://registry.npmjs.org/debug
+224 verbose url raw connect/2.10.1
+225 verbose url resolving [ 'https://registry.npmjs.org/', './connect/2.10.1' ]
+226 verbose url resolved https://registry.npmjs.org/connect/2.10.1
+227 info trying registry request attempt 1 at 15:13:33
+228 verbose etag "9RBUZWA1J6SECEH9MV5HZGBLW"
+229 http GET https://registry.npmjs.org/connect/2.10.1
+230 verbose url raw commander/1.3.2
+231 verbose url resolving [ 'https://registry.npmjs.org/', './commander/1.3.2' ]
+232 verbose url resolved https://registry.npmjs.org/commander/1.3.2
+233 info trying registry request attempt 1 at 15:13:33
+234 verbose etag "27IZG02YYKQFVTUPHC3CC5OQ5"
+235 http GET https://registry.npmjs.org/commander/1.3.2
+236 http 304 https://registry.npmjs.org/buffer-crc32/0.2.1
+237 silly registry.get cb [ 304,
+237 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+237 silly registry.get     etag: '"4JLO8SIQOKXMA94PVFN5E59WV"',
+237 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:34 GMT',
+237 silly registry.get     'content-length': '0' } ]
+238 verbose etag buffer-crc32/0.2.1 from cache
+239 http 304 https://registry.npmjs.org/mkdirp/0.3.5
+240 silly registry.get cb [ 304,
+240 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+240 silly registry.get     etag: '"6A3HQJJS800XM6HY1G91KHAHX"',
+240 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:34 GMT',
+240 silly registry.get     'content-length': '0' } ]
+241 verbose etag mkdirp/0.3.5 from cache
+242 http 304 https://registry.npmjs.org/range-parser/0.0.4
+243 silly registry.get cb [ 304,
+243 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+243 silly registry.get     etag: '"27HRUXP1C4FYWUHH9AKW9J76C"',
+243 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:34 GMT',
+243 silly registry.get     'content-length': '0' } ]
+244 verbose etag range-parser/0.0.4 from cache
+245 http 304 https://registry.npmjs.org/cookie-signature/1.0.1
+246 silly registry.get cb [ 304,
+246 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+246 silly registry.get     etag: '"332BQXGWC1DJFGGZJ0ETUQXA6"',
+246 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:34 GMT',
+246 silly registry.get     'content-length': '0' } ]
+247 verbose etag cookie-signature/1.0.1 from cache
+248 http 304 https://registry.npmjs.org/cookie/0.1.0
+249 silly registry.get cb [ 304,
+249 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+249 silly registry.get     etag: '"F1R4EMW6NEBFUL3OK9Q9DKBJF"',
+249 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:34 GMT',
+249 silly registry.get     'content-length': '0' } ]
+250 verbose etag cookie/0.1.0 from cache
+251 silly lockFile 057d0d26-buffer-crc32-0-2-1 buffer-crc32@0.2.1
+252 silly lockFile 057d0d26-buffer-crc32-0-2-1 buffer-crc32@0.2.1
+253 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+254 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+255 silly lockFile d4a1eba1-cookie-signature-1-0-1 cookie-signature@1.0.1
+256 silly lockFile d4a1eba1-cookie-signature-1-0-1 cookie-signature@1.0.1
+257 silly lockFile b55e145e-cookie-0-1-0 cookie@0.1.0
+258 silly lockFile b55e145e-cookie-0-1-0 cookie@0.1.0
+259 silly lockFile 0760c556-range-parser-0-0-4 range-parser@0.0.4
+260 silly lockFile 0760c556-range-parser-0-0-4 range-parser@0.0.4
+261 http 304 https://registry.npmjs.org/send/0.1.4
+262 silly registry.get cb [ 304,
+262 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+262 silly registry.get     etag: '"44MEX16XITH6HKKBT0BOK31OO"',
+262 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:34 GMT',
+262 silly registry.get     'content-length': '0' } ]
+263 verbose etag send/0.1.4 from cache
+264 http 304 https://registry.npmjs.org/connect/2.10.1
+265 silly registry.get cb [ 304,
+265 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+265 silly registry.get     etag: '"9RBUZWA1J6SECEH9MV5HZGBLW"',
+265 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:34 GMT',
+265 silly registry.get     'content-length': '0' } ]
+266 verbose etag connect/2.10.1 from cache
+267 silly lockFile 555fd08a-send-0-1-4 send@0.1.4
+268 silly lockFile 555fd08a-send-0-1-4 send@0.1.4
+269 silly lockFile fc3d8274-connect-2-10-1 connect@2.10.1
+270 silly lockFile fc3d8274-connect-2-10-1 connect@2.10.1
+271 http 304 https://registry.npmjs.org/fresh/0.2.0
+272 silly registry.get cb [ 304,
+272 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+272 silly registry.get     etag: '"6CDQ014VE8MJLSGJOYMKCVKVG"',
+272 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:34 GMT',
+272 silly registry.get     'content-length': '0' } ]
+273 verbose etag fresh/0.2.0 from cache
+274 http 304 https://registry.npmjs.org/methods/0.0.1
+275 silly registry.get cb [ 304,
+275 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+275 silly registry.get     etag: '"D7BIME5C6Q45VILIKMWZAC09D"',
+275 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:34 GMT',
+275 silly registry.get     'content-length': '0' } ]
+276 verbose etag methods/0.0.1 from cache
+277 silly lockFile 1a4cf0d3-fresh-0-2-0 fresh@0.2.0
+278 silly lockFile 1a4cf0d3-fresh-0-2-0 fresh@0.2.0
+279 silly lockFile 209c2920-methods-0-0-1 methods@0.0.1
+280 silly lockFile 209c2920-methods-0-0-1 methods@0.0.1
+281 http 304 https://registry.npmjs.org/commander/1.3.2
+282 silly registry.get cb [ 304,
+282 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+282 silly registry.get     etag: '"27IZG02YYKQFVTUPHC3CC5OQ5"',
+282 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:34 GMT',
+282 silly registry.get     'content-length': '0' } ]
+283 verbose etag commander/1.3.2 from cache
+284 silly lockFile 2016e061-commander-1-3-2 commander@1.3.2
+285 silly lockFile 2016e061-commander-1-3-2 commander@1.3.2
+286 http 304 https://registry.npmjs.org/debug
+287 silly registry.get cb [ 304,
+287 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+287 silly registry.get     etag: '"AI2IHWD96UTI2Y5ZY8SO9X426"',
+287 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:34 GMT',
+287 silly registry.get     'content-length': '0' } ]
+288 verbose etag debug from cache
+289 silly addNameRange number 2 { name: 'debug', range: '*', hasData: true }
+290 silly addNameRange versions [ 'debug',
+290 silly addNameRange   [ '0.0.1',
+290 silly addNameRange     '0.1.0',
+290 silly addNameRange     '0.2.0',
+290 silly addNameRange     '0.3.0',
+290 silly addNameRange     '0.4.0',
+290 silly addNameRange     '0.4.1',
+290 silly addNameRange     '0.5.0',
+290 silly addNameRange     '0.6.0',
+290 silly addNameRange     '0.7.0',
+290 silly addNameRange     '0.7.1',
+290 silly addNameRange     '0.7.2' ] ]
+291 verbose addNamed [ 'debug', '0.7.2' ]
+292 verbose addNamed [ '0.7.2', '0.7.2' ]
+293 silly lockFile 432e5064-debug-0-7-2 debug@0.7.2
+294 verbose lock debug@0.7.2 /home/hariganet/.npm/432e5064-debug-0-7-2.lock
+295 silly lockFile 432e5064-debug-0-7-2 debug@0.7.2
+296 silly lockFile 432e5064-debug-0-7-2 debug@0.7.2
+297 silly lockFile 3ac45eff-debug debug@*
+298 silly lockFile 3ac45eff-debug debug@*
+299 silly resolved [ { author:
+299 silly resolved      { name: 'Brian J. Brennan',
+299 silly resolved        email: 'brianloveswords@gmail.com',
+299 silly resolved        url: 'http://bjb.io' },
+299 silly resolved     name: 'buffer-crc32',
+299 silly resolved     description: 'A pure javascript CRC32 algorithm that plays nice with binary data',
+299 silly resolved     version: '0.2.1',
+299 silly resolved     contributors: [ [Object] ],
+299 silly resolved     homepage: 'https://github.com/brianloveswords/buffer-crc32',
+299 silly resolved     repository:
+299 silly resolved      { type: 'git',
+299 silly resolved        url: 'git://github.com/brianloveswords/buffer-crc32.git' },
+299 silly resolved     main: 'index.js',
+299 silly resolved     scripts: { test: './node_modules/.bin/tap tests/*.test.js' },
+299 silly resolved     dependencies: {},
+299 silly resolved     devDependencies: { tap: '~0.2.5' },
+299 silly resolved     optionalDependencies: {},
+299 silly resolved     engines: { node: '*' },
+299 silly resolved     readme: '# buffer-crc32\n\n[![Build Status](https://secure.travis-ci.org/brianloveswords/buffer-crc32.png?branch=master)](http://travis-ci.org/brianloveswords/buffer-crc32)\n\ncrc32 that works with binary data and fancy character sets, outputs\nbuffer, signed or unsigned data and has tests.\n\nDerived from the sample CRC implementation in the PNG specification: http://www.w3.org/TR/PNG/#D-CRCAppendix\n\n# install\n```\nnpm install buffer-crc32\n```\n\n# example\n```js\nvar crc32 = require(\'buffer-crc32\');\n// works with buffers\nvar buf = Buffer([0x00, 0x73, 0x75, 0x70, 0x20, 0x62, 0x72, 0x6f, 0x00])\ncrc32(buf) // -> <Buffer 94 5a ab 4a>\n\n// has convenience methods for getting signed or unsigned ints\ncrc32.signed(buf) // -> -1805997238\ncrc32.unsigned(buf) // -> 2488970058\n\n// will cast to buffer if given a string, so you can\n// directly use foreign characters safely\ncrc32(\'自動販売機\') // -> <Buffer cb 03 1a c5>\n\n// and works in append mode too\nvar partialCrc = crc32(\'hey\');\nvar partialCrc = crc32(\' \', partialCrc);\nvar partialCrc = crc32(\'sup\', partialCrc);\nvar partialCrc = crc32(\' \', partialCrc);\nvar finalCrc = crc32(\'bros\', partialCrc); // -> <Buffer 47 fa 55 70>\n```\n\n# tests\nThis was tested against the output of zlib\'s crc32 method. You can run\nthe tests with`npm test` (requires tap)\n\n# see also\nhttps://github.com/alexgorbatchev/node-crc, `crc.buffer.crc32` also\nsupports buffer inputs and return unsigned ints (thanks @tjholowaychuk).\n\n# license\nMIT/X11\n',
+299 silly resolved     readmeFilename: 'README.md',
+299 silly resolved     bugs: { url: 'https://github.com/brianloveswords/buffer-crc32/issues' },
+299 silly resolved     _id: 'buffer-crc32@0.2.1',
+299 silly resolved     _from: 'buffer-crc32@0.2.1' },
+299 silly resolved   { name: 'mkdirp',
+299 silly resolved     description: 'Recursively mkdir, like `mkdir -p`',
+299 silly resolved     version: '0.3.5',
+299 silly resolved     author:
+299 silly resolved      { name: 'James Halliday',
+299 silly resolved        email: 'mail@substack.net',
+299 silly resolved        url: 'http://substack.net' },
+299 silly resolved     main: './index',
+299 silly resolved     keywords: [ 'mkdir', 'directory' ],
+299 silly resolved     repository:
+299 silly resolved      { type: 'git',
+299 silly resolved        url: 'http://github.com/substack/node-mkdirp.git' },
+299 silly resolved     scripts: { test: 'tap test/*.js' },
+299 silly resolved     devDependencies: { tap: '~0.4.0' },
+299 silly resolved     license: 'MIT',
+299 silly resolved     readme: '# mkdirp\n\nLike `mkdir -p`, but in node.js!\n\n[![build status](https://secure.travis-ci.org/substack/node-mkdirp.png)](http://travis-ci.org/substack/node-mkdirp)\n\n# example\n\n## pow.js\n\n```js\nvar mkdirp = require(\'mkdirp\');\n    \nmkdirp(\'/tmp/foo/bar/baz\', function (err) {\n    if (err) console.error(err)\n    else console.log(\'pow!\')\n});\n```\n\nOutput\n\n```\npow!\n```\n\nAnd now /tmp/foo/bar/baz exists, huzzah!\n\n# methods\n\n```js\nvar mkdirp = require(\'mkdirp\');\n```\n\n## mkdirp(dir, mode, cb)\n\nCreate a new directory and any necessary subdirectories at `dir` with octal\npermission string `mode`.\n\nIf `mode` isn\'t specified, it defaults to `0777 & (~process.umask())`.\n\n`cb(err, made)` fires with the error or the first directory `made`\nthat had to be created, if any.\n\n## mkdirp.sync(dir, mode)\n\nSynchronously create a new directory and any necessary subdirectories at `dir`\nwith octal permission string `mode`.\n\nIf `mode` isn\'t specified, it defaults to `0777 & (~process.umask())`.\n\nReturns the first directory that had to be created, if any.\n\n# install\n\nWith [npm](http://npmjs.org) do:\n\n```\nnpm install mkdirp\n```\n\n# license\n\nMIT\n',
+299 silly resolved     readmeFilename: 'readme.markdown',
+299 silly resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+299 silly resolved     _id: 'mkdirp@0.3.5',
+299 silly resolved     _from: 'mkdirp@0.3.5' },
+299 silly resolved   { name: 'cookie-signature',
+299 silly resolved     version: '1.0.1',
+299 silly resolved     description: 'Sign and unsign cookies',
+299 silly resolved     keywords: [ 'cookie', 'sign', 'unsign' ],
+299 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@learnboost.com' },
+299 silly resolved     dependencies: {},
+299 silly resolved     devDependencies: { mocha: '*', should: '*' },
+299 silly resolved     main: 'index',
+299 silly resolved     readme: '\n# cookie-signature\n\n  Sign and unsign cookies.\n\n## Example\n\n```js\nvar cookie = require(\'cookie-signature\');\n\nvar val = cookie.sign(\'hello\', \'tobiiscool\');\nval.should.equal(\'hello.DGDUkGlIkCzPz+C0B064FNgHdEjox7ch8tOBGslZ5QI\');\n\nvar val = cookie.sign(\'hello\', \'tobiiscool\');\ncookie.unsign(val, \'tobiiscool\').should.equal(\'hello\');\ncookie.unsign(val, \'luna\').should.be.false;\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2012 LearnBoost &lt;tj@learnboost.com&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.',
+299 silly resolved     readmeFilename: 'Readme.md',
+299 silly resolved     _id: 'cookie-signature@1.0.1',
+299 silly resolved     _from: 'cookie-signature@1.0.1' },
+299 silly resolved   { author: { name: 'Roman Shtylman', email: 'shtylman@gmail.com' },
+299 silly resolved     name: 'cookie',
+299 silly resolved     description: 'cookie parsing and serialization',
+299 silly resolved     version: '0.1.0',
+299 silly resolved     repository:
+299 silly resolved      { type: 'git',
+299 silly resolved        url: 'git://github.com/shtylman/node-cookie.git' },
+299 silly resolved     keywords: [ 'cookie', 'cookies' ],
+299 silly resolved     main: 'index.js',
+299 silly resolved     scripts: { test: 'mocha' },
+299 silly resolved     dependencies: {},
+299 silly resolved     devDependencies: { mocha: '1.x.x' },
+299 silly resolved     optionalDependencies: {},
+299 silly resolved     engines: { node: '*' },
+299 silly resolved     readme: '# cookie [![Build Status](https://secure.travis-ci.org/shtylman/node-cookie.png?branch=master)](http://travis-ci.org/shtylman/node-cookie) #\n\ncookie is a basic cookie parser and serializer. It doesn\'t make assumptions about how you are going to deal with your cookies. It basically just provides a way to read and write the HTTP cookie headers.\n\nSee [RFC6265](http://tools.ietf.org/html/rfc6265) for details about the http header for cookies.\n\n## how?\n\n```\nnpm install cookie\n```\n\n```javascript\nvar cookie = require(\'cookie\');\n\nvar hdr = cookie.serialize(\'foo\', \'bar\');\n// hdr = \'foo=bar\';\n\nvar cookies = cookie.parse(\'foo=bar; cat=meow; dog=ruff\');\n// cookies = { foo: \'bar\', cat: \'meow\', dog: \'ruff\' };\n```\n\n## more\n\nThe serialize function takes a third parameter, an object, to set cookie options. See the RFC for valid values.\n\n### path\n> cookie path\n\n### expires\n> absolute expiration date for the cookie (Date object)\n\n### maxAge\n> relative max age of the cookie from when the client receives it (seconds)\n\n### domain\n> domain for the cookie\n\n### secure\n> true or false\n\n### httpOnly\n> true or false\n\n',
+299 silly resolved     readmeFilename: 'README.md',
+299 silly resolved     bugs: { url: 'https://github.com/shtylman/node-cookie/issues' },
+299 silly resolved     _id: 'cookie@0.1.0',
+299 silly resolved     _from: 'cookie@0.1.0' },
+299 silly resolved   { name: 'range-parser',
+299 silly resolved     author:
+299 silly resolved      { name: 'TJ Holowaychuk',
+299 silly resolved        email: 'tj@vision-media.ca',
+299 silly resolved        url: 'http://tjholowaychuk.com' },
+299 silly resolved     description: 'Range header field string parser',
+299 silly resolved     version: '0.0.4',
+299 silly resolved     main: 'index.js',
+299 silly resolved     dependencies: {},
+299 silly resolved     devDependencies: { mocha: '*', should: '*' },
+299 silly resolved     readme: '\n# node-range-parser\n\n  Range header field parser.\n\n## Example:\n\n```js\nassert(-1 == parse(200, \'bytes=500-20\'));\nassert(-2 == parse(200, \'bytes=malformed\'));\nparse(200, \'bytes=0-499\').should.eql(arr(\'bytes\', [{ start: 0, end: 199 }]));\nparse(1000, \'bytes=0-499\').should.eql(arr(\'bytes\', [{ start: 0, end: 499 }]));\nparse(1000, \'bytes=40-80\').should.eql(arr(\'bytes\', [{ start: 40, end: 80 }]));\nparse(1000, \'bytes=-500\').should.eql(arr(\'bytes\', [{ start: 500, end: 999 }]));\nparse(1000, \'bytes=-400\').should.eql(arr(\'bytes\', [{ start: 600, end: 999 }]));\nparse(1000, \'bytes=500-\').should.eql(arr(\'bytes\', [{ start: 500, end: 999 }]));\nparse(1000, \'bytes=400-\').should.eql(arr(\'bytes\', [{ start: 400, end: 999 }]));\nparse(1000, \'bytes=0-0\').should.eql(arr(\'bytes\', [{ start: 0, end: 0 }]));\nparse(1000, \'bytes=-1\').should.eql(arr(\'bytes\', [{ start: 999, end: 999 }]));\nparse(1000, \'items=0-5\').should.eql(arr(\'items\', [{ start: 0, end: 5 }]));\nparse(1000, \'bytes=40-80,-1\').should.eql(arr(\'bytes\', [{ start: 40, end: 80 }, { start: 999, end: 999 }]));\n```\n\n## Installation\n\n```\n$ npm install range-parser\n```',
+299 silly resolved     readmeFilename: 'Readme.md',
+299 silly resolved     _id: 'range-parser@0.0.4',
+299 silly resolved     _from: 'range-parser@0.0.4' },
+299 silly resolved   { name: 'send',
+299 silly resolved     version: '0.1.4',
+299 silly resolved     description: 'Better streaming static file server with Range and conditional-GET support',
+299 silly resolved     keywords: [ 'static', 'file', 'server' ],
+299 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+299 silly resolved     dependencies:
+299 silly resolved      { debug: '*',
+299 silly resolved        mime: '~1.2.9',
+299 silly resolved        fresh: '0.2.0',
+299 silly resolved        'range-parser': '0.0.4' },
+299 silly resolved     devDependencies: { mocha: '*', should: '*', supertest: '0.0.1', connect: '2.x' },
+299 silly resolved     scripts: { test: 'make test' },
+299 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/send.git' },
+299 silly resolved     main: 'index',
+299 silly resolved     readme: '# send\n\n  Send is Connect\'s `static()` extracted for generalized use, a streaming static file\n  server supporting partial responses (Ranges), conditional-GET negotiation, high test coverage, and granular events which may be leveraged to take appropriate actions in your application or framework.\n\n## Installation\n\n    $ npm install send\n\n## Examples\n\n  Small:\n\n```js\nvar http = require(\'http\');\nvar send = require(\'send\');\n\nvar app = http.createServer(function(req, res){\n  send(req, req.url).pipe(res);\n}).listen(3000);\n```\n\n  Serving from a root directory with custom error-handling:\n\n```js\nvar http = require(\'http\');\nvar send = require(\'send\');\nvar url = require(\'url\');\n\nvar app = http.createServer(function(req, res){\n  // your custom error-handling logic:\n  function error(err) {\n    res.statusCode = err.status || 500;\n    res.end(err.message);\n  }\n\n  // your custom directory handling logic:\n  function redirect() {\n    res.statusCode = 301;\n    res.setHeader(\'Location\', req.url + \'/\');\n    res.end(\'Redirecting to \' + req.url + \'/\');\n  }\n\n  // transfer arbitrary files from within\n  // /www/example.com/public/*\n  send(req, url.parse(req.url).pathname)\n  .root(\'/www/example.com/public\')\n  .on(\'error\', error)\n  .on(\'directory\', redirect)\n  .pipe(res);\n}).listen(3000);\n```\n\n## API\n\n### Events\n\n  - `error` an error occurred `(err)`\n  - `directory` a directory was requested\n  - `file` a file was requested `(path, stat)`\n  - `stream` file streaming has started `(stream)`\n  - `end` streaming has completed\n\n### .root(dir)\n\n  Serve files relative to `path`. Aliased as `.from(dir)`.\n\n### .index(path)\n\n  By default send supports "index.html" files, to disable this\n  invoke `.index(false)` or to supply a new index pass a string.\n\n### .maxage(ms)\n\n  Provide a max-age in milliseconds for http caching, defaults to 0.\n\n### .hidden(bool)\n\n  Enable or disable transfer of hidden files, defaults to false.\n\n## Error-handling\n\n  By default when no `error` listeners are present an automatic response will be made, otherwise you have full control over the response, aka you may show a 5xx page etc.\n\n## Caching\n\n  It does _not_ perform internal caching, you should use a reverse proxy cache such\n  as Varnish for this, or those fancy things called CDNs. If your application is small enough that it would benefit from single-node memory caching, it\'s small enough that it does not need caching at all ;).\n\n## Debugging\n\n To enable `debug()` instrumentation output export __DEBUG__:\n\n```\n$ DEBUG=send node app\n```\n\n## Running tests\n\n```\n$ npm install\n$ make test\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+299 silly resolved     readmeFilename: 'Readme.md',
+299 silly resolved     bugs: { url: 'https://github.com/visionmedia/send/issues' },
+299 silly resolved     _id: 'send@0.1.4',
+299 silly resolved     _from: 'send@0.1.4' },
+299 silly resolved   { name: 'connect',
+299 silly resolved     version: '2.10.1',
+299 silly resolved     description: 'High performance middleware framework',
+299 silly resolved     keywords: [ 'framework', 'web', 'middleware', 'connect', 'rack' ],
+299 silly resolved     repository: { type: 'git', url: 'git://github.com/senchalabs/connect.git' },
+299 silly resolved     author:
+299 silly resolved      { name: 'TJ Holowaychuk',
+299 silly resolved        email: 'tj@vision-media.ca',
+299 silly resolved        url: 'http://tjholowaychuk.com' },
+299 silly resolved     dependencies:
+299 silly resolved      { qs: '0.6.5',
+299 silly resolved        'cookie-signature': '1.0.1',
+299 silly resolved        'buffer-crc32': '0.2.1',
+299 silly resolved        cookie: '0.1.0',
+299 silly resolved        send: '0.1.4',
+299 silly resolved        bytes: '0.2.0',
+299 silly resolved        fresh: '0.2.0',
+299 silly resolved        pause: '0.0.1',
+299 silly resolved        uid2: '0.0.2',
+299 silly resolved        debug: '*',
+299 silly resolved        methods: '0.0.1',
+299 silly resolved        'raw-body': '0.0.3',
+299 silly resolved        negotiator: '0.2.8',
+299 silly resolved        multiparty: '2.2.0' },
+299 silly resolved     devDependencies: { should: '>= 2.0.0', mocha: '*', jade: '*', dox: '*' },
+299 silly resolved     licenses: [ [Object] ],
+299 silly resolved     main: 'index',
+299 silly resolved     engines: { node: '>= 0.8.0' },
+299 silly resolved     scripts: { test: 'make' },
+299 silly resolved     readme: '# Connect [![build status](https://secure.travis-ci.org/senchalabs/connect.png)](http://travis-ci.org/senchalabs/connect)\n\n  Connect is an extensible HTTP server framework for [node](http://nodejs.org), providing high performance "plugins" known as _middleware_.\n\n Connect is bundled with over _20_ commonly used middleware, including\n a logger, session support, cookie parser, and [more](http://senchalabs.github.com/connect). Be sure to view the 2.x [documentation](http://senchalabs.github.com/connect/).\n\n```js\nvar connect = require(\'connect\')\n  , http = require(\'http\');\n\nvar app = connect()\n  .use(connect.favicon())\n  .use(connect.logger(\'dev\'))\n  .use(connect.static(\'public\'))\n  .use(connect.directory(\'public\'))\n  .use(connect.cookieParser())\n  .use(connect.session({ secret: \'my secret here\' }))\n  .use(function(req, res){\n    res.end(\'Hello from Connect!\\n\');\n  });\n\nhttp.createServer(app).listen(3000);\n```\n\n## Middleware\n\n  - [basicAuth](http://www.senchalabs.org/connect/basicAuth.html)\n  - [bodyParser](http://www.senchalabs.org/connect/bodyParser.html)\n  - [compress](http://www.senchalabs.org/connect/compress.html)\n  - [cookieParser](http://www.senchalabs.org/connect/cookieParser.html)\n  - [cookieSession](http://www.senchalabs.org/connect/cookieSession.html)\n  - [csrf](http://www.senchalabs.org/connect/csrf.html)\n  - [directory](http://www.senchalabs.org/connect/directory.html)\n  - [errorHandler](http://www.senchalabs.org/connect/errorHandler.html)\n  - [favicon](http://www.senchalabs.org/connect/favicon.html)\n  - [json](http://www.senchalabs.org/connect/json.html)\n  - [limit](http://www.senchalabs.org/connect/limit.html)\n  - [logger](http://www.senchalabs.org/connect/logger.html)\n  - [methodOverride](http://www.senchalabs.org/connect/methodOverride.html)\n  - [multipart](http://www.senchalabs.org/connect/multipart.html)\n  - [urlencoded](http://www.senchalabs.org/connect/urlencoded.html)\n  - [query](http://www.senchalabs.org/connect/query.html)\n  - [responseTime](http://www.senchalabs.org/connect/responseTime.html)\n  - [session](http://www.senchalabs.org/connect/session.html)\n  - [static](http://www.senchalabs.org/connect/static.html)\n  - [staticCache](http://www.senchalabs.org/connect/staticCache.html)\n  - [subdomains](http://www.senchalabs.org/connect/subdomains.html)\n  - [vhost](http://www.senchalabs.org/connect/vhost.html)\n\n## Running Tests\n\nfirst:\n\n    $ npm install -d\n\nthen:\n\n    $ make test\n\n## Contributors\n\n https://github.com/senchalabs/connect/graphs/contributors\n\n## Node Compatibility\n\n  Connect `< 1.x` is compatible with node 0.2.x\n\n\n  Connect `1.x` is compatible with node 0.4.x\n\n\n  Connect `2.x` is compatible with node 0.6.x\n\n\n  Connect (_master_) is compatible with node 0.8.x\n\n## CLA\n\n [http://sencha.com/cla](http://sencha.com/cla)\n\n## License\n\nView the [LICENSE](https://github.com/senchalabs/connect/blob/master/LICENSE) file. The [Silk](http://www.famfamfam.com/lab/icons/silk/) icons used by the `directory` middleware created by/copyright of [FAMFAMFAM](http://www.famfamfam.com/).\n',
+299 silly resolved     readmeFilename: 'Readme.md',
+299 silly resolved     bugs: { url: 'https://github.com/senchalabs/connect/issues' },
+299 silly resolved     _id: 'connect@2.10.1',
+299 silly resolved     _from: 'connect@2.10.1' },
+299 silly resolved   { name: 'fresh',
+299 silly resolved     author:
+299 silly resolved      { name: 'TJ Holowaychuk',
+299 silly resolved        email: 'tj@vision-media.ca',
+299 silly resolved        url: 'http://tjholowaychuk.com' },
+299 silly resolved     description: 'HTTP response freshness testing',
+299 silly resolved     version: '0.2.0',
+299 silly resolved     main: 'index.js',
+299 silly resolved     repository:
+299 silly resolved      { type: 'git',
+299 silly resolved        url: 'https://github.com/visionmedia/node-fresh.git' },
+299 silly resolved     dependencies: {},
+299 silly resolved     devDependencies: { mocha: '*', should: '*' },
+299 silly resolved     readme: '\n# node-fresh\n\n  HTTP response freshness testing\n\n## fresh(req, res)\n\n Check freshness of `req` and `res` headers.\n\n When the cache is "fresh" __true__ is returned,\n otherwise __false__ is returned to indicate that\n the cache is now stale.\n\n## Example:\n\n```js\nvar req = { \'if-none-match\': \'tobi\' };\nvar res = { \'etag\': \'luna\' };\nfresh(req, res);\n// => false\n\nvar req = { \'if-none-match\': \'tobi\' };\nvar res = { \'etag\': \'tobi\' };\nfresh(req, res);\n// => true\n```\n\n## Installation\n\n```\n$ npm install fresh\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.',
+299 silly resolved     readmeFilename: 'Readme.md',
+299 silly resolved     bugs: { url: 'https://github.com/visionmedia/node-fresh/issues' },
+299 silly resolved     _id: 'fresh@0.2.0',
+299 silly resolved     _from: 'fresh@0.2.0' },
+299 silly resolved   { name: 'methods',
+299 silly resolved     version: '0.0.1',
+299 silly resolved     description: 'HTTP methods that node supports',
+299 silly resolved     main: 'index.js',
+299 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+299 silly resolved     keywords: [ 'http', 'methods' ],
+299 silly resolved     author: { name: 'TJ Holowaychuk' },
+299 silly resolved     license: 'MIT',
+299 silly resolved     readme: 'ERROR: No README data found!',
+299 silly resolved     _id: 'methods@0.0.1',
+299 silly resolved     _from: 'methods@0.0.1' },
+299 silly resolved   { name: 'commander',
+299 silly resolved     version: '1.3.2',
+299 silly resolved     description: 'the complete solution for node.js command-line programs',
+299 silly resolved     keywords: [ 'command', 'option', 'parser', 'prompt', 'stdin' ],
+299 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+299 silly resolved     repository:
+299 silly resolved      { type: 'git',
+299 silly resolved        url: 'https://github.com/visionmedia/commander.js.git' },
+299 silly resolved     dependencies: { keypress: '0.1.x' },
+299 silly resolved     devDependencies: { should: '>= 0.0.1' },
+299 silly resolved     scripts: { test: 'make test' },
+299 silly resolved     main: 'index',
+299 silly resolved     engines: { node: '>= 0.6.x' },
+299 silly resolved     readme: '# Commander.js\n\n  The complete solution for [node.js](http://nodejs.org) command-line interfaces, inspired by Ruby\'s [commander](https://github.com/visionmedia/commander).\n\n [![Build Status](https://secure.travis-ci.org/visionmedia/commander.js.png)](http://travis-ci.org/visionmedia/commander.js)\n\n## Installation\n\n    $ npm install commander\n\n## Option parsing\n\n Options with commander are defined with the `.option()` method, also serving as documentation for the options. The example below parses args and options from `process.argv`, leaving remaining args as the `program.args` array which were not consumed by options.\n\n```js\n#!/usr/bin/env node\n\n/**\n * Module dependencies.\n */\n\nvar program = require(\'commander\');\n\nprogram\n  .version(\'0.0.1\')\n  .option(\'-p, --peppers\', \'Add peppers\')\n  .option(\'-P, --pineapple\', \'Add pineapple\')\n  .option(\'-b, --bbq\', \'Add bbq sauce\')\n  .option(\'-c, --cheese [type]\', \'Add the specified type of cheese [marble]\', \'marble\')\n  .parse(process.argv);\n\nconsole.log(\'you ordered a pizza with:\');\nif (program.peppers) console.log(\'  - peppers\');\nif (program.pineapple) console.log(\'  - pineapple\');\nif (program.bbq) console.log(\'  - bbq\');\nconsole.log(\'  - %s cheese\', program.cheese);\n```\n\n Short flags may be passed as a single arg, for example `-abc` is equivalent to `-a -b -c`. Multi-word options such as "--template-engine" are camel-cased, becoming `program.templateEngine` etc.\n\n## Automated --help\n\n The help information is auto-generated based on the information commander already knows about your program, so the following `--help` info is for free:\n\n```  \n $ ./examples/pizza --help\n\n   Usage: pizza [options]\n\n   Options:\n\n     -V, --version        output the version number\n     -p, --peppers        Add peppers\n     -P, --pineapple      Add pineapple\n     -b, --bbq            Add bbq sauce\n     -c, --cheese <type>  Add the specified type of cheese [marble]\n     -h, --help           output usage information\n\n```\n\n## Coercion\n\n```js\nfunction range(val) {\n  return val.split(\'..\').map(Number);\n}\n\nfunction list(val) {\n  return val.split(\',\');\n}\n\nprogram\n  .version(\'0.0.1\')\n  .usage(\'[options] <file ...>\')\n  .option(\'-i, --integer <n>\', \'An integer argument\', parseInt)\n  .option(\'-f, --float <n>\', \'A float argument\', parseFloat)\n  .option(\'-r, --range <a>..<b>\', \'A range\', range)\n  .option(\'-l, --list <items>\', \'A list\', list)\n  .option(\'-o, --optional [value]\', \'An optional value\')\n  .parse(process.argv);\n\nconsole.log(\' int: %j\', program.integer);\nconsole.log(\' float: %j\', program.float);\nconsole.log(\' optional: %j\', program.optional);\nprogram.range = program.range || [];\nconsole.log(\' range: %j..%j\', program.range[0], program.range[1]);\nconsole.log(\' list: %j\', program.list);\nconsole.log(\' args: %j\', program.args);\n```\n\n## Custom help\n\n You can display arbitrary `-h, --help` information\n by listening for "--help". Commander will automatically\n exit once you are done so that the remainder of your program\n does not execute causing undesired behaviours, for example\n in the following executable "stuff" will not output when\n `--help` is used.\n\n```js\n#!/usr/bin/env node\n\n/**\n * Module dependencies.\n */\n\nvar program = require(\'../\');\n\nfunction list(val) {\n  return val.split(\',\').map(Number);\n}\n\nprogram\n  .version(\'0.0.1\')\n  .option(\'-f, --foo\', \'enable some foo\')\n  .option(\'-b, --bar\', \'enable some bar\')\n  .option(\'-B, --baz\', \'enable some baz\');\n\n// must be before .parse() since\n// node\'s emit() is immediate\n\nprogram.on(\'--help\', function(){\n  console.log(\'  Examples:\');\n  console.log(\'\');\n  console.log(\'    $ custom-help --help\');\n  console.log(\'    $ custom-help -h\');\n  console.log(\'\');\n});\n\nprogram.parse(process.argv);\n\nconsole.log(\'stuff\');\n```\n\nyielding the following help output:\n\n```\n\nUsage: custom-help [options]\n\nOptions:\n\n  -h, --help     output usage information\n  -V, --version  output the version number\n  -f, --foo      enable some foo\n  -b, --bar      enable some bar\n  -B, --baz      enable some baz\n\nExamples:\n\n  $ custom-help --help\n  $ custom-help -h\n\n```\n\n## .prompt(msg, fn)\n\n Single-line prompt:\n\n```js\nprogram.prompt(\'name: \', function(name){\n  console.log(\'hi %s\', name);\n});\n```\n\n Multi-line prompt:\n\n```js\nprogram.prompt(\'description:\', function(name){\n  console.log(\'hi %s\', name);\n});\n```\n\n Coercion:\n\n```js\nprogram.prompt(\'Age: \', Number, function(age){\n  console.log(\'age: %j\', age);\n});\n```\n\n```js\nprogram.prompt(\'Birthdate: \', Date, function(date){\n  console.log(\'date: %s\', date);\n});\n```\n\n```js\nprogram.prompt(\'Email: \', /^.+@.+\\..+$/, function(email){\n  console.log(\'email: %j\', email);\n});\n```\n\n## .password(msg[, mask], fn)\n\nPrompt for password without echoing:\n\n```js\nprogram.password(\'Password: \', function(pass){\n  console.log(\'got "%s"\', pass);\n  process.stdin.destroy();\n});\n```\n\nPrompt for password with mask char "*":\n\n```js\nprogram.password(\'Password: \', \'*\', function(pass){\n  console.log(\'got "%s"\', pass);\n  process.stdin.destroy();\n});\n```\n\n## .confirm(msg, fn)\n\n Confirm with the given `msg`:\n\n```js\nprogram.confirm(\'continue? \', function(ok){\n  console.log(\' got %j\', ok);\n});\n```\n\n## .choose(list, fn)\n\n Let the user choose from a `list`:\n\n```js\nvar list = [\'tobi\', \'loki\', \'jane\', \'manny\', \'luna\'];\n\nconsole.log(\'Choose the coolest pet:\');\nprogram.choose(list, function(i){\n  console.log(\'you chose %d "%s"\', i, list[i]);\n});\n```\n\n## .outputHelp()\n\n  Output help information without exiting.\n\n## .help()\n\n  Output help information and exit immediately.\n\n## Links\n\n - [API documentation](http://visionmedia.github.com/commander.js/)\n - [ascii tables](https://github.com/LearnBoost/cli-table)\n - [progress bars](https://github.com/visionmedia/node-progress)\n - [more progress bars](https://github.com/substack/node-multimeter)\n - [examples](https://github.com/visionmedia/commander.js/tree/master/examples)\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+299 silly resolved     readmeFilename: 'Readme.md',
+299 silly resolved     bugs: { url: 'https://github.com/visionmedia/commander.js/issues' },
+299 silly resolved     _id: 'commander@1.3.2',
+299 silly resolved     _from: 'commander@1.3.2' },
+299 silly resolved   { name: 'debug',
+299 silly resolved     version: '0.7.2',
+299 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/debug.git' },
+299 silly resolved     description: 'small debugging utility',
+299 silly resolved     keywords: [ 'debug', 'log', 'debugger' ],
+299 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+299 silly resolved     dependencies: {},
+299 silly resolved     devDependencies: { mocha: '*' },
+299 silly resolved     main: 'lib/debug.js',
+299 silly resolved     browserify: 'debug.js',
+299 silly resolved     engines: { node: '*' },
+299 silly resolved     component: { scripts: [Object] },
+299 silly resolved     readme: '\n# debug\n\n  tiny node.js debugging utility modelled after node core\'s debugging technique.\n\n## Installation\n\n```\n$ npm install debug\n```\n\n## Usage\n\n With `debug` you simply invoke the exported function to generate your debug function, passing it a name which will determine if a noop function is returned, or a decorated `console.error`, so all of the `console` format string goodies you\'re used to work fine. A unique color is selected per-function for visibility.\n \nExample _app.js_:\n\n```js\nvar debug = require(\'debug\')(\'http\')\n  , http = require(\'http\')\n  , name = \'My App\';\n\n// fake app\n\ndebug(\'booting %s\', name);\n\nhttp.createServer(function(req, res){\n  debug(req.method + \' \' + req.url);\n  res.end(\'hello\\n\');\n}).listen(3000, function(){\n  debug(\'listening\');\n});\n\n// fake worker of some kind\n\nrequire(\'./worker\');\n```\n\nExample _worker.js_:\n\n```js\nvar debug = require(\'debug\')(\'worker\');\n\nsetInterval(function(){\n  debug(\'doing some work\');\n}, 1000);\n```\n\n The __DEBUG__ environment variable is then used to enable these based on space or comma-delimited names. Here are some examples:\n\n  ![debug http and worker](http://f.cl.ly/items/18471z1H402O24072r1J/Screenshot.png)\n\n  ![debug worker](http://f.cl.ly/items/1X413v1a3M0d3C2c1E0i/Screenshot.png)\n\n## Millisecond diff\n\n  When actively developing an application it can be useful to see when the time spent between one `debug()` call and the next. Suppose for example you invoke `debug()` before requesting a resource, and after as well, the "+NNNms" will show you how much time was spent between calls.\n\n  ![](http://f.cl.ly/items/2i3h1d3t121M2Z1A3Q0N/Screenshot.png)\n\n  When stdout is not a TTY, `Date#toUTCString()` is used, making it more useful for logging the debug information as shown below:\n  \n  ![](http://f.cl.ly/items/112H3i0e0o0P0a2Q2r11/Screenshot.png)\n\n## Conventions\n\n If you\'re using this in one or more of your libraries, you _should_ use the name of your library so that developers may toggle debugging as desired without guessing names. If you have more than one debuggers you _should_ prefix them with your library name and use ":" to separate features. For example "bodyParser" from Connect would then be "connect:bodyParser". \n\n## Wildcards\n\n  The "*" character may be used as a wildcard. Suppose for example your library has debuggers named "connect:bodyParser", "connect:compress", "connect:session", instead of listing all three with `DEBUG=connect:bodyParser,connect.compress,connect:session`, you may simply do `DEBUG=connect:*`, or to run everything using this module simply use `DEBUG=*`.\n\n  You can also exclude specific debuggers by prefixing them with a "-" character.  For example, `DEBUG=* -connect:*` would include all debuggers except those starting with "connect:".\n\n## Browser support\n\n Debug works in the browser as well, currently persisted by `localStorage`. For example if you have `worker:a` and `worker:b` as shown below, and wish to debug both type `debug.enable(\'worker:*\')` in the console and refresh the page, this will remain until you disable with `debug.disable()`. \n\n```js\na = debug(\'worker:a\');\nb = debug(\'worker:b\');\n\nsetInterval(function(){\n  a(\'doing some work\');\n}, 1000);\n\nsetInterval(function(){\n  a(\'doing some work\');\n}, 1200);\n```\n\n## License \n\n(The MIT License)\n\nCopyright (c) 2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.',
+299 silly resolved     readmeFilename: 'Readme.md',
+299 silly resolved     bugs: { url: 'https://github.com/visionmedia/debug/issues' },
+299 silly resolved     _id: 'debug@0.7.2',
+299 silly resolved     _from: 'debug@*' } ]
+300 info install buffer-crc32@0.2.1 into /var/www/www.hariganet.com/public_html/node/node_modules/express
+301 info install mkdirp@0.3.5 into /var/www/www.hariganet.com/public_html/node/node_modules/express
+302 info install cookie-signature@1.0.1 into /var/www/www.hariganet.com/public_html/node/node_modules/express
+303 info install cookie@0.1.0 into /var/www/www.hariganet.com/public_html/node/node_modules/express
+304 info install range-parser@0.0.4 into /var/www/www.hariganet.com/public_html/node/node_modules/express
+305 info install send@0.1.4 into /var/www/www.hariganet.com/public_html/node/node_modules/express
+306 info install connect@2.10.1 into /var/www/www.hariganet.com/public_html/node/node_modules/express
+307 info install fresh@0.2.0 into /var/www/www.hariganet.com/public_html/node/node_modules/express
+308 info install methods@0.0.1 into /var/www/www.hariganet.com/public_html/node/node_modules/express
+309 info install commander@1.3.2 into /var/www/www.hariganet.com/public_html/node/node_modules/express
+310 info install debug@0.7.2 into /var/www/www.hariganet.com/public_html/node/node_modules/express
+311 info installOne buffer-crc32@0.2.1
+312 info installOne mkdirp@0.3.5
+313 info installOne cookie-signature@1.0.1
+314 info installOne cookie@0.1.0
+315 info installOne range-parser@0.0.4
+316 info installOne send@0.1.4
+317 info installOne connect@2.10.1
+318 info installOne fresh@0.2.0
+319 info installOne methods@0.0.1
+320 info installOne commander@1.3.2
+321 info installOne debug@0.7.2
+322 info /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/buffer-crc32 unbuild
+323 info /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/mkdirp unbuild
+324 info /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/cookie-signature unbuild
+325 info /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/cookie unbuild
+326 info /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/range-parser unbuild
+327 info /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send unbuild
+328 info /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/connect unbuild
+329 info /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/fresh unbuild
+330 info /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/methods unbuild
+331 info /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander unbuild
+332 info /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/debug unbuild
+333 verbose tar unpack /home/hariganet/.npm/buffer-crc32/0.2.1/package.tgz
+334 silly lockFile 6c501cea-xpress-node-modules-buffer-crc32 tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/buffer-crc32
+335 verbose lock tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/buffer-crc32 /home/hariganet/.npm/6c501cea-xpress-node-modules-buffer-crc32.lock
+336 silly lockFile 10640ba9-m-buffer-crc32-0-2-1-package-tgz tar:///home/hariganet/.npm/buffer-crc32/0.2.1/package.tgz
+337 verbose lock tar:///home/hariganet/.npm/buffer-crc32/0.2.1/package.tgz /home/hariganet/.npm/10640ba9-m-buffer-crc32-0-2-1-package-tgz.lock
+338 verbose tar unpack /home/hariganet/.npm/mkdirp/0.3.5/package.tgz
+339 silly lockFile 2545e3ac-ules-express-node-modules-mkdirp tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/mkdirp
+340 verbose lock tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/mkdirp /home/hariganet/.npm/2545e3ac-ules-express-node-modules-mkdirp.lock
+341 silly lockFile ebb027db-net-npm-mkdirp-0-3-5-package-tgz tar:///home/hariganet/.npm/mkdirp/0.3.5/package.tgz
+342 verbose lock tar:///home/hariganet/.npm/mkdirp/0.3.5/package.tgz /home/hariganet/.npm/ebb027db-net-npm-mkdirp-0-3-5-package-tgz.lock
+343 verbose tar unpack /home/hariganet/.npm/cookie-signature/1.0.1/package.tgz
+344 silly lockFile 0e8f01e4-ss-node-modules-cookie-signature tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/cookie-signature
+345 verbose lock tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/cookie-signature /home/hariganet/.npm/0e8f01e4-ss-node-modules-cookie-signature.lock
+346 silly lockFile a46ff930-okie-signature-1-0-1-package-tgz tar:///home/hariganet/.npm/cookie-signature/1.0.1/package.tgz
+347 verbose lock tar:///home/hariganet/.npm/cookie-signature/1.0.1/package.tgz /home/hariganet/.npm/a46ff930-okie-signature-1-0-1-package-tgz.lock
+348 verbose tar unpack /home/hariganet/.npm/cookie/0.1.0/package.tgz
+349 silly lockFile b89e7fe6-ules-express-node-modules-cookie tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/cookie
+350 verbose lock tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/cookie /home/hariganet/.npm/b89e7fe6-ules-express-node-modules-cookie.lock
+351 silly lockFile 25c67b15-net-npm-cookie-0-1-0-package-tgz tar:///home/hariganet/.npm/cookie/0.1.0/package.tgz
+352 verbose lock tar:///home/hariganet/.npm/cookie/0.1.0/package.tgz /home/hariganet/.npm/25c67b15-net-npm-cookie-0-1-0-package-tgz.lock
+353 verbose tar unpack /home/hariganet/.npm/range-parser/0.0.4/package.tgz
+354 silly lockFile bde2889b-xpress-node-modules-range-parser tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/range-parser
+355 verbose lock tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/range-parser /home/hariganet/.npm/bde2889b-xpress-node-modules-range-parser.lock
+356 silly lockFile 54fc58a8-m-range-parser-0-0-4-package-tgz tar:///home/hariganet/.npm/range-parser/0.0.4/package.tgz
+357 verbose lock tar:///home/hariganet/.npm/range-parser/0.0.4/package.tgz /home/hariganet/.npm/54fc58a8-m-range-parser-0-0-4-package-tgz.lock
+358 verbose tar unpack /home/hariganet/.npm/send/0.1.4/package.tgz
+359 silly lockFile 2e1dcbe4-odules-express-node-modules-send tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send
+360 verbose lock tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send /home/hariganet/.npm/2e1dcbe4-odules-express-node-modules-send.lock
+361 silly lockFile 1698f561-ganet-npm-send-0-1-4-package-tgz tar:///home/hariganet/.npm/send/0.1.4/package.tgz
+362 verbose lock tar:///home/hariganet/.npm/send/0.1.4/package.tgz /home/hariganet/.npm/1698f561-ganet-npm-send-0-1-4-package-tgz.lock
+363 verbose tar unpack /home/hariganet/.npm/connect/2.10.1/package.tgz
+364 silly lockFile 30f4a9cc-les-express-node-modules-connect tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/connect
+365 verbose lock tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/connect /home/hariganet/.npm/30f4a9cc-les-express-node-modules-connect.lock
+366 silly lockFile 8437344a-t-npm-connect-2-10-1-package-tgz tar:///home/hariganet/.npm/connect/2.10.1/package.tgz
+367 verbose lock tar:///home/hariganet/.npm/connect/2.10.1/package.tgz /home/hariganet/.npm/8437344a-t-npm-connect-2-10-1-package-tgz.lock
+368 verbose tar unpack /home/hariganet/.npm/fresh/0.2.0/package.tgz
+369 silly lockFile fc3106aa-dules-express-node-modules-fresh tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/fresh
+370 verbose lock tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/fresh /home/hariganet/.npm/fc3106aa-dules-express-node-modules-fresh.lock
+371 silly lockFile 850f6d64-anet-npm-fresh-0-2-0-package-tgz tar:///home/hariganet/.npm/fresh/0.2.0/package.tgz
+372 verbose lock tar:///home/hariganet/.npm/fresh/0.2.0/package.tgz /home/hariganet/.npm/850f6d64-anet-npm-fresh-0-2-0-package-tgz.lock
+373 verbose tar unpack /home/hariganet/.npm/methods/0.0.1/package.tgz
+374 silly lockFile 40845978-les-express-node-modules-methods tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/methods
+375 verbose lock tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/methods /home/hariganet/.npm/40845978-les-express-node-modules-methods.lock
+376 silly lockFile 28b82ec0-et-npm-methods-0-0-1-package-tgz tar:///home/hariganet/.npm/methods/0.0.1/package.tgz
+377 verbose lock tar:///home/hariganet/.npm/methods/0.0.1/package.tgz /home/hariganet/.npm/28b82ec0-et-npm-methods-0-0-1-package-tgz.lock
+378 verbose tar unpack /home/hariganet/.npm/commander/1.3.2/package.tgz
+379 silly lockFile bf5bfac0-s-express-node-modules-commander tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander
+380 verbose lock tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander /home/hariganet/.npm/bf5bfac0-s-express-node-modules-commander.lock
+381 silly lockFile bb582a26--npm-commander-1-3-2-package-tgz tar:///home/hariganet/.npm/commander/1.3.2/package.tgz
+382 verbose lock tar:///home/hariganet/.npm/commander/1.3.2/package.tgz /home/hariganet/.npm/bb582a26--npm-commander-1-3-2-package-tgz.lock
+383 verbose tar unpack /home/hariganet/.npm/debug/0.7.2/package.tgz
+384 silly lockFile 350f025f-dules-express-node-modules-debug tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/debug
+385 verbose lock tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/debug /home/hariganet/.npm/350f025f-dules-express-node-modules-debug.lock
+386 silly lockFile 73711d7d-anet-npm-debug-0-7-2-package-tgz tar:///home/hariganet/.npm/debug/0.7.2/package.tgz
+387 verbose lock tar:///home/hariganet/.npm/debug/0.7.2/package.tgz /home/hariganet/.npm/73711d7d-anet-npm-debug-0-7-2-package-tgz.lock
+388 silly gunzTarPerm modes [ '755', '644' ]
+389 silly gunzTarPerm modes [ '755', '644' ]
+390 silly gunzTarPerm modes [ '755', '644' ]
+391 silly gunzTarPerm modes [ '755', '644' ]
+392 silly gunzTarPerm modes [ '755', '644' ]
+393 silly gunzTarPerm modes [ '755', '644' ]
+394 silly gunzTarPerm modes [ '755', '644' ]
+395 silly gunzTarPerm modes [ '755', '644' ]
+396 silly gunzTarPerm modes [ '755', '644' ]
+397 silly gunzTarPerm modes [ '755', '644' ]
+398 silly gunzTarPerm modes [ '755', '644' ]
+399 silly gunzTarPerm extractEntry package.json
+400 silly gunzTarPerm extractEntry package.json
+401 silly gunzTarPerm extractEntry package.json
+402 silly gunzTarPerm extractEntry package.json
+403 silly gunzTarPerm extractEntry package.json
+404 silly gunzTarPerm extractEntry package.json
+405 silly gunzTarPerm extractEntry package.json
+406 silly gunzTarPerm extractEntry package.json
+407 silly gunzTarPerm extractEntry package.json
+408 silly gunzTarPerm extractEntry package.json
+409 silly gunzTarPerm extractEntry package.json
+410 silly gunzTarPerm extractEntry .npmignore
+411 silly gunzTarPerm extractEntry README.md
+412 silly gunzTarPerm extractEntry .npmignore
+413 silly gunzTarPerm extractEntry LICENSE
+414 silly gunzTarPerm extractEntry .npmignore
+415 silly gunzTarPerm extractEntry index.js
+416 silly gunzTarPerm extractEntry .npmignore
+417 silly gunzTarPerm extractEntry README.md
+418 silly gunzTarPerm extractEntry .npmignore
+419 silly gunzTarPerm extractEntry index.js
+420 silly gunzTarPerm extractEntry .npmignore
+421 silly gunzTarPerm extractEntry index.js
+422 silly gunzTarPerm extractEntry .npmignore
+423 silly gunzTarPerm extractEntry LICENSE
+424 silly gunzTarPerm extractEntry .npmignore
+425 silly gunzTarPerm extractEntry index.js
+426 silly gunzTarPerm extractEntry index.js
+427 silly gunzTarPerm extractEntry index.js
+428 silly gunzTarPerm extractEntry History.md
+429 silly gunzTarPerm extractEntry Readme.md
+430 silly gunzTarPerm extractEntry .npmignore
+431 silly gunzTarPerm extractEntry debug.js
+432 silly gunzTarPerm extractEntry History.md
+433 silly gunzTarPerm extractEntry Makefile
+434 silly gunzTarPerm extractEntry LICENSE
+435 silly gunzTarPerm extractEntry index.js
+436 silly gunzTarPerm extractEntry History.md
+437 silly gunzTarPerm extractEntry Makefile
+438 silly gunzTarPerm extractEntry index.js
+439 silly gunzTarPerm extractEntry .travis.yml
+440 silly gunzTarPerm extractEntry History.md
+441 silly gunzTarPerm extractEntry Makefile
+442 silly gunzTarPerm extractEntry index.js
+443 silly gunzTarPerm extractEntry .travis.yml
+444 silly gunzTarPerm extractEntry History.md
+445 silly gunzTarPerm extractEntry Makefile
+446 silly gunzTarPerm extractEntry index.js
+447 silly gunzTarPerm extractEntry .travis.yml
+448 silly gunzTarPerm extractEntry index.js
+449 silly gunzTarPerm extractEntry History.md
+450 silly gunzTarPerm extractEntry Readme.md
+451 silly gunzTarPerm extractEntry .travis.yml
+452 silly gunzTarPerm extractEntry test/parse.js
+453 silly gunzTarPerm extractEntry Readme.md
+454 silly gunzTarPerm extractEntry tests/crc.test.js
+455 silly gunzTarPerm extractEntry Readme.md
+456 silly gunzTarPerm extractEntry examples/pow.js
+457 silly gunzTarPerm extractEntry readme.markdown
+458 silly gunzTarPerm extractEntry Readme.md
+459 silly gunzTarPerm extractEntry lib/send.js
+460 silly gunzTarPerm extractEntry Readme.md
+461 silly gunzTarPerm extractEntry lib/cache.js
+462 silly gunzTarPerm extractEntry Readme.md
+463 silly gunzTarPerm extractEntry component.json
+464 silly lockFile 40845978-les-express-node-modules-methods tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/methods
+465 silly lockFile 40845978-les-express-node-modules-methods tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/methods
+466 silly lockFile 28b82ec0-et-npm-methods-0-0-1-package-tgz tar:///home/hariganet/.npm/methods/0.0.1/package.tgz
+467 silly lockFile 28b82ec0-et-npm-methods-0-0-1-package-tgz tar:///home/hariganet/.npm/methods/0.0.1/package.tgz
+468 info preinstall methods@0.0.1
+469 silly gunzTarPerm extractEntry lib/utils.js
+470 silly gunzTarPerm extractEntry test/serialize.js
+471 silly gunzTarPerm extractEntry test/mocha.opts
+472 verbose readDependencies using package.json deps
+473 silly gunzTarPerm extractEntry test/chmod.js
+474 silly gunzTarPerm extractEntry test/perm.js
+475 verbose readDependencies using package.json deps
+476 silly resolved []
+477 verbose about to build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/methods
+478 info build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/methods
+479 verbose linkStuff [ false,
+479 verbose linkStuff   false,
+479 verbose linkStuff   false,
+479 verbose linkStuff   '/var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules' ]
+480 info linkStuff methods@0.0.1
+481 silly gunzTarPerm extractEntry lib/connect.js
+482 silly gunzTarPerm extractEntry lib/index.js
+483 verbose linkBins methods@0.0.1
+484 verbose linkMans methods@0.0.1
+485 verbose rebuildBundles methods@0.0.1
+486 silly gunzTarPerm extractEntry example/app.js
+487 silly gunzTarPerm extractEntry example/wildcards.js
+488 info install methods@0.0.1
+489 info postinstall methods@0.0.1
+490 silly gunzTarPerm extractEntry lib/patch.js
+491 silly gunzTarPerm extractEntry example/worker.js
+492 silly gunzTarPerm extractEntry test/perm_sync.js
+493 silly gunzTarPerm extractEntry test/race.js
+494 silly gunzTarPerm extractEntry test/mkdirp.js
+495 silly gunzTarPerm extractEntry test/return.js
+496 silly gunzTarPerm extractEntry test/return_sync.js
+497 silly gunzTarPerm extractEntry test/root.js
+498 silly gunzTarPerm extractEntry test/sync.js
+499 silly gunzTarPerm extractEntry test/umask.js
+500 silly gunzTarPerm extractEntry test/clobber.js
+501 silly gunzTarPerm extractEntry test/umask_sync.js
+502 silly gunzTarPerm extractEntry test/rel.js
+503 silly gunzTarPerm extractEntry lib/proto.js
+504 silly gunzTarPerm extractEntry lib/utils.js
+505 silly gunzTarPerm extractEntry example/browser.html
+506 silly gunzTarPerm extractEntry lib/debug.js
+507 silly gunzTarPerm extractEntry lib/middleware/basicAuth.js
+508 silly gunzTarPerm extractEntry lib/middleware/errorHandler.js
+509 silly lockFile bde2889b-xpress-node-modules-range-parser tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/range-parser
+510 silly lockFile bde2889b-xpress-node-modules-range-parser tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/range-parser
+511 silly lockFile 0e8f01e4-ss-node-modules-cookie-signature tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/cookie-signature
+512 silly lockFile 0e8f01e4-ss-node-modules-cookie-signature tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/cookie-signature
+513 silly lockFile 54fc58a8-m-range-parser-0-0-4-package-tgz tar:///home/hariganet/.npm/range-parser/0.0.4/package.tgz
+514 silly lockFile 54fc58a8-m-range-parser-0-0-4-package-tgz tar:///home/hariganet/.npm/range-parser/0.0.4/package.tgz
+515 silly lockFile a46ff930-okie-signature-1-0-1-package-tgz tar:///home/hariganet/.npm/cookie-signature/1.0.1/package.tgz
+516 silly lockFile a46ff930-okie-signature-1-0-1-package-tgz tar:///home/hariganet/.npm/cookie-signature/1.0.1/package.tgz
+517 silly lockFile fc3106aa-dules-express-node-modules-fresh tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/fresh
+518 silly lockFile fc3106aa-dules-express-node-modules-fresh tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/fresh
+519 silly lockFile 850f6d64-anet-npm-fresh-0-2-0-package-tgz tar:///home/hariganet/.npm/fresh/0.2.0/package.tgz
+520 silly lockFile 850f6d64-anet-npm-fresh-0-2-0-package-tgz tar:///home/hariganet/.npm/fresh/0.2.0/package.tgz
+521 info preinstall range-parser@0.0.4
+522 info preinstall cookie-signature@1.0.1
+523 info preinstall fresh@0.2.0
+524 verbose readDependencies using package.json deps
+525 verbose readDependencies using package.json deps
+526 verbose readDependencies using package.json deps
+527 silly resolved []
+528 verbose about to build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/range-parser
+529 info build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/range-parser
+530 verbose linkStuff [ false,
+530 verbose linkStuff   false,
+530 verbose linkStuff   false,
+530 verbose linkStuff   '/var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules' ]
+531 info linkStuff range-parser@0.0.4
+532 verbose readDependencies using package.json deps
+533 silly resolved []
+534 verbose about to build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/cookie-signature
+535 info build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/cookie-signature
+536 verbose linkStuff [ false,
+536 verbose linkStuff   false,
+536 verbose linkStuff   false,
+536 verbose linkStuff   '/var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules' ]
+537 info linkStuff cookie-signature@1.0.1
+538 silly gunzTarPerm extractEntry lib/middleware/favicon.js
+539 silly gunzTarPerm extractEntry lib/middleware/json.js
+540 verbose readDependencies using package.json deps
+541 verbose linkBins range-parser@0.0.4
+542 verbose linkMans range-parser@0.0.4
+543 verbose rebuildBundles range-parser@0.0.4
+544 verbose linkBins cookie-signature@1.0.1
+545 verbose linkMans cookie-signature@1.0.1
+546 verbose rebuildBundles cookie-signature@1.0.1
+547 verbose readDependencies using package.json deps
+548 silly resolved []
+549 verbose about to build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/fresh
+550 info build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/fresh
+551 verbose linkStuff [ false,
+551 verbose linkStuff   false,
+551 verbose linkStuff   false,
+551 verbose linkStuff   '/var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules' ]
+552 info linkStuff fresh@0.2.0
+553 info install range-parser@0.0.4
+554 info install cookie-signature@1.0.1
+555 silly lockFile 6c501cea-xpress-node-modules-buffer-crc32 tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/buffer-crc32
+556 silly lockFile 6c501cea-xpress-node-modules-buffer-crc32 tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/buffer-crc32
+557 verbose linkBins fresh@0.2.0
+558 verbose linkMans fresh@0.2.0
+559 verbose rebuildBundles fresh@0.2.0
+560 silly lockFile 10640ba9-m-buffer-crc32-0-2-1-package-tgz tar:///home/hariganet/.npm/buffer-crc32/0.2.1/package.tgz
+561 silly lockFile 10640ba9-m-buffer-crc32-0-2-1-package-tgz tar:///home/hariganet/.npm/buffer-crc32/0.2.1/package.tgz
+562 info postinstall range-parser@0.0.4
+563 info postinstall cookie-signature@1.0.1
+564 info install fresh@0.2.0
+565 info postinstall fresh@0.2.0
+566 info preinstall buffer-crc32@0.2.1
+567 silly gunzTarPerm extractEntry lib/middleware/limit.js
+568 silly gunzTarPerm extractEntry lib/middleware/directory.js
+569 verbose readDependencies using package.json deps
+570 verbose readDependencies using package.json deps
+571 silly resolved []
+572 verbose about to build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/buffer-crc32
+573 info build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/buffer-crc32
+574 verbose linkStuff [ false,
+574 verbose linkStuff   false,
+574 verbose linkStuff   false,
+574 verbose linkStuff   '/var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules' ]
+575 info linkStuff buffer-crc32@0.2.1
+576 verbose linkBins buffer-crc32@0.2.1
+577 verbose linkMans buffer-crc32@0.2.1
+578 verbose rebuildBundles buffer-crc32@0.2.1
+579 info install buffer-crc32@0.2.1
+580 info postinstall buffer-crc32@0.2.1
+581 silly gunzTarPerm extractEntry lib/middleware/methodOverride.js
+582 silly gunzTarPerm extractEntry lib/middleware/multipart.js
+583 silly lockFile b89e7fe6-ules-express-node-modules-cookie tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/cookie
+584 silly lockFile b89e7fe6-ules-express-node-modules-cookie tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/cookie
+585 silly lockFile 25c67b15-net-npm-cookie-0-1-0-package-tgz tar:///home/hariganet/.npm/cookie/0.1.0/package.tgz
+586 silly lockFile 25c67b15-net-npm-cookie-0-1-0-package-tgz tar:///home/hariganet/.npm/cookie/0.1.0/package.tgz
+587 info preinstall cookie@0.1.0
+588 verbose readDependencies using package.json deps
+589 silly gunzTarPerm extractEntry lib/middleware/query.js
+590 silly gunzTarPerm extractEntry lib/middleware/responseTime.js
+591 silly lockFile 2e1dcbe4-odules-express-node-modules-send tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send
+592 silly lockFile 2e1dcbe4-odules-express-node-modules-send tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send
+593 verbose readDependencies using package.json deps
+594 silly resolved []
+595 verbose about to build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/cookie
+596 info build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/cookie
+597 verbose linkStuff [ false,
+597 verbose linkStuff   false,
+597 verbose linkStuff   false,
+597 verbose linkStuff   '/var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules' ]
+598 info linkStuff cookie@0.1.0
+599 silly lockFile 1698f561-ganet-npm-send-0-1-4-package-tgz tar:///home/hariganet/.npm/send/0.1.4/package.tgz
+600 silly lockFile 1698f561-ganet-npm-send-0-1-4-package-tgz tar:///home/hariganet/.npm/send/0.1.4/package.tgz
+601 verbose linkBins cookie@0.1.0
+602 verbose linkMans cookie@0.1.0
+603 verbose rebuildBundles cookie@0.1.0
+604 info install cookie@0.1.0
+605 info preinstall send@0.1.4
+606 info postinstall cookie@0.1.0
+607 verbose readDependencies using package.json deps
+608 silly lockFile bf5bfac0-s-express-node-modules-commander tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander
+609 silly lockFile bf5bfac0-s-express-node-modules-commander tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander
+610 verbose readDependencies using package.json deps
+611 silly lockFile bb582a26--npm-commander-1-3-2-package-tgz tar:///home/hariganet/.npm/commander/1.3.2/package.tgz
+612 silly lockFile bb582a26--npm-commander-1-3-2-package-tgz tar:///home/hariganet/.npm/commander/1.3.2/package.tgz
+613 verbose cache add [ 'mime@~1.2.9', null ]
+614 verbose cache add name=undefined spec="mime@~1.2.9" args=["mime@~1.2.9",null]
+615 verbose parsed url { protocol: null,
+615 verbose parsed url   slashes: null,
+615 verbose parsed url   auth: null,
+615 verbose parsed url   host: null,
+615 verbose parsed url   port: null,
+615 verbose parsed url   hostname: null,
+615 verbose parsed url   hash: null,
+615 verbose parsed url   search: null,
+615 verbose parsed url   query: null,
+615 verbose parsed url   pathname: 'mime@~1.2.9',
+615 verbose parsed url   path: 'mime@~1.2.9',
+615 verbose parsed url   href: 'mime@~1.2.9' }
+616 verbose cache add name="mime" spec="~1.2.9" args=["mime","~1.2.9"]
+617 verbose parsed url { protocol: null,
+617 verbose parsed url   slashes: null,
+617 verbose parsed url   auth: null,
+617 verbose parsed url   host: null,
+617 verbose parsed url   port: null,
+617 verbose parsed url   hostname: null,
+617 verbose parsed url   hash: null,
+617 verbose parsed url   search: null,
+617 verbose parsed url   query: null,
+617 verbose parsed url   pathname: '~1.2.9',
+617 verbose parsed url   path: '~1.2.9',
+617 verbose parsed url   href: '~1.2.9' }
+618 verbose addNamed [ 'mime', '~1.2.9' ]
+619 verbose addNamed [ null, '>=1.2.9-0 <1.3.0-0' ]
+620 silly lockFile ccf24a67-mime-1-2-9 mime@~1.2.9
+621 verbose lock mime@~1.2.9 /home/hariganet/.npm/ccf24a67-mime-1-2-9.lock
+622 silly addNameRange { name: 'mime', range: '>=1.2.9-0 <1.3.0-0', hasData: false }
+623 info preinstall commander@1.3.2
+624 verbose url raw mime
+625 verbose url resolving [ 'https://registry.npmjs.org/', './mime' ]
+626 verbose url resolved https://registry.npmjs.org/mime
+627 info trying registry request attempt 1 at 15:13:35
+628 verbose etag "E6XCARW5KGP2FEMF4DRNGR1ZF"
+629 http GET https://registry.npmjs.org/mime
+630 verbose readDependencies using package.json deps
+631 verbose readDependencies using package.json deps
+632 silly gunzTarPerm extractEntry lib/middleware/urlencoded.js
+633 silly gunzTarPerm extractEntry lib/middleware/csrf.js
+634 verbose cache add [ 'keypress@0.1.x', null ]
+635 verbose cache add name=undefined spec="keypress@0.1.x" args=["keypress@0.1.x",null]
+636 verbose parsed url { protocol: null,
+636 verbose parsed url   slashes: null,
+636 verbose parsed url   auth: null,
+636 verbose parsed url   host: null,
+636 verbose parsed url   port: null,
+636 verbose parsed url   hostname: null,
+636 verbose parsed url   hash: null,
+636 verbose parsed url   search: null,
+636 verbose parsed url   query: null,
+636 verbose parsed url   pathname: 'keypress@0.1.x',
+636 verbose parsed url   path: 'keypress@0.1.x',
+636 verbose parsed url   href: 'keypress@0.1.x' }
+637 verbose cache add name="keypress" spec="0.1.x" args=["keypress","0.1.x"]
+638 verbose parsed url { protocol: null,
+638 verbose parsed url   slashes: null,
+638 verbose parsed url   auth: null,
+638 verbose parsed url   host: null,
+638 verbose parsed url   port: null,
+638 verbose parsed url   hostname: null,
+638 verbose parsed url   hash: null,
+638 verbose parsed url   search: null,
+638 verbose parsed url   query: null,
+638 verbose parsed url   pathname: '0.1.x',
+638 verbose parsed url   path: '0.1.x',
+638 verbose parsed url   href: '0.1.x' }
+639 verbose addNamed [ 'keypress', '0.1.x' ]
+640 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+641 silly lockFile a3a73622-keypress-0-1-x keypress@0.1.x
+642 verbose lock keypress@0.1.x /home/hariganet/.npm/a3a73622-keypress-0-1-x.lock
+643 silly addNameRange { name: 'keypress', range: '>=0.1.0-0 <0.2.0-0', hasData: false }
+644 silly lockFile 350f025f-dules-express-node-modules-debug tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/debug
+645 silly lockFile 350f025f-dules-express-node-modules-debug tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/debug
+646 silly lockFile 73711d7d-anet-npm-debug-0-7-2-package-tgz tar:///home/hariganet/.npm/debug/0.7.2/package.tgz
+647 silly lockFile 73711d7d-anet-npm-debug-0-7-2-package-tgz tar:///home/hariganet/.npm/debug/0.7.2/package.tgz
+648 verbose url raw keypress
+649 verbose url resolving [ 'https://registry.npmjs.org/', './keypress' ]
+650 verbose url resolved https://registry.npmjs.org/keypress
+651 info trying registry request attempt 1 at 15:13:35
+652 verbose etag "ZU2AWLYGEBSRDNMY2BPQXH2A"
+653 http GET https://registry.npmjs.org/keypress
+654 info preinstall debug@0.7.2
+655 verbose readDependencies using package.json deps
+656 verbose readDependencies using package.json deps
+657 silly resolved []
+658 verbose about to build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/debug
+659 info build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/debug
+660 verbose linkStuff [ false,
+660 verbose linkStuff   false,
+660 verbose linkStuff   false,
+660 verbose linkStuff   '/var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules' ]
+661 info linkStuff debug@0.7.2
+662 verbose linkBins debug@0.7.2
+663 verbose linkMans debug@0.7.2
+664 verbose rebuildBundles debug@0.7.2
+665 info install debug@0.7.2
+666 info postinstall debug@0.7.2
+667 silly gunzTarPerm extractEntry lib/middleware/session.js
+668 silly gunzTarPerm extractEntry lib/middleware/cookieSession.js
+669 silly gunzTarPerm extractEntry lib/middleware/static.js
+670 silly gunzTarPerm extractEntry lib/middleware/cookieParser.js
+671 silly gunzTarPerm extractEntry lib/middleware/staticCache.js
+672 silly gunzTarPerm extractEntry lib/middleware/compress.js
+673 silly gunzTarPerm extractEntry lib/middleware/timeout.js
+674 silly gunzTarPerm extractEntry lib/middleware/bodyParser.js
+675 silly gunzTarPerm extractEntry lib/middleware/vhost.js
+676 silly gunzTarPerm extractEntry lib/middleware/logger.js
+677 silly lockFile 2545e3ac-ules-express-node-modules-mkdirp tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/mkdirp
+678 silly lockFile 2545e3ac-ules-express-node-modules-mkdirp tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/mkdirp
+679 silly lockFile ebb027db-net-npm-mkdirp-0-3-5-package-tgz tar:///home/hariganet/.npm/mkdirp/0.3.5/package.tgz
+680 silly lockFile ebb027db-net-npm-mkdirp-0-3-5-package-tgz tar:///home/hariganet/.npm/mkdirp/0.3.5/package.tgz
+681 info preinstall mkdirp@0.3.5
+682 verbose readDependencies using package.json deps
+683 silly gunzTarPerm extractEntry lib/middleware/session/cookie.js
+684 silly gunzTarPerm extractEntry lib/middleware/session/memory.js
+685 verbose readDependencies using package.json deps
+686 silly resolved []
+687 verbose about to build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/mkdirp
+688 info build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/mkdirp
+689 verbose linkStuff [ false,
+689 verbose linkStuff   false,
+689 verbose linkStuff   false,
+689 verbose linkStuff   '/var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules' ]
+690 info linkStuff mkdirp@0.3.5
+691 verbose linkBins mkdirp@0.3.5
+692 verbose linkMans mkdirp@0.3.5
+693 verbose rebuildBundles mkdirp@0.3.5
+694 info install mkdirp@0.3.5
+695 info postinstall mkdirp@0.3.5
+696 silly gunzTarPerm extractEntry lib/middleware/session/session.js
+697 silly gunzTarPerm extractEntry lib/middleware/session/store.js
+698 silly gunzTarPerm extractEntry lib/public/directory.html
+699 silly gunzTarPerm extractEntry lib/public/error.html
+700 silly gunzTarPerm extractEntry lib/public/favicon.ico
+701 silly gunzTarPerm extractEntry lib/public/icons/page_white_edit.png
+702 silly gunzTarPerm extractEntry lib/public/icons/page.png
+703 silly gunzTarPerm extractEntry lib/public/icons/page_attach.png
+704 silly gunzTarPerm extractEntry lib/public/icons/page_code.png
+705 silly gunzTarPerm extractEntry lib/public/icons/page_copy.png
+706 silly gunzTarPerm extractEntry lib/public/icons/page_delete.png
+707 silly gunzTarPerm extractEntry lib/public/icons/page_edit.png
+708 silly gunzTarPerm extractEntry lib/public/icons/page_error.png
+709 silly gunzTarPerm extractEntry lib/public/icons/page_excel.png
+710 silly gunzTarPerm extractEntry lib/public/icons/page_find.png
+711 silly gunzTarPerm extractEntry lib/public/icons/page_gear.png
+712 silly gunzTarPerm extractEntry lib/public/icons/page_go.png
+713 silly gunzTarPerm extractEntry lib/public/icons/page_green.png
+714 silly gunzTarPerm extractEntry lib/public/icons/page_key.png
+715 silly gunzTarPerm extractEntry lib/public/icons/page_lightning.png
+716 silly gunzTarPerm extractEntry lib/public/icons/page_link.png
+717 silly gunzTarPerm extractEntry lib/public/icons/page_paintbrush.png
+718 silly gunzTarPerm extractEntry lib/public/icons/page_paste.png
+719 silly gunzTarPerm extractEntry lib/public/icons/page_red.png
+720 silly gunzTarPerm extractEntry lib/public/icons/page_refresh.png
+721 silly gunzTarPerm extractEntry lib/public/icons/page_save.png
+722 silly gunzTarPerm extractEntry lib/public/icons/page_white.png
+723 silly gunzTarPerm extractEntry lib/public/icons/page_white_acrobat.png
+724 silly gunzTarPerm extractEntry lib/public/icons/page_white_actionscript.png
+725 silly gunzTarPerm extractEntry lib/public/icons/page_white_add.png
+726 silly gunzTarPerm extractEntry lib/public/icons/page_white_c.png
+727 silly gunzTarPerm extractEntry lib/public/icons/page_white_camera.png
+728 silly gunzTarPerm extractEntry lib/public/icons/page_white_cd.png
+729 silly gunzTarPerm extractEntry lib/public/icons/page_white_code.png
+730 silly gunzTarPerm extractEntry lib/public/icons/page_white_code_red.png
+731 silly gunzTarPerm extractEntry lib/public/icons/page_white_coldfusion.png
+732 silly gunzTarPerm extractEntry lib/public/icons/page_white_compressed.png
+733 silly gunzTarPerm extractEntry lib/public/icons/page_white_copy.png
+734 silly gunzTarPerm extractEntry lib/public/icons/page_white_cplusplus.png
+735 silly gunzTarPerm extractEntry lib/public/icons/page_white_csharp.png
+736 silly gunzTarPerm extractEntry lib/public/icons/page_white_cup.png
+737 silly gunzTarPerm extractEntry lib/public/icons/page_white_database.png
+738 silly gunzTarPerm extractEntry lib/public/icons/page_white_delete.png
+739 silly gunzTarPerm extractEntry lib/public/icons/page_white_dvd.png
+740 silly gunzTarPerm extractEntry lib/public/icons/page_add.png
+741 silly gunzTarPerm extractEntry lib/public/icons/page_white_error.png
+742 silly gunzTarPerm extractEntry lib/public/icons/page_white_excel.png
+743 silly gunzTarPerm extractEntry lib/public/icons/page_white_find.png
+744 silly gunzTarPerm extractEntry lib/public/icons/page_white_flash.png
+745 silly gunzTarPerm extractEntry lib/public/icons/page_white_freehand.png
+746 silly gunzTarPerm extractEntry lib/public/icons/page_white_gear.png
+747 silly gunzTarPerm extractEntry lib/public/icons/page_white_get.png
+748 silly gunzTarPerm extractEntry lib/public/icons/page_white_go.png
+749 silly gunzTarPerm extractEntry lib/public/icons/page_white_h.png
+750 silly gunzTarPerm extractEntry lib/public/icons/page_white_horizontal.png
+751 silly gunzTarPerm extractEntry lib/public/icons/page_white_key.png
+752 silly gunzTarPerm extractEntry lib/public/icons/page_white_lightning.png
+753 silly gunzTarPerm extractEntry lib/public/icons/page_white_link.png
+754 silly gunzTarPerm extractEntry lib/public/icons/page_white_magnify.png
+755 silly gunzTarPerm extractEntry lib/public/icons/page_white_medal.png
+756 silly gunzTarPerm extractEntry lib/public/icons/page_white_office.png
+757 silly gunzTarPerm extractEntry lib/public/icons/page_white_paint.png
+758 silly gunzTarPerm extractEntry lib/public/icons/page_white_paintbrush.png
+759 silly gunzTarPerm extractEntry lib/public/icons/page_white_paste.png
+760 silly gunzTarPerm extractEntry lib/public/icons/page_white_php.png
+761 silly gunzTarPerm extractEntry lib/public/icons/page_white_picture.png
+762 silly gunzTarPerm extractEntry lib/public/icons/page_white_powerpoint.png
+763 silly gunzTarPerm extractEntry lib/public/icons/page_white_put.png
+764 silly gunzTarPerm extractEntry lib/public/icons/page_white_ruby.png
+765 silly gunzTarPerm extractEntry lib/public/icons/page_white_stack.png
+766 silly gunzTarPerm extractEntry lib/public/icons/page_white_star.png
+767 silly gunzTarPerm extractEntry lib/public/icons/page_white_swoosh.png
+768 silly gunzTarPerm extractEntry lib/public/icons/page_white_text.png
+769 silly gunzTarPerm extractEntry lib/public/icons/page_white_text_width.png
+770 silly gunzTarPerm extractEntry lib/public/icons/page_white_tux.png
+771 silly gunzTarPerm extractEntry lib/public/icons/page_white_vector.png
+772 silly gunzTarPerm extractEntry lib/public/icons/page_white_visualstudio.png
+773 silly gunzTarPerm extractEntry lib/public/icons/page_white_width.png
+774 silly gunzTarPerm extractEntry lib/public/icons/page_white_word.png
+775 silly gunzTarPerm extractEntry lib/public/icons/page_white_world.png
+776 silly gunzTarPerm extractEntry lib/public/icons/page_white_wrench.png
+777 silly gunzTarPerm extractEntry lib/public/icons/page_white_zip.png
+778 silly gunzTarPerm extractEntry lib/public/icons/page_word.png
+779 silly gunzTarPerm extractEntry lib/public/icons/page_world.png
+780 silly gunzTarPerm extractEntry lib/public/style.css
+781 silly lockFile 30f4a9cc-les-express-node-modules-connect tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/connect
+782 silly lockFile 30f4a9cc-les-express-node-modules-connect tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/connect
+783 silly lockFile 8437344a-t-npm-connect-2-10-1-package-tgz tar:///home/hariganet/.npm/connect/2.10.1/package.tgz
+784 silly lockFile 8437344a-t-npm-connect-2-10-1-package-tgz tar:///home/hariganet/.npm/connect/2.10.1/package.tgz
+785 info preinstall connect@2.10.1
+786 verbose readDependencies using package.json deps
+787 verbose readDependencies using package.json deps
+788 verbose cache add [ 'qs@0.6.5', null ]
+789 verbose cache add name=undefined spec="qs@0.6.5" args=["qs@0.6.5",null]
+790 verbose parsed url { protocol: null,
+790 verbose parsed url   slashes: null,
+790 verbose parsed url   auth: null,
+790 verbose parsed url   host: null,
+790 verbose parsed url   port: null,
+790 verbose parsed url   hostname: null,
+790 verbose parsed url   hash: null,
+790 verbose parsed url   search: null,
+790 verbose parsed url   query: null,
+790 verbose parsed url   pathname: 'qs@0.6.5',
+790 verbose parsed url   path: 'qs@0.6.5',
+790 verbose parsed url   href: 'qs@0.6.5' }
+791 verbose cache add name="qs" spec="0.6.5" args=["qs","0.6.5"]
+792 verbose parsed url { protocol: null,
+792 verbose parsed url   slashes: null,
+792 verbose parsed url   auth: null,
+792 verbose parsed url   host: null,
+792 verbose parsed url   port: null,
+792 verbose parsed url   hostname: null,
+792 verbose parsed url   hash: null,
+792 verbose parsed url   search: null,
+792 verbose parsed url   query: null,
+792 verbose parsed url   pathname: '0.6.5',
+792 verbose parsed url   path: '0.6.5',
+792 verbose parsed url   href: '0.6.5' }
+793 verbose addNamed [ 'qs', '0.6.5' ]
+794 verbose addNamed [ '0.6.5', '0.6.5' ]
+795 silly lockFile f5e5a40f-qs-0-6-5 qs@0.6.5
+796 verbose lock qs@0.6.5 /home/hariganet/.npm/f5e5a40f-qs-0-6-5.lock
+797 verbose cache add [ 'bytes@0.2.0', null ]
+798 verbose cache add name=undefined spec="bytes@0.2.0" args=["bytes@0.2.0",null]
+799 verbose parsed url { protocol: null,
+799 verbose parsed url   slashes: null,
+799 verbose parsed url   auth: null,
+799 verbose parsed url   host: null,
+799 verbose parsed url   port: null,
+799 verbose parsed url   hostname: null,
+799 verbose parsed url   hash: null,
+799 verbose parsed url   search: null,
+799 verbose parsed url   query: null,
+799 verbose parsed url   pathname: 'bytes@0.2.0',
+799 verbose parsed url   path: 'bytes@0.2.0',
+799 verbose parsed url   href: 'bytes@0.2.0' }
+800 verbose cache add name="bytes" spec="0.2.0" args=["bytes","0.2.0"]
+801 verbose parsed url { protocol: null,
+801 verbose parsed url   slashes: null,
+801 verbose parsed url   auth: null,
+801 verbose parsed url   host: null,
+801 verbose parsed url   port: null,
+801 verbose parsed url   hostname: null,
+801 verbose parsed url   hash: null,
+801 verbose parsed url   search: null,
+801 verbose parsed url   query: null,
+801 verbose parsed url   pathname: '0.2.0',
+801 verbose parsed url   path: '0.2.0',
+801 verbose parsed url   href: '0.2.0' }
+802 verbose addNamed [ 'bytes', '0.2.0' ]
+803 verbose addNamed [ '0.2.0', '0.2.0' ]
+804 silly lockFile e351aee0-bytes-0-2-0 bytes@0.2.0
+805 verbose lock bytes@0.2.0 /home/hariganet/.npm/e351aee0-bytes-0-2-0.lock
+806 verbose cache add [ 'pause@0.0.1', null ]
+807 verbose cache add name=undefined spec="pause@0.0.1" args=["pause@0.0.1",null]
+808 verbose parsed url { protocol: null,
+808 verbose parsed url   slashes: null,
+808 verbose parsed url   auth: null,
+808 verbose parsed url   host: null,
+808 verbose parsed url   port: null,
+808 verbose parsed url   hostname: null,
+808 verbose parsed url   hash: null,
+808 verbose parsed url   search: null,
+808 verbose parsed url   query: null,
+808 verbose parsed url   pathname: 'pause@0.0.1',
+808 verbose parsed url   path: 'pause@0.0.1',
+808 verbose parsed url   href: 'pause@0.0.1' }
+809 verbose cache add name="pause" spec="0.0.1" args=["pause","0.0.1"]
+810 verbose parsed url { protocol: null,
+810 verbose parsed url   slashes: null,
+810 verbose parsed url   auth: null,
+810 verbose parsed url   host: null,
+810 verbose parsed url   port: null,
+810 verbose parsed url   hostname: null,
+810 verbose parsed url   hash: null,
+810 verbose parsed url   search: null,
+810 verbose parsed url   query: null,
+810 verbose parsed url   pathname: '0.0.1',
+810 verbose parsed url   path: '0.0.1',
+810 verbose parsed url   href: '0.0.1' }
+811 verbose addNamed [ 'pause', '0.0.1' ]
+812 verbose addNamed [ '0.0.1', '0.0.1' ]
+813 silly lockFile c62fc432-pause-0-0-1 pause@0.0.1
+814 verbose lock pause@0.0.1 /home/hariganet/.npm/c62fc432-pause-0-0-1.lock
+815 verbose cache add [ 'uid2@0.0.2', null ]
+816 verbose cache add name=undefined spec="uid2@0.0.2" args=["uid2@0.0.2",null]
+817 verbose parsed url { protocol: null,
+817 verbose parsed url   slashes: null,
+817 verbose parsed url   auth: null,
+817 verbose parsed url   host: null,
+817 verbose parsed url   port: null,
+817 verbose parsed url   hostname: null,
+817 verbose parsed url   hash: null,
+817 verbose parsed url   search: null,
+817 verbose parsed url   query: null,
+817 verbose parsed url   pathname: 'uid2@0.0.2',
+817 verbose parsed url   path: 'uid2@0.0.2',
+817 verbose parsed url   href: 'uid2@0.0.2' }
+818 verbose cache add name="uid2" spec="0.0.2" args=["uid2","0.0.2"]
+819 verbose parsed url { protocol: null,
+819 verbose parsed url   slashes: null,
+819 verbose parsed url   auth: null,
+819 verbose parsed url   host: null,
+819 verbose parsed url   port: null,
+819 verbose parsed url   hostname: null,
+819 verbose parsed url   hash: null,
+819 verbose parsed url   search: null,
+819 verbose parsed url   query: null,
+819 verbose parsed url   pathname: '0.0.2',
+819 verbose parsed url   path: '0.0.2',
+819 verbose parsed url   href: '0.0.2' }
+820 verbose addNamed [ 'uid2', '0.0.2' ]
+821 verbose addNamed [ '0.0.2', '0.0.2' ]
+822 silly lockFile aaa92211-uid2-0-0-2 uid2@0.0.2
+823 verbose lock uid2@0.0.2 /home/hariganet/.npm/aaa92211-uid2-0-0-2.lock
+824 verbose cache add [ 'raw-body@0.0.3', null ]
+825 verbose cache add name=undefined spec="raw-body@0.0.3" args=["raw-body@0.0.3",null]
+826 verbose parsed url { protocol: null,
+826 verbose parsed url   slashes: null,
+826 verbose parsed url   auth: null,
+826 verbose parsed url   host: null,
+826 verbose parsed url   port: null,
+826 verbose parsed url   hostname: null,
+826 verbose parsed url   hash: null,
+826 verbose parsed url   search: null,
+826 verbose parsed url   query: null,
+826 verbose parsed url   pathname: 'raw-body@0.0.3',
+826 verbose parsed url   path: 'raw-body@0.0.3',
+826 verbose parsed url   href: 'raw-body@0.0.3' }
+827 verbose cache add name="raw-body" spec="0.0.3" args=["raw-body","0.0.3"]
+828 verbose parsed url { protocol: null,
+828 verbose parsed url   slashes: null,
+828 verbose parsed url   auth: null,
+828 verbose parsed url   host: null,
+828 verbose parsed url   port: null,
+828 verbose parsed url   hostname: null,
+828 verbose parsed url   hash: null,
+828 verbose parsed url   search: null,
+828 verbose parsed url   query: null,
+828 verbose parsed url   pathname: '0.0.3',
+828 verbose parsed url   path: '0.0.3',
+828 verbose parsed url   href: '0.0.3' }
+829 verbose addNamed [ 'raw-body', '0.0.3' ]
+830 verbose addNamed [ '0.0.3', '0.0.3' ]
+831 silly lockFile f4dfbef7-raw-body-0-0-3 raw-body@0.0.3
+832 verbose lock raw-body@0.0.3 /home/hariganet/.npm/f4dfbef7-raw-body-0-0-3.lock
+833 verbose cache add [ 'negotiator@0.2.8', null ]
+834 verbose cache add name=undefined spec="negotiator@0.2.8" args=["negotiator@0.2.8",null]
+835 verbose parsed url { protocol: null,
+835 verbose parsed url   slashes: null,
+835 verbose parsed url   auth: null,
+835 verbose parsed url   host: null,
+835 verbose parsed url   port: null,
+835 verbose parsed url   hostname: null,
+835 verbose parsed url   hash: null,
+835 verbose parsed url   search: null,
+835 verbose parsed url   query: null,
+835 verbose parsed url   pathname: 'negotiator@0.2.8',
+835 verbose parsed url   path: 'negotiator@0.2.8',
+835 verbose parsed url   href: 'negotiator@0.2.8' }
+836 verbose cache add name="negotiator" spec="0.2.8" args=["negotiator","0.2.8"]
+837 verbose parsed url { protocol: null,
+837 verbose parsed url   slashes: null,
+837 verbose parsed url   auth: null,
+837 verbose parsed url   host: null,
+837 verbose parsed url   port: null,
+837 verbose parsed url   hostname: null,
+837 verbose parsed url   hash: null,
+837 verbose parsed url   search: null,
+837 verbose parsed url   query: null,
+837 verbose parsed url   pathname: '0.2.8',
+837 verbose parsed url   path: '0.2.8',
+837 verbose parsed url   href: '0.2.8' }
+838 verbose addNamed [ 'negotiator', '0.2.8' ]
+839 verbose addNamed [ '0.2.8', '0.2.8' ]
+840 silly lockFile bf85c2ab-negotiator-0-2-8 negotiator@0.2.8
+841 verbose lock negotiator@0.2.8 /home/hariganet/.npm/bf85c2ab-negotiator-0-2-8.lock
+842 verbose cache add [ 'multiparty@2.2.0', null ]
+843 verbose cache add name=undefined spec="multiparty@2.2.0" args=["multiparty@2.2.0",null]
+844 verbose parsed url { protocol: null,
+844 verbose parsed url   slashes: null,
+844 verbose parsed url   auth: null,
+844 verbose parsed url   host: null,
+844 verbose parsed url   port: null,
+844 verbose parsed url   hostname: null,
+844 verbose parsed url   hash: null,
+844 verbose parsed url   search: null,
+844 verbose parsed url   query: null,
+844 verbose parsed url   pathname: 'multiparty@2.2.0',
+844 verbose parsed url   path: 'multiparty@2.2.0',
+844 verbose parsed url   href: 'multiparty@2.2.0' }
+845 verbose cache add name="multiparty" spec="2.2.0" args=["multiparty","2.2.0"]
+846 verbose parsed url { protocol: null,
+846 verbose parsed url   slashes: null,
+846 verbose parsed url   auth: null,
+846 verbose parsed url   host: null,
+846 verbose parsed url   port: null,
+846 verbose parsed url   hostname: null,
+846 verbose parsed url   hash: null,
+846 verbose parsed url   search: null,
+846 verbose parsed url   query: null,
+846 verbose parsed url   pathname: '2.2.0',
+846 verbose parsed url   path: '2.2.0',
+846 verbose parsed url   href: '2.2.0' }
+847 verbose addNamed [ 'multiparty', '2.2.0' ]
+848 verbose addNamed [ '2.2.0', '2.2.0' ]
+849 silly lockFile f924b4a6-multiparty-2-2-0 multiparty@2.2.0
+850 verbose lock multiparty@2.2.0 /home/hariganet/.npm/f924b4a6-multiparty-2-2-0.lock
+851 verbose url raw qs/0.6.5
+852 verbose url resolving [ 'https://registry.npmjs.org/', './qs/0.6.5' ]
+853 verbose url resolved https://registry.npmjs.org/qs/0.6.5
+854 info trying registry request attempt 1 at 15:13:35
+855 verbose etag "A0908O91HJF6S9ZO1VDAN636E"
+856 http GET https://registry.npmjs.org/qs/0.6.5
+857 verbose url raw bytes/0.2.0
+858 verbose url resolving [ 'https://registry.npmjs.org/', './bytes/0.2.0' ]
+859 verbose url resolved https://registry.npmjs.org/bytes/0.2.0
+860 info trying registry request attempt 1 at 15:13:35
+861 verbose etag "DDRZ4XRRLN6Z0X2YNRRUFBM29"
+862 http GET https://registry.npmjs.org/bytes/0.2.0
+863 verbose url raw uid2/0.0.2
+864 verbose url resolving [ 'https://registry.npmjs.org/', './uid2/0.0.2' ]
+865 verbose url resolved https://registry.npmjs.org/uid2/0.0.2
+866 info trying registry request attempt 1 at 15:13:35
+867 verbose etag "6YUT1KABG2MRIOFA9YWQEHH5B"
+868 http GET https://registry.npmjs.org/uid2/0.0.2
+869 verbose url raw pause/0.0.1
+870 verbose url resolving [ 'https://registry.npmjs.org/', './pause/0.0.1' ]
+871 verbose url resolved https://registry.npmjs.org/pause/0.0.1
+872 info trying registry request attempt 1 at 15:13:35
+873 verbose etag "EOB5X18A1J6GDBBJPGSXXC6N8"
+874 http GET https://registry.npmjs.org/pause/0.0.1
+875 verbose url raw raw-body/0.0.3
+876 verbose url resolving [ 'https://registry.npmjs.org/', './raw-body/0.0.3' ]
+877 verbose url resolved https://registry.npmjs.org/raw-body/0.0.3
+878 info trying registry request attempt 1 at 15:13:35
+879 verbose etag "BGH5A2FN5CRG40M94E2FIK7RJ"
+880 http GET https://registry.npmjs.org/raw-body/0.0.3
+881 verbose url raw negotiator/0.2.8
+882 verbose url resolving [ 'https://registry.npmjs.org/', './negotiator/0.2.8' ]
+883 verbose url resolved https://registry.npmjs.org/negotiator/0.2.8
+884 info trying registry request attempt 1 at 15:13:35
+885 verbose etag "ABBGFF914GSDN2CNMDROFOFXN"
+886 http GET https://registry.npmjs.org/negotiator/0.2.8
+887 verbose url raw multiparty/2.2.0
+888 verbose url resolving [ 'https://registry.npmjs.org/', './multiparty/2.2.0' ]
+889 verbose url resolved https://registry.npmjs.org/multiparty/2.2.0
+890 info trying registry request attempt 1 at 15:13:35
+891 verbose etag "7M8ID7120BFESEFIFL84N8QAC"
+892 http GET https://registry.npmjs.org/multiparty/2.2.0
+893 http 304 https://registry.npmjs.org/keypress
+894 silly registry.get cb [ 304,
+894 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+894 silly registry.get     etag: '"ZU2AWLYGEBSRDNMY2BPQXH2A"',
+894 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:36 GMT',
+894 silly registry.get     'content-length': '0' } ]
+895 verbose etag keypress from cache
+896 http 304 https://registry.npmjs.org/mime
+897 silly registry.get cb [ 304,
+897 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+897 silly registry.get     etag: '"E6XCARW5KGP2FEMF4DRNGR1ZF"',
+897 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:36 GMT',
+897 silly registry.get     'content-length': '0' } ]
+898 verbose etag mime from cache
+899 silly addNameRange number 2 { name: 'keypress', range: '>=0.1.0-0 <0.2.0-0', hasData: true }
+900 silly addNameRange versions [ 'keypress', [ '0.0.1', '0.0.2', '0.1.0', '0.2.0', '0.2.1' ] ]
+901 verbose addNamed [ 'keypress', '0.1.0' ]
+902 verbose addNamed [ '0.1.0', '0.1.0' ]
+903 silly lockFile 22598b8c-keypress-0-1-0 keypress@0.1.0
+904 verbose lock keypress@0.1.0 /home/hariganet/.npm/22598b8c-keypress-0-1-0.lock
+905 silly addNameRange number 2 { name: 'mime', range: '>=1.2.9-0 <1.3.0-0', hasData: true }
+906 silly addNameRange versions [ 'mime',
+906 silly addNameRange   [ '1.0.0',
+906 silly addNameRange     '1.1.0',
+906 silly addNameRange     '1.2.1',
+906 silly addNameRange     '1.2.2',
+906 silly addNameRange     '1.2.3',
+906 silly addNameRange     '1.2.4',
+906 silly addNameRange     '1.2.5',
+906 silly addNameRange     '1.2.6',
+906 silly addNameRange     '1.2.7',
+906 silly addNameRange     '1.2.8',
+906 silly addNameRange     '1.2.9',
+906 silly addNameRange     '1.2.10',
+906 silly addNameRange     '1.2.11' ] ]
+907 verbose addNamed [ 'mime', '1.2.11' ]
+908 verbose addNamed [ '1.2.11', '1.2.11' ]
+909 silly lockFile c4b0741f-mime-1-2-11 mime@1.2.11
+910 verbose lock mime@1.2.11 /home/hariganet/.npm/c4b0741f-mime-1-2-11.lock
+911 silly lockFile 22598b8c-keypress-0-1-0 keypress@0.1.0
+912 silly lockFile 22598b8c-keypress-0-1-0 keypress@0.1.0
+913 silly lockFile a3a73622-keypress-0-1-x keypress@0.1.x
+914 silly lockFile a3a73622-keypress-0-1-x keypress@0.1.x
+915 silly lockFile c4b0741f-mime-1-2-11 mime@1.2.11
+916 silly lockFile c4b0741f-mime-1-2-11 mime@1.2.11
+917 silly resolved [ { name: 'keypress',
+917 silly resolved     version: '0.1.0',
+917 silly resolved     description: 'Make any Node ReadableStream emit "keypress" events',
+917 silly resolved     author:
+917 silly resolved      { name: 'Nathan Rajlich',
+917 silly resolved        email: 'nathan@tootallnate.net',
+917 silly resolved        url: 'http://tootallnate.net' },
+917 silly resolved     main: 'index.js',
+917 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+917 silly resolved     repository:
+917 silly resolved      { type: 'git',
+917 silly resolved        url: 'git://github.com/TooTallNate/keypress.git' },
+917 silly resolved     keywords: [ 'keypress', 'readline', 'core' ],
+917 silly resolved     license: 'MIT',
+917 silly resolved     readme: 'keypress\n========\n### Make any Node ReadableStream emit "keypress" events\n\n\nPrevious to Node `v0.8.x`, there was an undocumented `"keypress"` event that\n`process.stdin` would emit when it was a TTY. Some people discovered this hidden\ngem, and started using it in their own code.\n\nNow in Node `v0.8.x`, this `"keypress"` event does not get emitted by default,\nbut rather only when it is being used in conjuction with the `readline` (or by\nextension, the `repl`) module.\n\nThis module is the exact logic from the node `v0.8.x` releases ripped out into its\nown module.\n\n__Bonus:__ Now with mouse support!\n\nInstallation\n------------\n\nInstall with `npm`:\n\n``` bash\n$ npm install keypress\n```\n\nOr add it to the `"dependencies"` section of your _package.json_ file.\n\n\nExample\n-------\n\n#### Listening for "keypress" events\n\n``` js\nvar keypress = require(\'keypress\');\n\n// make `process.stdin` begin emitting "keypress" events\nkeypress(process.stdin);\n\n// listen for the "keypress" event\nprocess.stdin.on(\'keypress\', function (ch, key) {\n  console.log(\'got "keypress"\', key);\n  if (key && key.ctrl && key.name == \'c\') {\n    process.stdin.pause();\n  }\n});\n\nprocess.stdin.setRawMode(true);\nprocess.stdin.resume();\n```\n\n#### Listening for "mousepress" events\n\n``` js\nvar keypress = require(\'keypress\');\n\n// make `process.stdin` begin emitting "mousepress" (and "keypress") events\nkeypress(process.stdin);\n\n// you must enable the mouse events before they will begin firing\nkeypress.enableMouse(process.stdout);\n\nprocess.stdin.on(\'mousepress\', function (info) {\n  console.log(\'got "mousepress" event at %d x %d\', info.x, info.y);\n});\n\nprocess.on(\'exit\', function () {\n  // disable mouse on exit, so that the state\n  // is back to normal for the terminal\n  keypress.disableMouse(process.stdout);\n});\n```\n\n\nLicense\n-------\n\n(The MIT License)\n\nCopyright (c) 2012 Nathan Rajlich &lt;nathan@tootallnate.net&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+917 silly resolved     readmeFilename: 'README.md',
+917 silly resolved     bugs: { url: 'https://github.com/TooTallNate/keypress/issues' },
+917 silly resolved     _id: 'keypress@0.1.0',
+917 silly resolved     _from: 'keypress@0.1.x' } ]
+918 info install keypress@0.1.0 into /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander
+919 info installOne keypress@0.1.0
+920 silly lockFile ccf24a67-mime-1-2-9 mime@~1.2.9
+921 silly lockFile ccf24a67-mime-1-2-9 mime@~1.2.9
+922 silly resolved [ { author:
+922 silly resolved      { name: 'Robert Kieffer',
+922 silly resolved        email: 'robert@broofa.com',
+922 silly resolved        url: 'http://github.com/broofa' },
+922 silly resolved     contributors: [ [Object] ],
+922 silly resolved     dependencies: {},
+922 silly resolved     description: 'A comprehensive library for mime-type mapping',
+922 silly resolved     devDependencies: {},
+922 silly resolved     keywords: [ 'util', 'mime' ],
+922 silly resolved     main: 'mime.js',
+922 silly resolved     name: 'mime',
+922 silly resolved     repository: { url: 'https://github.com/broofa/node-mime', type: 'git' },
+922 silly resolved     version: '1.2.11',
+922 silly resolved     readme: '# mime\n\nComprehensive MIME type mapping API. Includes all 600+ types and 800+ extensions defined by the Apache project, plus additional types submitted by the node.js community.\n\n## Install\n\nInstall with [npm](http://github.com/isaacs/npm):\n\n    npm install mime\n\n## API - Queries\n\n### mime.lookup(path)\nGet the mime type associated with a file, if no mime type is found `application/octet-stream` is returned. Performs a case-insensitive lookup using the extension in `path` (the substring after the last \'/\' or \'.\').  E.g.\n\n    var mime = require(\'mime\');\n\n    mime.lookup(\'/path/to/file.txt\');         // => \'text/plain\'\n    mime.lookup(\'file.txt\');                  // => \'text/plain\'\n    mime.lookup(\'.TXT\');                      // => \'text/plain\'\n    mime.lookup(\'htm\');                       // => \'text/html\'\n\n### mime.default_type\nSets the mime type returned when `mime.lookup` fails to find the extension searched for. (Default is `application/octet-stream`.)\n\n### mime.extension(type)\nGet the default extension for `type`\n\n    mime.extension(\'text/html\');                 // => \'html\'\n    mime.extension(\'application/octet-stream\');  // => \'bin\'\n\n### mime.charsets.lookup()\n\nMap mime-type to charset\n\n    mime.charsets.lookup(\'text/plain\');        // => \'UTF-8\'\n\n(The logic for charset lookups is pretty rudimentary.  Feel free to suggest improvements.)\n\n## API - Defining Custom Types\n\nThe following APIs allow you to add your own type mappings within your project.  If you feel a type should be included as part of node-mime, see [requesting new types](https://github.com/broofa/node-mime/wiki/Requesting-New-Types).\n\n### mime.define()\n\nAdd custom mime/extension mappings\n\n    mime.define({\n        \'text/x-some-format\': [\'x-sf\', \'x-sft\', \'x-sfml\'],\n        \'application/x-my-type\': [\'x-mt\', \'x-mtt\'],\n        // etc ...\n    });\n\n    mime.lookup(\'x-sft\');                 // => \'text/x-some-format\'\n\nThe first entry in the extensions array is returned by `mime.extension()`. E.g.\n\n    mime.extension(\'text/x-some-format\'); // => \'x-sf\'\n\n### mime.load(filepath)\n\nLoad mappings from an Apache ".types" format file\n\n    mime.load(\'./my_project.types\');\n\nThe .types file format is simple -  See the `types` dir for examples.\n',
+922 silly resolved     readmeFilename: 'README.md',
+922 silly resolved     bugs: { url: 'https://github.com/broofa/node-mime/issues' },
+922 silly resolved     _id: 'mime@1.2.11',
+922 silly resolved     _from: 'mime@~1.2.9' } ]
+923 info install mime@1.2.11 into /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send
+924 info installOne mime@1.2.11
+925 info /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander/node_modules/keypress unbuild
+926 info /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send/node_modules/mime unbuild
+927 verbose tar unpack /home/hariganet/.npm/keypress/0.1.0/package.tgz
+928 silly lockFile 480de76c--commander-node-modules-keypress tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander/node_modules/keypress
+929 verbose lock tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander/node_modules/keypress /home/hariganet/.npm/480de76c--commander-node-modules-keypress.lock
+930 silly lockFile 067d1561-t-npm-keypress-0-1-0-package-tgz tar:///home/hariganet/.npm/keypress/0.1.0/package.tgz
+931 verbose lock tar:///home/hariganet/.npm/keypress/0.1.0/package.tgz /home/hariganet/.npm/067d1561-t-npm-keypress-0-1-0-package-tgz.lock
+932 verbose tar unpack /home/hariganet/.npm/mime/1.2.11/package.tgz
+933 silly lockFile 783e8bda-e-modules-send-node-modules-mime tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send/node_modules/mime
+934 verbose lock tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send/node_modules/mime /home/hariganet/.npm/783e8bda-e-modules-send-node-modules-mime.lock
+935 silly lockFile f603b357-anet-npm-mime-1-2-11-package-tgz tar:///home/hariganet/.npm/mime/1.2.11/package.tgz
+936 verbose lock tar:///home/hariganet/.npm/mime/1.2.11/package.tgz /home/hariganet/.npm/f603b357-anet-npm-mime-1-2-11-package-tgz.lock
+937 silly gunzTarPerm modes [ '755', '644' ]
+938 silly gunzTarPerm modes [ '755', '644' ]
+939 silly gunzTarPerm extractEntry package.json
+940 silly gunzTarPerm extractEntry package.json
+941 silly gunzTarPerm extractEntry README.md
+942 silly gunzTarPerm extractEntry index.js
+943 silly gunzTarPerm extractEntry README.md
+944 silly gunzTarPerm extractEntry LICENSE
+945 silly gunzTarPerm extractEntry test.js
+946 silly gunzTarPerm extractEntry mime.js
+947 silly gunzTarPerm extractEntry test.js
+948 silly gunzTarPerm extractEntry types/mime.types
+949 silly gunzTarPerm extractEntry types/node.types
+950 silly lockFile 480de76c--commander-node-modules-keypress tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander/node_modules/keypress
+951 silly lockFile 480de76c--commander-node-modules-keypress tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander/node_modules/keypress
+952 silly lockFile 067d1561-t-npm-keypress-0-1-0-package-tgz tar:///home/hariganet/.npm/keypress/0.1.0/package.tgz
+953 silly lockFile 067d1561-t-npm-keypress-0-1-0-package-tgz tar:///home/hariganet/.npm/keypress/0.1.0/package.tgz
+954 info preinstall keypress@0.1.0
+955 verbose readDependencies using package.json deps
+956 verbose readDependencies using package.json deps
+957 silly resolved []
+958 verbose about to build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander/node_modules/keypress
+959 info build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander/node_modules/keypress
+960 verbose linkStuff [ false,
+960 verbose linkStuff   false,
+960 verbose linkStuff   false,
+960 verbose linkStuff   '/var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander/node_modules' ]
+961 info linkStuff keypress@0.1.0
+962 verbose linkBins keypress@0.1.0
+963 verbose linkMans keypress@0.1.0
+964 verbose rebuildBundles keypress@0.1.0
+965 info install keypress@0.1.0
+966 info postinstall keypress@0.1.0
+967 verbose about to build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander
+968 info build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/commander
+969 verbose linkStuff [ false,
+969 verbose linkStuff   false,
+969 verbose linkStuff   false,
+969 verbose linkStuff   '/var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules' ]
+970 info linkStuff commander@1.3.2
+971 verbose linkBins commander@1.3.2
+972 verbose linkMans commander@1.3.2
+973 verbose rebuildBundles commander@1.3.2
+974 verbose rebuildBundles [ 'keypress' ]
+975 info install commander@1.3.2
+976 info postinstall commander@1.3.2
+977 silly lockFile 783e8bda-e-modules-send-node-modules-mime tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send/node_modules/mime
+978 silly lockFile 783e8bda-e-modules-send-node-modules-mime tar:///var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send/node_modules/mime
+979 silly lockFile f603b357-anet-npm-mime-1-2-11-package-tgz tar:///home/hariganet/.npm/mime/1.2.11/package.tgz
+980 silly lockFile f603b357-anet-npm-mime-1-2-11-package-tgz tar:///home/hariganet/.npm/mime/1.2.11/package.tgz
+981 info preinstall mime@1.2.11
+982 verbose readDependencies using package.json deps
+983 verbose readDependencies using package.json deps
+984 silly resolved []
+985 verbose about to build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send/node_modules/mime
+986 info build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send/node_modules/mime
+987 verbose linkStuff [ false,
+987 verbose linkStuff   false,
+987 verbose linkStuff   false,
+987 verbose linkStuff   '/var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send/node_modules' ]
+988 info linkStuff mime@1.2.11
+989 verbose linkBins mime@1.2.11
+990 verbose linkMans mime@1.2.11
+991 verbose rebuildBundles mime@1.2.11
+992 info install mime@1.2.11
+993 info postinstall mime@1.2.11
+994 verbose about to build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send
+995 info build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/send
+996 verbose linkStuff [ false,
+996 verbose linkStuff   false,
+996 verbose linkStuff   false,
+996 verbose linkStuff   '/var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules' ]
+997 info linkStuff send@0.1.4
+998 verbose linkBins send@0.1.4
+999 verbose linkMans send@0.1.4
+1000 verbose rebuildBundles send@0.1.4
+1001 verbose rebuildBundles [ 'mime' ]
+1002 info install send@0.1.4
+1003 info postinstall send@0.1.4
+1004 http 304 https://registry.npmjs.org/multiparty/2.2.0
+1005 silly registry.get cb [ 304,
+1005 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+1005 silly registry.get     etag: '"7M8ID7120BFESEFIFL84N8QAC"',
+1005 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:36 GMT',
+1005 silly registry.get     'content-length': '0' } ]
+1006 verbose etag multiparty/2.2.0 from cache
+1007 http 304 https://registry.npmjs.org/bytes/0.2.0
+1008 silly registry.get cb [ 304,
+1008 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+1008 silly registry.get     etag: '"DDRZ4XRRLN6Z0X2YNRRUFBM29"',
+1008 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:36 GMT',
+1008 silly registry.get     'content-length': '0' } ]
+1009 verbose etag bytes/0.2.0 from cache
+1010 http 304 https://registry.npmjs.org/qs/0.6.5
+1011 silly registry.get cb [ 304,
+1011 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+1011 silly registry.get     etag: '"A0908O91HJF6S9ZO1VDAN636E"',
+1011 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:36 GMT',
+1011 silly registry.get     'content-length': '0' } ]
+1012 verbose etag qs/0.6.5 from cache
+1013 http 304 https://registry.npmjs.org/uid2/0.0.2
+1014 silly registry.get cb [ 304,
+1014 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+1014 silly registry.get     etag: '"6YUT1KABG2MRIOFA9YWQEHH5B"',
+1014 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:36 GMT',
+1014 silly registry.get     'content-length': '0' } ]
+1015 verbose etag uid2/0.0.2 from cache
+1016 http 304 https://registry.npmjs.org/raw-body/0.0.3
+1017 silly registry.get cb [ 304,
+1017 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+1017 silly registry.get     etag: '"BGH5A2FN5CRG40M94E2FIK7RJ"',
+1017 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:36 GMT',
+1017 silly registry.get     'content-length': '0' } ]
+1018 verbose etag raw-body/0.0.3 from cache
+1019 http 304 https://registry.npmjs.org/pause/0.0.1
+1020 silly registry.get cb [ 304,
+1020 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+1020 silly registry.get     etag: '"EOB5X18A1J6GDBBJPGSXXC6N8"',
+1020 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:36 GMT',
+1020 silly registry.get     'content-length': '0' } ]
+1021 verbose etag pause/0.0.1 from cache
+1022 http 304 https://registry.npmjs.org/negotiator/0.2.8
+1023 silly registry.get cb [ 304,
+1023 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+1023 silly registry.get     etag: '"ABBGFF914GSDN2CNMDROFOFXN"',
+1023 silly registry.get     date: 'Sat, 26 Oct 2013 06:13:36 GMT',
+1023 silly registry.get     'content-length': '0' } ]
+1024 verbose etag negotiator/0.2.8 from cache
+1025 silly lockFile a2d46e5f--multiparty-multiparty-2-2-0-tgz https://registry.npmjs.org/multiparty/-/multiparty-2.2.0.tgz
+1026 verbose lock https://registry.npmjs.org/multiparty/-/multiparty-2.2.0.tgz /home/hariganet/.npm/a2d46e5f--multiparty-multiparty-2-2-0-tgz.lock
+1027 verbose addRemoteTarball [ 'https://registry.npmjs.org/multiparty/-/multiparty-2.2.0.tgz',
+1027 verbose addRemoteTarball   'a567c2af000ad22dc8f2a653d91978ae1f5316f4' ]
+1028 info retry fetch attempt 1 at 15:13:36
+1029 verbose fetch to= /home/hariganet/tmp/npm-14506-x8dzY55V/1382768016853-0.08191390754655004/tmp.tgz
+1030 silly lockFile aaa92211-uid2-0-0-2 uid2@0.0.2
+1031 silly lockFile aaa92211-uid2-0-0-2 uid2@0.0.2
+1032 http GET https://registry.npmjs.org/multiparty/-/multiparty-2.2.0.tgz
+1033 silly lockFile e351aee0-bytes-0-2-0 bytes@0.2.0
+1034 silly lockFile e351aee0-bytes-0-2-0 bytes@0.2.0
+1035 silly lockFile f5e5a40f-qs-0-6-5 qs@0.6.5
+1036 silly lockFile f5e5a40f-qs-0-6-5 qs@0.6.5
+1037 silly lockFile f4dfbef7-raw-body-0-0-3 raw-body@0.0.3
+1038 silly lockFile f4dfbef7-raw-body-0-0-3 raw-body@0.0.3
+1039 silly lockFile c62fc432-pause-0-0-1 pause@0.0.1
+1040 silly lockFile c62fc432-pause-0-0-1 pause@0.0.1
+1041 silly lockFile bf85c2ab-negotiator-0-2-8 negotiator@0.2.8
+1042 silly lockFile bf85c2ab-negotiator-0-2-8 negotiator@0.2.8
+1043 http 200 https://registry.npmjs.org/multiparty/-/multiparty-2.2.0.tgz
+1044 silly lockFile a2d46e5f--multiparty-multiparty-2-2-0-tgz https://registry.npmjs.org/multiparty/-/multiparty-2.2.0.tgz
+1045 silly lockFile a2d46e5f--multiparty-multiparty-2-2-0-tgz https://registry.npmjs.org/multiparty/-/multiparty-2.2.0.tgz
+1046 silly lockFile f924b4a6-multiparty-2-2-0 multiparty@2.2.0
+1047 silly lockFile f924b4a6-multiparty-2-2-0 multiparty@2.2.0
+1048 verbose about to build /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/connect
+1049 info /var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules/connect unbuild
+1050 info preuninstall connect@2.10.1
+1051 info uninstall connect@2.10.1
+1052 verbose false,/var/www/www.hariganet.com/public_html/node/node_modules,/var/www/www.hariganet.com/public_html/node/node_modules/express/node_modules unbuild connect@2.10.1
+1053 info postuninstall connect@2.10.1
+1054 verbose about to build /var/www/www.hariganet.com/public_html/node/node_modules/express
+1055 info /var/www/www.hariganet.com/public_html/node/node_modules/express unbuild
+1056 info preuninstall express@3.4.3
+1057 info uninstall express@3.4.3
+1058 verbose true,/var/www/www.hariganet.com/public_html/node/node_modules,/var/www/www.hariganet.com/public_html/node/node_modules unbuild express@3.4.3
+1059 verbose /var/www/www.hariganet.com/public_html/node/node_modules/.bin,[object Object] binRoot
+1060 info postuninstall express@3.4.3
+1061 error Error: shasum check failed for /home/hariganet/tmp/npm-14506-x8dzY55V/1382768016853-0.08191390754655004/tmp.tgz
+1061 error Expected: a567c2af000ad22dc8f2a653d91978ae1f5316f4
+1061 error Actual:   91b8f05ea204b85b5c1eec2d4d2917ca9d25ce97
+1061 error     at /home/hariganet/.nave/installed/0.11.7/lib/node_modules/npm/node_modules/sha/index.js:38:8
+1061 error     at ReadStream.<anonymous> (/home/hariganet/.nave/installed/0.11.7/lib/node_modules/npm/node_modules/sha/index.js:85:7)
+1061 error     at ReadStream.EventEmitter.emit (events.js:125:20)
+1061 error     at _stream_readable.js:896:16
+1061 error     at process._tickCallback (node.js:317:11)
+1062 error If you need help, you may report this log at:
+1062 error     <http://github.com/isaacs/npm/issues>
+1062 error or email it to:
+1062 error     <npm-@googlegroups.com>
+1063 error System Linux 2.6.32-358.11.1.el6.x86_64
+1064 error command "node" "/home/hariganet/.nave/installed/0.11.7/bin/npm" "install" "express"
+1065 error cwd /var/www/www.hariganet.com/public_html/node
+1066 error node -v v0.11.7
+1067 error npm -v 1.3.11
+1068 verbose exit [ 1, true ]
