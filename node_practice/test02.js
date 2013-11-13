@@ -51,7 +51,7 @@ var WF = function(data){
 //  console.log("@hariganet in WF");
 
   data = decodeURI(data);
-  fs.appendFile("/var/www/www.hariganet.com/public_html/node_practice/test.txt", data + "\n", function(err){
+  fs.appendFile("test.txt", data + "\n", function(err){
       if(err){
       return console.log("エラーが発生していますinWF " + err);
       }
@@ -60,7 +60,7 @@ var WF = function(data){
 }
 
 var RF = function(){
-  fs.readFile("/var/www/www.hariganet.com/public_html/node_practice/test.txt", "utf-8", function(err, data){
+  fs.readFile("test.txt", "utf-8", function(err, data){
       FDAT = data;
       if(err){
       return console.log("エラーが発生していますinRF " + err);
