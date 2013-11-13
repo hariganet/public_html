@@ -28,3 +28,7 @@
 /favicon.ico
 /hariganet
 /favicon.ico
+/hariganet
+/favicon.ico
+/hariganet
+/favicon.ico
