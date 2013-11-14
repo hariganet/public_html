@@ -41,7 +41,7 @@ io.sockets.on("connection", function(socket){
         case 1:
           EX = EneX -20;
           break;
-        case 2;
+        case 2:
           EY = EneY + 20;
           break;
         case 3:
