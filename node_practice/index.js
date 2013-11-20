@@ -1,6 +1,6 @@
-window.onload = init;
+//window.onload = init;
 
-document.onKeyDown = MV;
+//document.onKeyDown = MV;
 
 var CurX = Math.floor( Math.random() * 500 );
 var CurY = Math.floor( Math.random() * 300 );
@@ -12,7 +12,7 @@ var FreX, FreY;
 var EneX = 250;
 var EneY = 150;
 
-var socket = io.connect("http://www.hariganet.com:8080/");
+var socket = io.connect("http://www.hariganet.com:8080/node_practice/");
 
 socket.on("connect", function(){
     document.getElementById("info").innerHTML = "接続しました";
@@ -21,7 +21,7 @@ socket.on("connect", function(){
 socket.on("message", function(msg){
     if(msg == "REQ"){
       SDATA = CurX + "," + CurY;
-      socket.send(DATA);
+      socket.send(SDATA);
     }
     
     var XY = msg.split(",");
@@ -48,7 +48,7 @@ socket.on("EPOS", function(data){
     EY = Enemy[1];   
     EneX = Enemy[2];
     EneY = Enemy[3]; 
-    document.getElementById("info" .innerHTML = data;   
+    document.getElementById("info").innerHTML = data;   
     });
 
 //鬼の描画処理
@@ -141,6 +141,7 @@ function PointMove(P){
         break;
       case 3:
         CurX = CurX + STP;
+        break;
       case 4:
         CurY = CurY + STP;
         break;

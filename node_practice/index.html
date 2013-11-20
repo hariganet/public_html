@@ -3,9 +3,10 @@
     <meta charset="utf-8">
     <title>おにごっこ</title>
     <link rel="stylesheet" href="index.css" type="text/css" media="all" charset="utf-8">
+    <script src="/socket.io/socket.io.js"></script>
     <script type="text/javascript" src="index.js" charset="utf-8"></script>
   </head>
-  <body>
+  <body onkeydown="MV()" onLoad="init()">
     <canvas id="cvs" width="500" height="300"></canvas>
     <p>テスト</p>
     <div id="info"></div>
