@@ -2,6 +2,9 @@
 
 //document.onKeyDown = MV;
 
+
+ alert('000');
+
 var CurX = Math.floor( Math.random() * 500 );
 var CurY = Math.floor( Math.random() * 300 );
 
@@ -12,10 +15,13 @@ var FreX, FreY;
 var EneX = 250;
 var EneY = 150;
 
-var socket = io.connect("http://www.hariganet.com:8080/node_practice/");
+var socket = io.connect("http://localhost:8080/");
+
+
 
 socket.on("connect", function(){
     document.getElementById("info").innerHTML = "接続しました";
+//    alert('aaa');
 });
 
 socket.on("message", function(msg){
