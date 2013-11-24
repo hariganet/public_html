@@ -1,7 +1,6 @@
-var http = require('http');
-var io = require('socket.io');
+var io = require('socket.io').listen(8080);
 
-io.socket.on('connection', function(socket){
+io.sockets.on('connection', function(socket){
   console.log('onconnection:', socket);
 
   //クライアントからのイベント'all'を受信する
